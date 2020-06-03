@@ -1,0 +1,26 @@
+// DEFAULT PARAMETERS
+
+$font-family: Montserrat, sans-serif !default;
+$greenColor: #89C64A;
+$blackColor: #000;
+$whiteColor: #fff;
+$BackgroundColor: #E5E5E5;
+
+/*##########################################################*/
+
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+.section-carousel {
+    display: flex;
+    max-width: 1440px;
+    height: 894px;
+    margin: 0 auto;
+    background-color: $blackColor;
+}
