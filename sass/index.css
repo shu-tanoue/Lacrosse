@@ -1,0 +1,448 @@
+/*##########################################################*/
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+.section-carousel {
+  max-width: 1440px;
+  width: 100vw;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .carousel-item {
+  width: 440px !important;
+  height: 680px;
+}
+
+.carousel .carousel-item #coach-img, .carousel .carousel-item #training-img, .carousel .carousel-item #school-img {
+  width: 100%;
+  height: 680px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.carousel .carousel-item #coach-img {
+  background: url(/images/coach-black&white.png);
+}
+
+.carousel .carousel-item #training-img {
+  background: url(/images/training-black&white.png);
+}
+
+.carousel .carousel-item #school-img {
+  background: url(/images/school-black&white.png);
+}
+
+.carousel .carousel-item .box-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 390px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel .carousel-item .box-description .title {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.carousel .carousel-item .box-description hr {
+  display: none;
+  width: 287px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.carousel .carousel-item .box-description .description, .carousel .carousel-item .box-description a {
+  display: none;
+  margin: 10px;
+  padding: 0 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.carousel .carousel-item .box-description a {
+  text-decoration: underline;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.carousel .active .box-description {
+  top: 350px;
+  height: auto;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.carousel .active .box-description .title {
+  color: #89C64A;
+}
+
+.carousel .active .box-description .description, .carousel .active .box-description hr, .carousel .active .box-description a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel .active #coach-img {
+  background: url(/images/coach.png);
+}
+
+.carousel .active #training-img {
+  background: url(/images/training.png);
+}
+
+.carousel .active #school-img {
+  background: url(/images/school.png);
+}
+
+/* ===== SHINYA=========*/
+/* background-color: #92BB55; */
+/* background-color: rgba(0, 0, 0, 0.8); */
+/* background-color: black; */
+/* font-family: Montserrat;  */
+/* ############################ */
+/* ########## header ########## */
+/* ############################ */
+header {
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  z-index: 1;
+  text-align: center;
+  font-family: Montserrat;
+  /* background-color: black; */
+}
+
+/* ########################## */
+/* ########## menu ########## */
+/* ########################## */
+/* The necessary CSS styles for the navigation. */
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 20vw;
+  /* margin-top: 60px; */
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  /* background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%); */
+}
+
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarMenuInner p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px;
+}
+
+.sidebarMenuInner li {
+  list-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.10); */
+}
+
+.sidebarMenuInner li:hover {
+  font-size: large;
+}
+
+.sidebarMenuInner li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebarMenuInner li a:hover {
+  color: #89C64A;
+}
+
+.sidebarMenuInner li ul {
+  display: none;
+}
+
+#btn-1:checked ~ .sidebarMenuInner li ul {
+  display: block;
+}
+
+/* Style & animate the hamburger toggle button. */
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+input[type=checkbox] {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+}
+
+.sidebarIconToggle {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 20px;
+  left: 50px;
+  height: 22px;
+  width: 22px;
+  margin: 30px 0px;
+}
+
+.spinner {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.horizontal {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+.diagonal.part-1 {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: 8px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+#logo_img {
+  width: 9.5%;
+  height: 100%;
+}
+
+#register_btn p {
+  width: 10vw;
+  height: 5vh;
+  background-color: #89C64A;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 20px;
+  border-radius: 1%;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+/* ############################### */
+/* ########## container ########## */
+/* ############################### */
+/* slider container */
+#slide_container {
+  text-align: center;
+  background-color: black;
+}
+
+#slide_img {
+  width: 95vw;
+  height: 100vh;
+}
+
+/* text container */
+#text_container {
+  position: absolute;
+  bottom: 0;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+}
+
+#text_container p {
+  color: #fff;
+}
+
+#rectangle {
+  background-color: #89C64A;
+  width: 10vw;
+  height: 0.5vh;
+}
+
+#text_container h1 {
+  margin: 10px 0;
+}
+
+/*===============*/
+/* Lucas - About */
+/*===============*/
+.section-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.6fr 1fr;
+      grid-template-columns: 0.6fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "about-info about-picture";
+}
+
+.about-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about-info;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.about-picture {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: about-picture;
+  margin-top: 100px;
+}
+
+.about-info a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.aboutclub-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 110px;
+}
+
+.aboutclub-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3em;
+  line-height: 79px;
+}
+
+#club-title {
+  font-weight: 900;
+  color: #89C64A;
+  margin-left: 15px;
+}
+
+.about-info h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.8em;
+}
+
+.about-info p {
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.about-info h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-picture img {
+  margin-left: 200px;
+  width: 500px;
+}
+/*# sourceMappingURL=index.css.map */

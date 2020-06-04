@@ -1,0 +1,434 @@
+// DEFAULT PARAMETERS
+$max-width: 1440px;
+$font-family: Montserrat, sans-serif !default;
+$greenColor: #89C64A;
+$blackColor: #000;
+$whiteColor: #fff;
+$BackgroundColor: #E5E5E5;
+
+/*##########################################################*/
+
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+.section-carousel {
+    max-width: $max-width;
+    width: 100vw;
+    height: 90vh;
+    margin: 0 auto;
+    background-color: $blackColor;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+
+
+
+    .carousel-item {
+        width: 440px !important;
+        height: 680px;
+
+        #coach-img, #training-img, #school-img {
+            width: 100%;
+            height: 680px;
+            transition: 1s ease-in-out;
+        }
+
+        #coach-img {
+            background: url(/images/coach-black&white.png);
+        }
+        #training-img {
+            background: url(/images/training-black&white.png);
+        }
+        #school-img {
+            background: url(/images/school-black&white.png);
+        }
+
+        .box-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 390px; 
+            left: 0px;
+            width: 100%;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.7);
+
+
+            .title {
+                font-weight: bold;
+                font-size: 36px;
+                text-align: center;
+                color: $whiteColor;
+            }
+
+            hr {
+                display: none;
+                width: 287px;
+                height: 3px;
+                background-color: $whiteColor;
+            }
+
+            .description, a{
+                display: none;
+                margin: 10px;
+                padding: 0 40px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: $whiteColor;
+            }
+
+            a {
+                text-decoration: underline;
+                padding: 20px 40px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .active {
+        .box-description {
+            top: 350px; 
+            height: auto;
+            transition: 1s ease-in-out;
+
+            .title {
+                color: $greenColor;
+            }
+
+            .description, hr, a {
+                display: flex;
+            }
+        }
+
+        #coach-img {
+            background: url(/images/coach.png);
+        }
+        #training-img {
+            background: url(/images/training.png);
+        }
+        #school-img {
+            background: url(/images/school.png);
+        }
+    }
+}
+
+
+
+// SHINYA AND LUCAS CODE
+
+
+/* ===== SHINYA=========*/
+
+// body {
+    // margin: 0 auto;
+    /* background-color: #92BB55; */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* background-color: black; */
+    /* font-family: Montserrat;  */
+// }
+
+/* ############################ */
+/* ########## header ########## */
+/* ############################ */
+
+
+header {
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    z-index: 1;
+    text-align: center;
+    font-family: Montserrat; 
+    /* background-color: black; */
+}
+
+/* ########################## */
+/* ########## menu ########## */
+/* ########################## */
+
+/* The necessary CSS styles for the navigation. */
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 20vw;
+    /* margin-top: 60px; */
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    /* background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%); */
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.10); */
+}
+
+.sidebarMenuInner li:hover {
+    font-size: large;
+}
+
+.sidebarMenuInner li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarMenuInner li a:hover {
+    color: #89C64A;
+}
+
+.sidebarMenuInner li ul {
+    display: none;
+}
+
+#btn-1:checked ~ .sidebarMenuInner li ul {
+    display: block;
+}
+
+/* Style & animate the hamburger toggle button. */
+
+input[type="checkbox"]:checked ~ #sidebarMenu { transform: translateX(0); }
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 20px;
+    left: 50px;
+    height: 22px;
+    width: 22px;
+    margin: 30px 0px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+#logo_img {
+    width: 9.5%;
+    height: 100%;
+}
+
+#register_btn p{
+    width: 10vw;
+    height: 5vh;
+    background-color: #89C64A;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 20px;
+    border-radius: 1%;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+}
+
+
+/* ############################### */
+/* ########## container ########## */
+/* ############################### */
+
+/* slider container */
+
+#slide_container {
+    text-align: center;
+    background-color: black;
+}
+
+#slide_img {
+    width: 95vw;
+    height: 100vh;
+}
+
+/* text container */
+
+#text_container {
+    position: absolute;
+    bottom: 0;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-family: Montserrat; 
+}
+
+#text_container p {
+    color: #fff;
+ 
+}
+
+#rectangle {
+    background-color: #89C64A;
+    width: 10vw;
+    height: 0.5vh;
+}
+
+#text_container h1 {
+    margin: 10px 0;
+}
+
+
+
+/*===============*/
+
+/* Lucas - About */
+
+/*===============*/
+
+.section-about {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "about-info about-picture";
+}
+
+.about-info {
+    grid-area: about-info;
+    margin-left: 100px;
+    margin-top: 100px;    
+}
+
+.about-picture {
+    grid-area: about-picture;
+    margin-top: 100px;
+}
+
+.about-info a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.aboutclub-text {
+    display: flex;
+    height: 110px;
+}
+
+.aboutclub-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 79px;
+}
+
+#club-title {
+    font-weight: 900;
+    color: #89C64A;
+    margin-left: 15px;
+}
+
+.about-info h6 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.8em;
+}
+
+.about-info p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+.about-info h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-picture img {
+    margin-left: 200px;
+    width: 500px;
+}
