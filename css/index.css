@@ -184,19 +184,19 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     position: absolute;
     top: 20px;
     right: 50px;
-
 }
 
-
+     
 /* ############################### */
 /* ########## container ########## */
 /* ############################### */
-
+      
 /* slider container */
 
 #slide_container {
     text-align: center;
     background-color: black;
+
 }
 
 #slide_img {
