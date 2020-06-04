@@ -1,0 +1,72 @@
+/*===============*/
+
+/* Lucas - About */
+
+/*===============*/
+
+.section-about {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "about-info about-picture";
+}
+
+.about-info {
+    grid-area: about-info;
+    margin-left: 100px;
+    margin-top: 100px;    
+}
+
+.about-picture {
+    grid-area: about-picture;
+    margin-top: 100px;
+}
+
+.about-info a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.aboutclub-text {
+    display: flex;
+    height: 110px;
+}
+
+.aboutclub-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 79px;
+}
+
+#club-title {
+    font-weight: 900;
+    color: #89C64A;
+    margin-left: 15px;
+}
+
+.about-info h6 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.8em;
+}
+
+.about-info p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+.about-info h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-picture img {
+    margin-left: 200px;
+    width: 500px;
+}
