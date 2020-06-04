@@ -1,123 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./sass/index.css">
+    <script src="./js/jQuery.js"></script>
     <title>Document</title>
 </head>
-
 <body>
-    <header>
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-        </label>
-        <img src="./images/logoGreenWhite.png" alt="logo_img" id="logo_img">
-        <a href="#" id="register_btn"><p>register</p></a>
-        <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-                <p>MENU</p>
-                <li>
-                    <a href="#">ABOUT</a>
-                    <input type="checkbox" id="btn-1">
-                    <ul>
-                        <li><a href="#">Staff</a></li>
-                        <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">Policies</a></li>
-                        <li><a href="#">Payment Plans</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">FIELD PROGRAMS</a>
-                    <input type="checkbox" id="btn-2">
-                    <ul>
-                        <li><a href="#">-2021 : 2022</a></li>
-                        <li><a href="#">-2023 : 2024</a></li>
-                        <li><a href="#">-2025 : 2027</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">BOX PROGRAMS</a>
-                    <input type="checkbox" id="btn-3">
-                    <ul>
-                        <li><a href="#">Midget</a></li>
-                        <li><a href="#">Bantam</a></li>
-                        <li><a href="#">PeeWee</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">CAMPS & EVENTS</a>
-                    <input type="checkbox" id="btn-4">
-                    <ul>
-                        <li><a href="#">Tournaments</a></li>
-                        <li><a href="#">Field Camps</a></li>
-                        <li><a href="#">Box Camps</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">NCAA RECRUITMENTS</a>
-                    <input type="checkbox" id="btn-5">
-                    <ul>
-                        <li><a href="#">PCC Alumni</a></li>
-                        <li><a href="#">Recruiter Info</a></li>
-                        <li><a href="#">SAT Preparation</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">TRAINING</a>
-                    <input type="checkbox" id="btn-6">
-                    <ul>
-                        <li><a href="#">Private Training</a></li>
-                        <li><a href="#">Group Training</a></li>
-                        <li><a href="#">Weight Training</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <section id="section-home">
-        <div id="slide_container">
-            <img src="./images/slideimg1_bw.png" alt="img1" id="slide_img">
-        </div>
-        <div id="text_container">
-            <p>LACROSSE CLUB</p>
-            <p id="rectangle"></p>
-            <h1 style="color: #fff; font-weight: bold; font-size: 3em;">Meet the champs</h1>
-            <h1 style="color: #89C64A; font-weight: bold; font-size: 4.5em;"><b>PRO CALIBER LACROSSE</b></h1>
-        </div>
-    </section>
-
-
-
-    <section class="section-about">
-        <div class="about-info">
-            <a href="#">LEARN MORE</a>
-            <div class="aboutclub-text">
-                <h2>ABOUT</h2>
-                <h2 id="club-title">CLUB</h2>
+    <section class="section-carousel">
+        <div class="carousel">
+            <div class="carousel-item" href="#one!">
+                <div id="coach-img"></div>
+                <div class="box-description">
+                    <h2 class="title">COACH</h2>
+                    <hr>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
+                    <a href="#">Read more</a>
+                </div>
             </div>
-            <h6>The Club provides children the opportunity to learn and develop football skills.</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fugiat rem eveniet expedita modi maiores!
-                Vel itaque nostrum blanditiis eligendi aut temporibus, eum dolor adipisci enim inventore tempora
-                expedita laborum maiores sed voluptate voluptas exercitationem necessitatibus neque dignissimos. </p>
-            <img src="./images/Signature.png" alt="">
-            <p>SENIOR TEAM CAPTAIN</p>
-            <h4>FERNANDO C SILVA</h4>
-
-        </div>
-        <div class="about-picture">
-            <img src="./images/lacrosse-about1.png" alt="pic1">
+            <div class="carousel-item" href="#two!">
+                <div id="training-img"></div>
+                <div class="box-description">
+                    <h2 class="title">TRAINING</h2>
+                    <hr>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+                <div id="school-img"></div>
+                <div class="box-description">
+                    <h2 class="title">SCHOOL</h2>
+                    <hr>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="carousel-item" href="#four!">
+                <div id="coach-img" ></div>
+                <div class="box-description">
+                    <h2 class="title">COACH</h2>
+                    <hr>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="carousel-item" href="#five!">
+                <div id="training-img"></div>
+                <div class="box-description">
+                    <h2 class="title">TRAINING</h2>
+                    <hr>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="carousel-item" href="#six!">
+                <div id="school-img"></div>
+                <div class="box-description">
+                    <h2 class="title">SCHOOL</h2>
+                    <hr>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
         </div>
     </section>
-
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/customize-carousel.js"></script>
 </body>
-
 </html>
