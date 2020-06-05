@@ -38,15 +38,15 @@ body {
 }
 
 .carousel .carousel-item #coach-img {
-  background: url(/images/coach-black&white.png);
+  background: url(../images/coach-black&white.png);
 }
 
 .carousel .carousel-item #training-img {
-  background: url(/images/training-black&white.png);
+  background: url(../images/training-black&white.png);
 }
 
 .carousel .carousel-item #school-img {
-  background: url(/images/school-black&white.png);
+  background: url(../images/school-black&white.png);
 }
 
 .carousel .carousel-item .box-description {
@@ -117,14 +117,14 @@ body {
 }
 
 .carousel .active #coach-img {
-  background: url(/images/coach.png);
+  background: url(../images/coach.png);
 }
 
 .carousel .active #training-img {
-  background: url(/images/training.png);
+  background: url(../images/training.png);
 }
 
 .carousel .active #school-img {
-  background: url(/images/training.png);
+  background: url(../images/training.png);
 }
 /*# sourceMappingURL=index.css.map */
