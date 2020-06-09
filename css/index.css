@@ -321,7 +321,8 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #section-home {
   width: auto;/*included*/  
-  height: 920px;
+  height: 100vh;
+  /* height: 920px; */
   margin: 0 auto;
   overflow: hidden;
 }
