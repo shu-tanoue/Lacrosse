@@ -10,6 +10,14 @@ body {
   background-color: #E5E5E5;
 }
 
+
+.section-our_numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  height: 674px;
+}
 .section-carousel {
   max-width: 1800px;
   width: 100vw;
@@ -18,6 +26,33 @@ body {
   background-color: #000;
   z-index: -1;
 }
+
+
+span {
+  color: #fff;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  position: relative;
+  bottom: 5px;
+}
+
+.first-title {
+  color: #fff;
+  position: relative;
+  left: 20%;
+  top: 5%;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  margin: auto 0;
+}
+
+.second-title {
+  color: #89c64a;
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  font-size: 70px;
 
 .carousel {
   width: 100%;
@@ -47,52 +82,62 @@ body {
 
 .carousel .carousel-item #school-img {
   background: url(../images/school-black&white.png);
+
 }
 
-.carousel .carousel-item .box-description {
+.flexbox-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
+
+  margin: auto 0;
+  position: relative;
+  right: 5%;
+  top: 10%;
+/*   position: absolute;
   top: 330px;
   left: 0px;
   width: 100%;
   height: 80px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7); */
 }
 
-.carousel .carousel-item .box-description .title {
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  color: #fff;
+.flexbox-item {
+  width: 250px;
+  height: 200px;
+  background-color: #dfdfdf;
 }
 
-.carousel .carousel-item .box-description hr {
-  display: none;
-  width: 287px;
-  height: 3px;
+.flexbox-item-1 {
+  min-height: 100px;
+  background-color: #89c64a;
+}
+
+.flexbox-item-2 {
+  min-height: 200px;
   background-color: #fff;
 }
 
-.carousel .carousel-item .box-description .description, .carousel .carousel-item .box-description a {
-  display: none;
-  margin: 10px;
-  padding: 0 40px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  color: #fff;
+
+.flexbox-item-3 {
+  min-height: 200px;
+  background-color: #89c64a;
 }
 
+.right_lacrosse {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 0;
+  position: relative;
+  left: 14%;
+  }
 .carousel .carousel-item .box-description a {
   text-decoration: underline;
   padding: 0 40px 20px 40px;
@@ -104,16 +149,74 @@ body {
   height: auto;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+
 }
 
-.carousel .active .box-description .title {
-  color: #89C64A;
+.right_lacrosse img {
+  width: 32vw;
+  height: 633px;
+  margin: 0 20px;
 }
 
-.carousel .active .box-description .description, .carousel .active .box-description hr, .carousel .active .box-description a {
+.boxin2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 0;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  position: relative;
+  top: 10%;
+  color: #89c64a;
+}
+
+.boxin2 h1 {
+  font-size: 50px;
+  padding-left: 20px;
+  color: #89c64a;
+}
+
+.boxin3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 10%;
+}
+
+.boxin3 h1 {
+  font-size: 50px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.boxin_sub1 {
+  text-align: center;
+  position: relative;
+  bottom: 5%;
+  color: #89c64a;
+}
+
+.boxin_sub2 {
+  text-align: center;
+  position: relative;
+  bottom: 5%;
+  color: #fff;
+
 }
 
 .carousel .active #coach-img {
@@ -271,5 +374,6 @@ body {
 #section_latest_news .latest_news_contentsbandle .latest_news_content .content_article .greendott {
   color: #89C64A;
   font-weight: 100;
+
 }
 /*# sourceMappingURL=index.css.map */
