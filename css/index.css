@@ -162,7 +162,6 @@ header {
   width: 20vw;
   position: fixed;
   top: 80px;
-  left: 10px;
   transform: translateX(-1000px);
   transition: transform 250ms ease-in-out;
   background-color: black;
@@ -208,6 +207,12 @@ header {
 
 .sidebarMenuInner li ul {
   display: none;
+}
+
+.downbtn {
+  position: absolute;
+  right: 0px;
+  padding-right: 10px;
 }
 
 /* .subbtn {
