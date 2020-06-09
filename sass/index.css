@@ -128,343 +128,148 @@ body {
   background: url(../images/training.png);
 }
 
-/* ===== SHINYA=========*/
-
-header {
-  max-width: 1440px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  z-index: 1000;
-  font-family: Montserrat;
-  /* background-color: yellow; */
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-/* header img {
-  position: absolute;
-  top: 0;
-  right: 50%;
-  left: 50%;
-} */
-
-/* ########################## */
-
-/* ########## menu ########## */
-
-/* ########################## */
-
-/* The necessary CSS styles for the navigation. */
-
-#sidebarMenu {
-  height: 450px;
-  position: fixed;
-  top: 80px;
-  left: 0vw;
-  transform: translateX(-250px);
-  transition: transform 250ms ease-in-out;
-  /* background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%); */
-  background-color: black;
-}
-
-.sidebarMenuInner {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.10);
-}
-
-.sidebarMenuInner p {
-  color: #fff;
-  font-weight: bold;
-  font-size: 2em;
-  margin: 10px;
-}
-
-.sidebarMenuInner li {
-  list-style: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 20px;
-  cursor: pointer;
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.10); */
-}
-
-.sidebarMenuInner li:hover {
-  font-size: large;
-}
-
-.sidebarMenuInner li a {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.sidebarMenuInner li a:hover {
-  color: #89C64A;
-}
-
-.sidebarMenuInner li ul {
-  display: none;
-}
-
-#btn-1:checked~.sidebarMenuInner li ul {
-  display: block;
-}
-
-/* Style & animate the hamburger toggle button. */
-
-input[type="checkbox"]:checked~#sidebarMenu {
-  transform: translateX(0);
-}
-
-input[type=checkbox] {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  display: none;
-}
-
-.sidebarIconToggle {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  /* position: absolute; */
-  float: left;
-  margin-left: 50px;
-  margin-top: 30px;
-  z-index: 1;
-  height: 100vw;
-  width: 100vw;
-  /* top: 20px; */
-  /* left: 200px; */
-  height: 22px;
-  width: 22px;
-  /* margin: 30px 0px; */
-}
-
-.spinner {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: absolute;
-  height: 3px;
-  width: 100%;
+#section_latest_news {
   background-color: #fff;
-}
-
-.horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-
-.diagonal.part-1 {
-  position: relative;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  float: left;
-}
-
-.diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-
-input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  opacity: 0;
-}
-
-input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(135deg);
-  margin-top: 8px;
-}
-
-input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(-135deg);
-  margin-top: -9px;
-}
-
-#logo_img {
-  height: 100%;
-
-
-}
-
-#registerBtn {
-  width: 100px;
-  height: 40px;
-  float: right;
-  background-color: #89C64A;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 1%;
-  margin-right: 100px;
-  margin-top: 20px;
-}
-
-/* #register_btn p {
-  width: 100px;
-  height: 30px;
-  background-color: #89C64A;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 20px;
-  border-radius: 1%;
-  float: right;
-  margin-right: 100px;
-} */
-
-/* ############################### */
-
-/* ########## container ########## */
-
-/* ############################### */
-
-/* slider container */
-
-#section-home {
-  height: 100vh;
-  max-height: 700px;
-  max-width: 1440px;
-  overflow: hidden;
-  margin: 0 auto;
-  position: relative;
-}
-
-#slide_container {
-  text-align: center;
-  background-color: black;
-}
-
-#container {
-  width: 100%;
-  height: auto;
-}
-
-#slide_img {
-  width: 100%;
-  /* height: 100vh; */
-  overflow: hidden;
-}
-
-/* text container */
-
-#text_container {
-  position: absolute;
-  bottom: 0;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  font-family: Montserrat;
-}
-
-#text_container p {
-  color: #fff;
-}
-
-#rectangle {
-  background-color: #89C64A;
-  width: 10vw;
-  height: 0.5vh;
-}
-
-#text_container h1 {
-  margin: 10px 0;
-}
-
-/*===============*/
-
-/* Lucas - About */
-
-/*===============*/
-
-.section-about {
-  margin: 0 auto;
-  padding: 0 auto;
-  justify-content: center;
-  max-width: 1440px;
-  background-color: white;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "about-info about-picture";
-  margin: 100px;
-  justify-content: center;
-}
-
-.about-info {
-  grid-area: about-info;
-  max-width: 500px;
-}
-
-.about-picture {
-  grid-area: about-picture;
-  text-align: center;
-}
-
-.about-info a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  color: black;
-}
-
-.aboutclub-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5vh 5vw;
 }
 
-.aboutclub-text h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 3em;
-  line-height: 79px;
+#section_latest_news .latest_news_titlebandle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 40px;
 }
 
-#club-title {
-  font-weight: 900;
-  color: #89C64A;
-}
-
-.about-info h6 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 0.8em;
-}
-
-.about-info p {
-  text-align: justify;
-  font-family: 'Montserrat', sans-serif;
+#section_latest_news .latest_news_titlebandle .latest_news_subtitle {
+  color: #000;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
 }
 
-.about-info h4 {
-  font-family: 'Montserrat', sans-serif;
+#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.about-picture img {
+#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle .latest_news_maintitle1 {
+  color: #000;
+  font-size: 65px;
+  line-height: 79px;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+}
+
+#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle .latest_news_maintitle2 {
+  color: #89C64A;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 85px;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+}
+
+#section_latest_news .latest_news_contentsbandle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_latest_news .latest_news_contentsbandle img.latest_news_imgbandle {
   width: 400px;
-  margin-top: 10%;
+  height: 480px;
 }
 
+#section_latest_news .latest_news_contentsbandle .latest_news_content {
+  background-color: #E5E5E5;
+  margin: 20px;
+}
+
+#section_latest_news .latest_news_contentsbandle .latest_news_content .content_img {
+  position: relative;
+}
+
+#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box {
+  background-color: #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+}
+
+#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box .content-box_date {
+  margin: 0;
+}
+
+#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box .content-box_month {
+  margin: 0;
+}
+
+#section_latest_news .latest_news_contentsbandle .latest_news_content .content_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  padding: 10px;
+}
+
+#section_latest_news .latest_news_contentsbandle .latest_news_content .content_article .greendott {
+  color: #89C64A;
+  font-weight: 100;
+}
 /*# sourceMappingURL=index.css.map */
