@@ -1,7 +1,5 @@
 // DEFAULT PARAMETERS
 
-
-
 $max-width: 1800px;
 $font-family: Montserrat, sans-serif !default;
 $greenColor: #89c64a;
@@ -12,15 +10,13 @@ $BackgroundColor: #e5e5e5;
 /*##########################################################*/
 
 body {
-
-   width: 100vw;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font-family;
-    background-color: $BackgroundColor;
-
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+  background-color: $BackgroundColor;
 }
 
 .section-our_numbers {
@@ -140,219 +136,212 @@ span {
   color: #fff;
 }
 
-  
-
 .section-carousel {
-    max-width: $max-width;
-    width: 100vw;
-    height: 90vh;
-    margin: 0 auto;
-    background-color: $blackColor;
-    z-index: -1;
+  max-width: $max-width;
+  width: 100vw;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: $blackColor;
+  z-index: -1;
 }
 
 .carousel {
-    width: 100%;
-    height: 100%;
-    
-    .carousel-item {
-        visibility: visible !important;
-        width: 440px !important;
-        height: 680px;
+  width: 100%;
+  height: 100%;
 
-        #coach-img, #training-img, #school-img {
-            width: 100%;
-            height: 680px;
-            transition: 1s ease-in-out;
-        }
+  .carousel-item {
+    visibility: visible !important;
+    width: 440px !important;
+    height: 680px;
 
-        #coach-img {
-            background: url(../images/coach-black&white.png);
-        }
-        #training-img {
-            background: url(../images/training-black&white.png);
-        }
-        #school-img {
-            background: url(../images/school-black&white.png);
-        }
-
-        .box-description {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            top: 330px; 
-            left: 0px;
-            width: 100%;
-            height: 80px;
-            background: rgba(0, 0, 0, 0.7);
-
-
-            .title {
-                font-weight: bold;
-                font-size: 36px;
-                text-align: center;
-                color: $whiteColor;
-            }
-
-            hr {
-                display: none;
-                width: 287px;
-                height: 3px;
-                background-color: $whiteColor;
-            }
-
-            .description, a{
-                display: none;
-                margin: 10px;
-                padding: 0 40px;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 22px;
-                color: $whiteColor;
-            }
-
-            a {
-                text-decoration: underline;
-                padding: 0 40px 20px 40px;
-                cursor: pointer;
-            }
-        }
+    #coach-img,
+    #training-img,
+    #school-img {
+      width: 100%;
+      height: 680px;
+      transition: 1s ease-in-out;
     }
 
-    .active {
-        .box-description {
-            top: 320px; 
-            height: auto;
-            transition: 1s ease-in-out;
-
-            .title {
-                color: $greenColor;
-            }
-
-            .description, hr, a {
-                display: flex;
-            }
-        }
-
-        #coach-img {
-            background: url(../images/coach.png);
-        }
-        #training-img {
-            background: url(../images/training.png);
-        }
-        #school-img {
-            background: url(../images/training.png);
-        }
+    #coach-img {
+      background: url(../images/coach-black&white.png);
     }
+    #training-img {
+      background: url(../images/training-black&white.png);
+    }
+    #school-img {
+      background: url(../images/school-black&white.png);
+    }
+
+    .box-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 330px;
+      left: 0px;
+      width: 100%;
+      height: 80px;
+      background: rgba(0, 0, 0, 0.7);
+
+      .title {
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        color: $whiteColor;
+      }
+
+      hr {
+        display: none;
+        width: 287px;
+        height: 3px;
+        background-color: $whiteColor;
+      }
+
+      .description,
+      a {
+        display: none;
+        margin: 10px;
+        padding: 0 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $whiteColor;
+      }
+
+      a {
+        text-decoration: underline;
+        padding: 0 40px 20px 40px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .active {
+    .box-description {
+      top: 320px;
+      height: auto;
+      transition: 1s ease-in-out;
+
+      .title {
+        color: $greenColor;
+      }
+
+      .description,
+      hr,
+      a {
+        display: flex;
+      }
+    }
+
+    #coach-img {
+      background: url(../images/coach.png);
+    }
+    #training-img {
+      background: url(../images/training.png);
+    }
+    #school-img {
+      background: url(../images/training.png);
+    }
+  }
 }
 
-
-
 // SHINYA AND LUCAS CODE
-
 
 //section AKIS//
 
 #section_latest_news {
-    background-color: $whiteColor;
-    display: flex;
-    max-width: 1440px;
-    margin: 0 auto;
-    flex-direction: column;
-    padding: 5vh 5vw;
+  background-color: $whiteColor;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 5vh 5vw;
 
-    .latest_news_titlebandle {
+  .latest_news_titlebandle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 40px;
+
+    .latest_news_subtitle {
+      color: $blackColor;
+      font-size: 18px;
+      line-height: 22px;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .latest_news_maintitlebandle {
+      display: flex;
+      flex-direction: row;
+
+      .latest_news_maintitle1 {
+        color: $blackColor;
+        font-size: 65px;
+        line-height: 79px;
+        font-family: $font-family;
+        margin: 0;
+      }
+
+      .latest_news_maintitle2 {
+        color: $greenColor;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 85px;
+        font-family: $font-family;
+        margin: 0;
+      }
+    }
+  }
+
+  .latest_news_contentsbandle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    img.latest_news_imgbandle {
+      width: 400px;
+      height: 480px;
+    }
+
+    .latest_news_content {
+      background-color: $BackgroundColor;
+      margin: 20px;
+      .content_img {
+        position: relative;
+      }
+      .content-box {
+        background-color: #e5e5e5;
         display: flex;
         flex-direction: column;
-        position: relative;
-        left: 40px;
-
-        .latest_news_subtitle {
-            color: $blackColor;
-            font-size: 18px;
-            line-height: 22px;
-            font-family: $font-family;
-            font-style: normal;
-            font-weight: normal;
+        position: absolute;
+        align-items: center;
+        justify-content: space-evenly;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        .content-box_date {
+          margin: 0;
         }
-
-        .latest_news_maintitlebandle {
-            display: flex;
-            flex-direction: row;
-
-            .latest_news_maintitle1 {
-                color: $blackColor;
-                font-size: 65px;
-                line-height: 79px;
-                font-family: $font-family;
-                margin: 0;
-            }
-
-            .latest_news_maintitle2 {
-                color: $greenColor;
-                font-weight: bold;
-                font-size: 70px;
-                line-height: 85px;
-                font-family: $font-family;
-                margin: 0;
-            }
+        .content-box_month {
+          margin: 0;
         }
-    }
-
-    .latest_news_contentsbandle {
+      }
+      .content_article {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        img.latest_news_imgbandle{
-            width: 400px;
-            height: 480px;
+        height: 200px;
+        padding: 10px;
+        .greendott {
+          color: $greenColor;
+          font-weight: 100;
         }
-
-        .latest_news_content {
-            background-color: $BackgroundColor;
-            margin: 20px;
-            .content_img{
-                position: relative;
-            }
-            .content-box{
-                background-color: #E5E5E5;
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                align-items: center;
-                justify-content: space-evenly;
-                left: 0;
-                bottom: 0;
-                width: 50px;
-                height: 50px;
-                .content-box_date{
-                    margin: 0;
-                }
-                .content-box_month{
-                    margin: 0;
-
-                }
-
-
-            }
-            .content_article{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;height: 200px;
-                padding: 10px;
-                .greendott{
-                    color: $greenColor;
-                    font-weight: 100;
-                }
-            }
-        }
-
-
+      }
     }
-
+  }
 }
-
