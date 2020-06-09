@@ -159,11 +159,11 @@ header {
 /* The necessary CSS styles for the navigation. */
 
 #sidebarMenu {
-  height: 450px;
+  width: 20vw;
   position: fixed;
   top: 80px;
-  left: 0vw;
-  transform: translateX(-250px);
+  left: 10px;
+  transform: translateX(-1000px);
   transition: transform 250ms ease-in-out;
   background-color: black;
 }
@@ -207,6 +207,16 @@ header {
 }
 
 .sidebarMenuInner li ul {
+  display: none;
+}
+
+/* .subbtn {
+  opacity: 1 !important;
+  display: block !important;
+  pointer-events: auto !important;
+} */
+
+#submenu-1, #submenu-2, #submenu-3, #submenu-4, #submenu-5, #submenu-6 {
   display: none;
 }
 
