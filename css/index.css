@@ -797,3 +797,71 @@ span {
 .sub_title_from {
   height: auto;
 }
+
+
+/* RODRIGO */
+
+/*========*/
+/* FOOTER */
+/*========*/
+footer {
+  background: url(/images/footerbackground.png);
+  display: flex;
+  flex-direction: row;
+  height: 384px;
+  color: white;
+  background-color: black;
+}
+.footer-socialMedia {
+  /* float: left; */
+  width: 75%;
+}
+.footer-socialMedia ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 10%;
+}
+.footer-socialMedia li {
+  margin: 10px;
+}
+footer h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+}
+footer p {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+}
+/* .footer-subscribe { */
+  /* float: right; */
+/* } */
+.subscribe-title {
+  display: flex;
+  height: 100px;
+}
+#subscribe-green {
+  color: #89C64A;
+  margin-left: 10px;
+  font-weight: 800;
+}
+.footer-subscribe input {
+  width: 300px;
+  padding: 10px;
+}
+.footer-subscribe button {
+  background: #89C64A;
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  color: white;
+}
+.footer-subscribe form {
+  display: flex;
+  flex-direction: row;
+}
