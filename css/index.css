@@ -209,17 +209,21 @@ header {
   display: none;
 }
 
-.downbtn {
-  position: absolute;
-  right: 0px;
-  padding-right: 10px;
-}
-
 /* .subbtn {
   opacity: 1 !important;
   display: block !important;
   pointer-events: auto !important;
 } */
+
+#offradio-1 {
+  display: none;
+}
+
+.downbtn {
+  position: absolute;
+  right: 0px;
+  padding-right: 10px;
+}
 
 #submenu-1, #submenu-2, #submenu-3, #submenu-4, #submenu-5, #submenu-6 {
   display: none;
