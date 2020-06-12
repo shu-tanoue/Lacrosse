@@ -136,7 +136,7 @@ body {
   background: url(../images/training.png);
 }
 
-/* ===== SHINYA=========*/
+/* ========== SHINYA ========== */
 
 header {
   width: 100%;
@@ -150,6 +150,19 @@ header {
   text-align: center;
 }
 
+#hamburger-bar {
+  /* background-color: #89c64a; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
 /* ########################## */
 
 /* ########## menu ########## */
@@ -160,11 +173,13 @@ header {
 
 #sidebarMenu {
   width: 20vw;
+  height: 100vh;
   position: fixed;
   top: 80px;
   transform: translateX(-1000px);
   transition: transform 250ms ease-in-out;
   background-color: black;
+  z-index: 100;
 }
 
 .sidebarMenuInner {
@@ -225,6 +240,10 @@ header {
   padding-right: 10px;
 }
 
+.fas:hover {
+  color: #89c64a;
+}
+
 #submenu-1, #submenu-2, #submenu-3, #submenu-4, #submenu-5, #submenu-6 {
   display: none;
 }
@@ -250,8 +269,6 @@ input[type="checkbox"] {
   box-sizing: border-box;
   cursor: pointer;
   float: left;
-  margin-left: 50px;
-  margin-top: 30px;
   z-index: 1;
   height: 100vw;
   width: 100vw;
@@ -291,20 +308,20 @@ input[type="checkbox"] {
   margin-top: 3px;
 }
 
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .horizontal {
   transition: all 0.3s;
   box-sizing: border-box;
   opacity: 0;
 }
 
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal.part-1 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(135deg);
   margin-top: 8px;
 }
 
-input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal.part-2 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(-135deg);
@@ -327,6 +344,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-right: 50px;
   margin-top: 20px;
   border-radius: 5px;
+  border: none;/*modified*/
 }
 
 
@@ -486,12 +504,11 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;/*included*/
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 5vh 5vw;
 }
 
@@ -805,4 +822,81 @@ span {
 
 .sub_title_from {
   height: auto;
+}
+
+
+/* RODRIGO */
+
+/*========*/
+/* FOOTER */
+/*========*/
+.footer {
+  background: url(/images/footerbackground.png);
+  display: flex;
+  flex-direction: row;
+  height: 384px;
+  color: white;
+  background-color: black;
+}
+.footer-socialMedia {
+  /* float: left; */
+  width: 75%;
+}
+.footer-socialMedia ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 10%;
+}
+.footer-socialMedia li {
+  margin: 10px;
+}
+footer h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+}
+footer p {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+}
+/* .footer-subscribe { */
+  /* float: right; */
+/* } */
+.subscribe-title {
+  display: flex;
+  height: 100px;
+}
+#subscribe-green {
+  color: #89C64A;
+  margin-left: 10px;
+  font-weight: 800;
+}
+.footer-subscribe input {
+  width: 300px;
+  padding: 10px;
+}
+.footer-subscribe button {
+  background: #89C64A;
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  color: white;
+}
+.footer-subscribe form {
+  display: flex;
+  flex-direction: row;
+}
+#copy-right{
+position: relative;
+width: 100%;
+height: 50PX;
+bottom: 0px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }

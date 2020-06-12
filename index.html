@@ -12,9 +12,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./sass/index.css">
     <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <!-- <link rel="stylesheet" href="./sass/index.css" /> -->
     <script src="./js/jQuery.js"></script>
     <title>Document</title>
   </head>
@@ -22,15 +21,17 @@
   <body>
     <header>
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-      </label>
       <a href="#"
         ><img src="./images/logoGreenWhite.png" alt="logo_img" id="logo_img"
       /></a>
       <button id="registerBtn" name="register">Register</button>
+      <div id="hamburger-bar">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+      </div>
       <div id="sidebarMenu">
         <ul class="sidebarMenuInner">
           <p>MENU</p>
@@ -348,7 +349,7 @@
           <h1>7</h1>
         </div>
         <div class="boxin_sub1">
-          <h1>
+          <h1 class="title_font">
             SCHOLARSHIP
           </h1>
         </div>
@@ -360,7 +361,7 @@
           <h1>73</h1>
         </div>
         <div class="boxin_sub2">
-          <h1>PLAYERS</h1>
+          <h1 class="title_font">PLAYERS</h1>
         </div>
       </div>
       <div class="right_lacrosse">
@@ -369,9 +370,38 @@
       </div>
     </div>
   </section>
+
+  <!-- RODIGO -->
+  <footer class="footer">
+    <div class="footer-socialMedia">
+        <ul>
+            <li><a href=""><img src="./images/Facebook-icon.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="./images/Twiter-icon.png" alt="Twitter"></a></li>
+            <li><a href=""><img src="./images/Instagran-icon.png" alt="Instagram"></a></li>
+            <li><a href=""><img src="./images/Youtube-icon.png" alt="Youtube"></a></li>
+        </ul>
+    </div>
+    <div class="footer-subscribe">
+        <div class="subscribe-title">
+            <h3>Subscribe</h3>
+            <h3 id="subscribe-green">Now</h3>
+        </div>
+        <p>Don't miss our latest news and lacrosse game reports. We track record of success in training players.</p>
+        <form action="_POST">
+            <input type="email" name="emailSubscribe" id="emailSubscribe" placeholder="Email">
+            <button type="submit">SIGN UP</button>
+        </form>
+        
+    </div>
+    
+</footer>
+<footer id="copy-right"> <small>&copy; Copyright 2018, Example Corporation</small> </footer> 
+
   <script src="./js/materialize.min.js"></script>
   <script src="./js/carousel.js"></script>
   <script src="./js/customize-carousel.js"></script>
+  <script src="./js/index.js"></script>
+
 </body>
 
 </html>

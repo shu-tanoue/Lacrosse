@@ -1,3 +1,11 @@
+/* ========== SHNYA ========== */
+
+/* ########################## */
+
+/* ########## menu ########## */
+
+/* ########################## */
+
 function showSubmenu(){
     let subbtn1 = document.getElementById('subbtn-1');
     let submenu1 = document.getElementById('submenu-1');
@@ -74,4 +82,21 @@ function radioDeselection() {
         submenu5.style.display = "none";
         submenu6.style.display = "none";
     };
-  };
+};
+
+/* ################################### */
+
+/* ########## hamburger-bar ########## */
+
+/* ################################### */
+
+$(function() {
+    var backColor = $('#hamburger-bar');  
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            backColor.css("background-color", "#89c64a");
+        }else if ($(this).scrollTop() < 300) {
+            backColor.css("background-color", "");
+        }
+    })
+})
