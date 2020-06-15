@@ -21,22 +21,25 @@
   <body>
     <header>
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-      </label>
       <a href="#"
         ><img src="./images/logoGreenWhite.png" alt="logo_img" id="logo_img"
       /></a>
       <button id="registerBtn" name="register">Register</button>
+      <div id="hamburger-bar">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+      </div>
       <div id="sidebarMenu">
         <ul class="sidebarMenuInner">
           <p>MENU</p>
-          <input type="checkbox" class="subbtn" id="subbtn-1" onclick="showSubmenu()">
+          <input type="radio" class="subbtn" id="subbtn-1" name="subMenu" onclick="showSubmenu()">
+          <button type="button" id="offradio-1" onclick="radioDeselection()"></button>
           <li>
             <a href="#">ABOUT</a>
-            <label for="subbtn-1">
+            <label for="subbtn-1" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
           </li>
@@ -45,11 +48,16 @@
             <li><a href="#">Sponsors</a></li>
             <li><a href="#">Policies</a></li>
             <li><a href="#">Payment Plans</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
           </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-2" onclick="showSubmenu()">
+          <input type="radio" class="subbtn" id="subbtn-2" name="subMenu" onclick="showSubmenu()">
           <li>
             <a href="#">FIELD PROGRAMS</a>
-            <label for="subbtn-2">
+            <label for="subbtn-2" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
           </li>
@@ -57,11 +65,16 @@
             <li><a href="#">-2021 : 2022</a></li>
             <li><a href="#">-2023 : 2024</a></li>
             <li><a href="#">-2025 : 2027</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
           </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-3" onclick="showSubmenu()">
+          <input type="radio" class="subbtn" id="subbtn-3" name="subMenu" onclick="showSubmenu()">
           <li>
             <a href="#">BOX PROGRAMS</a>
-            <label for="subbtn-3">
+            <label for="subbtn-3" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
           </li>
@@ -69,11 +82,16 @@
             <li><a href="#">Midget</a></li>
             <li><a href="#">Bantam</a></li>
             <li><a href="#">PeeWee</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
           </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-4" onclick="showSubmenu()">
+          <input type="radio" class="subbtn" id="subbtn-4" name="subMenu" onclick="showSubmenu()">
           <li>
             <a href="#">CAMPS & EVENTS</a>
-            <label for="subbtn-4">
+            <label for="subbtn-4" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
           </li>
@@ -81,11 +99,16 @@
               <li><a href="#">Tournaments</a></li>
               <li><a href="#">Field Camps</a></li>
               <li><a href="#">Box Camps</a></li>
+              <li>
+                <label for="offradio-1" class="downbtn">
+                  <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+                </label>
+              </li>
             </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-5" onclick="showSubmenu()">
+          <input type="radio" class="subbtn" id="subbtn-5" name="subMenu" onclick="showSubmenu()">
           <li>
             <a href="#">NCAA RECRUITMENTS</a>
-            <label for="subbtn-5">
+            <label for="subbtn-5" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
           </li>
@@ -93,18 +116,28 @@
               <li><a href="#">PCC Alumni</a></li>
               <li><a href="#">Recruiter Info</a></li>
               <li><a href="#">SAT Preparation</a></li>
+              <li>
+                <label for="offradio-1" class="downbtn">
+                  <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+                </label>
+              </li>
             </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-6" onclick="showSubmenu()">
-            <ul id="submenu-6">
+          <input type="radio" class="subbtn" id="subbtn-6" name="subMenu" onclick="showSubmenu()">
           <li>
             <a href="#">TRAINING</a>
-            <label for="subbtn-6">
+            <label for="subbtn-6" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
           </li>
+          <ul id="submenu-6">
             <li><a href="#">Private Training</a></li>
             <li><a href="#">Group Training</a></li>
             <li><a href="#">Weight Training</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
           </ul>
         </li>
       </ul>
@@ -124,7 +157,6 @@
         </h1>
       </div>
     </div>
-
   </section>
 
   <section class="section-about">
