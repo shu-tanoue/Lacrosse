@@ -14,9 +14,9 @@ $(function () {
                 var caption = p.html(insta[i].caption)[0].textContent;
                 // var like_count = p1.html(insta[i].like_count)[0].textContent;
                 if (insta[i].media_url.indexOf('video') > 0) {
-                    html += '<div class="insta-bandle" ><a href="' + insta[i].permalink + '" target="_blank"><div class="instaImage"><video class="content_img" src="' + insta[i].media_url + '"></div><p class="insta_caption">' + caption + '</p></a></div>';
+                    html += '<div class="insta-bandle" ><a href="' + insta[i].permalink + '" target="_blank"><div class="instaImage"><video class="content_img" src="' + insta[i].media_url + '"></div><div class="insta_captionbandle"><p class="insta_caption">' + caption + '</p></div><button type ="button" class="btn-flat-border">READ MORE</button></a></div>';
                 } else {
-                    html += '<div class="insta-bandle" ><a href="' + insta[i].permalink + '" target="_blank"><div class="instaImage"><img class="content_img" src="' + insta[i].media_url + '"></div><p class="insta_caption">' + caption + '</p></a></div>';
+                    html += '<div class="insta-bandle" ><a href="' + insta[i].permalink + '" target="_blank"><div class="instaImage"><img class="content_img" src="' + insta[i].media_url + '"></div><div class="insta_captionbandle"><p class="insta_caption">' + caption + '</p></div><button type ="button" class="btn-flat-border">READ MORE</button></a></div>';
                 }
             }
             $("#instafeed").append(html);

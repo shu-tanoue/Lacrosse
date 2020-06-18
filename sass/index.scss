@@ -309,48 +309,71 @@ span {
         margin: 10px;
         background-color: $BackgroundColor;
         width:33%;
+        height: 500px;
+        position: relative;
 
         img.content_img {
           position: relative;
           object-fit: cover;
           max-width: 100%;
+          height: 250px;
         }
         video.content_img {
           max-width: 100%;
+          height: 250px;
+          object-fit: cover;
         }
-        p.insta_caption{
+        .btn-flat-border {
+          display: inline-block;
+          padding: 0.3em 1em;
+          text-decoration: none;
+          color: $greenColor;
+          border: solid 2px $greenColor;
+          border-radius: 3px;
+          transition: .4s;
+          position: absolute;
+          top: 90%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+      }
+
+      .btn-flat-border:hover {
+        background: $greenColor;
+        color: white;
+      }
+
+      .content-box {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: space-evenly;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+
+        .content-box_date {
+          margin: 0;
+        }
+
+        .content-box_month {
+          margin: 0;
+        }
+      }
+      .insta_captionbandle {
+        height: 180px;
+        display: inline-block;
+        .insta_caption {
+          display: inline-block;
           color: black;
           padding: 15px;
-          overflow: scroll;
-        }
-
-        .content-box {
-          background-color: #e5e5e5;
-          display: flex;
-          flex-direction: column;
-          position: absolute;
-          align-items: center;
-          justify-content: space-evenly;
-          left: 0;
-          bottom: 0;
-          width: 50px;
-          height: 50px;
-
-          .content-box_date {
-            margin: 0;
-          }
-
-          .content-box_month {
-            margin: 0;
-          }
-        }
-
-        .instaCaption {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          height: 200px;
-          padding: 10px;
+          height: 120px;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
