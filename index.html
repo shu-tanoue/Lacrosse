@@ -1,74 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./sass/index.css">
+    <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
     <script src="./js/jQuery.js"></script>
     <title>Document</title>
-</head>
-<body>
-    <section class="section-carousel">
-        <div class="carousel">
-            <div class="carousel-item" href="#one!">
-                <div id="coach-img"></div>
-                <div class="box-description">
-                    <h2 class="title">COACH</h2>
-                    <hr>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-            <div class="carousel-item" href="#two!">
-                <div id="training-img"></div>
-                <div class="box-description">
-                    <h2 class="title">TRAINING</h2>
-                    <hr>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-            <div class="carousel-item" href="#three!">
-                <div id="school-img"></div>
-                <div class="box-description">
-                    <h2 class="title">SCHOOL</h2>
-                    <hr>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-            <div class="carousel-item" href="#four!">
-                <div id="coach-img" ></div>
-                <div class="box-description">
-                    <h2 class="title">COACH</h2>
-                    <hr>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-            <div class="carousel-item" href="#five!">
-                <div id="training-img"></div>
-                <div class="box-description">
-                    <h2 class="title">TRAINING</h2>
-                    <hr>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-            <div class="carousel-item" href="#six!">
-                <div id="school-img"></div>
-                <div class="box-description">
-                    <h2 class="title">SCHOOL</h2>
-                    <hr>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure dolor consequatur iste quis delectus itaque officiis tempore veritatis dolorem.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
+  </head>
+
+  <body>
+    <header>
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+      <a href="#"
+        ><img src="./images/logoGreenWhite.png" alt="logo_img" id="logo_img"
+      /></a>
+      <button id="registerBtn" name="register">Register</button>
+      <div id="hamburger-bar">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+      </div>
+      <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+          <p>MENU</p>
+          <input type="radio" class="subbtn" id="subbtn-1" name="subMenu" onclick="showSubmenu()">
+          <button type="button" id="offradio-1" onclick="radioDeselection()"></button>
+          <li>
+            <a href="#">ABOUT</a>
+            <label for="subbtn-1" class="downbtn">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-1">
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Payment Plans</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
+          </ul>
+          <input type="radio" class="subbtn" id="subbtn-2" name="subMenu" onclick="showSubmenu()">
+          <li>
+            <a href="#">FIELD PROGRAMS</a>
+            <label for="subbtn-2" class="downbtn">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-2">
+            <li><a href="#">-2021 : 2022</a></li>
+            <li><a href="#">-2023 : 2024</a></li>
+            <li><a href="#">-2025 : 2027</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
+          </ul>
+          <input type="radio" class="subbtn" id="subbtn-3" name="subMenu" onclick="showSubmenu()">
+          <li>
+            <a href="#">BOX PROGRAMS</a>
+            <label for="subbtn-3" class="downbtn">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-3">
+            <li><a href="#">Midget</a></li>
+            <li><a href="#">Bantam</a></li>
+            <li><a href="#">PeeWee</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
+          </ul>
+          <input type="radio" class="subbtn" id="subbtn-4" name="subMenu" onclick="showSubmenu()">
+          <li>
+            <a href="#">CAMPS & EVENTS</a>
+            <label for="subbtn-4" class="downbtn">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+          </li>
+            <ul id="submenu-4">
+              <li><a href="#">Tournaments</a></li>
+              <li><a href="#">Field Camps</a></li>
+              <li><a href="#">Box Camps</a></li>
+              <li>
+                <label for="offradio-1" class="downbtn">
+                  <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+                </label>
+              </li>
+            </ul>
+          <input type="radio" class="subbtn" id="subbtn-5" name="subMenu" onclick="showSubmenu()">
+          <li>
+            <a href="#">NCAA RECRUITMENTS</a>
+            <label for="subbtn-5" class="downbtn">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+          </li>
+            <ul id="submenu-5">
+              <li><a href="#">PCC Alumni</a></li>
+              <li><a href="#">Recruiter Info</a></li>
+              <li><a href="#">SAT Preparation</a></li>
+              <li>
+                <label for="offradio-1" class="downbtn">
+                  <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+                </label>
+              </li>
+            </ul>
+          <input type="radio" class="subbtn" id="subbtn-6" name="subMenu" onclick="showSubmenu()">
+          <li>
+            <a href="#">TRAINING</a>
+            <label for="subbtn-6" class="downbtn">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-6">
+            <li><a href="#">Private Training</a></li>
+            <li><a href="#">Group Training</a></li>
+            <li><a href="#">Weight Training</a></li>
+            <li>
+              <label for="offradio-1" class="downbtn">
+                <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+              </label>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="section-home">
+    <div id="container">
+      <img src="./images/background-home.png" alt="img1" id="home_img" />
+      <div id="text_container">
+        <p>LACROSSE CLUB</p>
+        <p id="rectangle"></p>
+        <h1 style="color: #fff; font-weight: bold; font-size: 3em;">
+          Meet the champs
+        </h1>
+        <h1 style="color: #89c64a; font-weight: bold; font-size: 4.5em;">
+          <b>PRO CALIBER LACROSSE</b>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-about">
+    <div class="about-grid">
+      <div class="box-info">
+        <div class="about-info">
+          <a href="#">LEARN MORE</a>
+          <div class="aboutclub-text">
+            <h2>ABOUT </h2>
+            <h2 id="club-title">CLUB</h2>
+          </div>
+          <h6>
+            The Club provides children the opportunity to learn and develop
+            football skills.
+          </h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            fugiat rem eveniet expedita modi maiores! Vel itaque nostrum
+            blanditiis eligendi aut temporibus, eum dolor adipisci enim
+            inventore tempora expedita laborum maiores sed voluptate voluptas
+            exercitationem necessitatibus neque dignissimos.
+          </p>
+          <img src="./images/Signature.png" alt="" />
+          <p>SENIOR TEAM CAPTAIN</p>
+          <h4>FERNANDO C SILVA</h4>
         </div>
-    </section>
-    <script src="./js/materialize.min.js"></script>
-    <script src="./js/carousel.js"></script>
-    <script src="./js/customize-carousel.js"></script>
+      </div>
+      <div class="about-picture">
+        <img src="./images/lacrosse-about.png" alt="pic1" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-carousel">
+    <div class="carousel">
+      <div class="carousel-item" href="#one!">
+        <div id="coach-img"></div>
+        <div class="box-description">
+          <h2 class="title">COACH</h2>
+          <hr />
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            iure dolor consequatur iste quis delectus itaque officiis tempore
+            veritatis dolorem.
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="carousel-item" href="#two!">
+        <div id="training-img"></div>
+        <div class="box-description">
+          <h2 class="title">TRAINING</h2>
+          <hr />
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            iure dolor consequatur iste quis delectus itaque officiis tempore
+            veritatis dolorem.
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="carousel-item" href="#three!">
+        <div id="school-img"></div>
+        <div class="box-description">
+          <h2 class="title">SCHOOL</h2>
+          <hr />
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            iure dolor consequatur iste quis delectus itaque officiis tempore
+            veritatis dolorem.
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="carousel-item" href="#four!">
+        <div id="coach-img"></div>
+        <div class="box-description">
+          <h2 class="title">COACH</h2>
+          <hr />
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            iure dolor consequatur iste quis delectus itaque officiis tempore
+            veritatis dolorem.
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="carousel-item" href="#five!">
+        <div id="training-img"></div>
+        <div class="box-description">
+          <h2 class="title">TRAINING</h2>
+          <hr />
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            iure dolor consequatur iste quis delectus itaque officiis tempore
+            veritatis dolorem.
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="carousel-item" href="#six!">
+        <div id="school-img"></div>
+        <div class="box-description">
+          <h2 class="title">SCHOOL</h2>
+          <hr />
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            iure dolor consequatur iste quis delectus itaque officiis tempore
+            veritatis dolorem.
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="section_latest_news">
+    <div class="latest_news_titlebandle">
+      <p class="latest_news_subtitle">PRO CALIBER LACROSSE</p>
+      <div class="latest_news_maintitlebandle">
+        <h1 class="latest_news_maintitle1">LATEST</h1>
+        <h1 class="latest_news_maintitle2">NEWS</h1>
+      </div>
+    </div>
+    <div class="latest_news_contentsbandle">
+      <img class="latest_news_imgbandle" src="./images/lacrossePlayer%201.png" alt="picture of lacrosseplayer">
+      <div class="latest_news_content">
+        <div class="content_img">
+          <img src="./images/latest_news1.png" class="content_picture" alt="content1_picture">
+          <div class="content-box">
+            <p class="content-box_date">15</p>
+            <p class="content-box_month">MAR</p>
+          </div>
+        </div>
+        <div class="content_article">
+          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
+          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
+          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
+            incidunt modi nesciunt temporibus vero?
+          </div>
+        </div>
+      </div>
+      <div class="latest_news_content">
+        <div class="content_img">
+          <img src="./images/latest_news2.png" class="content_picture" alt="content2_picture">
+          <div class="content-box">
+            <p class="content-box_date">18</p>
+            <p class="content-box_month">MAR</p>
+          </div>
+        </div>
+        <div class="content_article">
+          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
+          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
+          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
+            incidunt modi nesciunt temporibus vero?
+          </div>
+        </div>
+      </div>
+      <div class="latest_news_content">
+        <div class="content_img">
+          <img src="./images/latest_news3.png" class="content_picture" alt="content3_picture">
+          <div class="content-box">
+            <p class="content-box_date">21</p>
+            <p class="content-box_month">MAR</p>
+          </div>
+        </div>
+        <div class="content_article">
+          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
+          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
+          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
+            incidunt modi nesciunt temporibus vero?
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-our_numbers">
+    <div class="sub_title_from">
+      <h1 class="first-title">FROM THE CLUB</h1>
+      <h2 class="second-title"><span>NCAA</span>COMMITMENTS</h2>
+    </div>
+
+    <div class="flexbox-container">
+
+      <div class="flexbox-item flexbox-item-2">
+        <div class="boxin2">
+          <img src="./images/graduation.png" alt="" width="70" height="70" />
+          <h1>7</h1>
+        </div>
+        <div class="boxin_sub1">
+          <h1 class="title_font">
+            SCHOLARSHIP
+          </h1>
+        </div>
+      </div>
+
+      <div class="flexbox-item flexbox-item-3">
+        <div class="boxin3">
+          <img src="./images/Star.png" alt="" width="60" height="60" color="#89c64a" />
+          <h1>73</h1>
+        </div>
+        <div class="boxin_sub2">
+          <h1 class="title_font">PLAYERS</h1>
+        </div>
+      </div>
+      <div class="right_lacrosse">
+        <img src="./images/lacrosse01 1.png" alt="lacrosse01" />
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-socialMedia">
+        <ul>
+            <li><a href=""><img src="./images/Facebook-icon.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="./images/Twiter-icon.png" alt="Twitter"></a></li>
+            <li><a href=""><img src="./images/Instagran-icon.png" alt="Instagram"></a></li>
+            <li><a href=""><img src="./images/Youtube-icon.png" alt="Youtube"></a></li>
+        </ul>
+    </div>
+    <div class="footer-subscribe">
+        <div class="subscribe-title">
+            <h3>Subscribe</h3>
+            <h3 id="subscribe-green">Now</h3>
+        </div>
+        <p>Don't miss our latest news and lacrosse game reports. We track record of success in training players.</p>
+        <form action="_POST">
+            <input type="email" name="emailSubscribe" id="emailSubscribe" placeholder="Email">
+            <button type="submit">SIGN UP</button>
+        </form>
+    </div>
+</footer>
+<footer id="copy-right"> <small>&copy; Copyright 2018, Example Corporation</small> </footer> 
+
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/carousel.js"></script>
+  <script src="./js/customize-carousel.js"></script>
+  <script src="./js/index.js"></script>
+
 </body>
 </html>
