@@ -7,12 +7,15 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../js/utilities.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./sass/index.css">
+    <link rel="stylesheet" href="./sass/template.css">
     <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
     <script src="./js/jQuery.js"></script>
     <title>Document</title>
@@ -22,7 +25,7 @@
     <header>
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
       <a href="#"
-        ><img src="./images/logoGreenWhite.png" alt="logo_img" id="logo_img"
+        ><img src="./images/logo-tp.png" alt="logo_img" id="logo_img"
       /></a>
       <button id="registerBtn" name="register">Register</button>
       <div id="hamburger-bar">
@@ -56,13 +59,13 @@
           </ul>
           <input type="radio" class="subbtn" id="subbtn-2" name="subMenu" onclick="showSubmenu()">
           <li>
-            <a href="#">FIELD PROGRAMS</a>
+            <a href="./html/fieldPrograms.html">FIELD PROGRAMS</a>
             <label for="subbtn-2" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
           </li>
           <ul id="submenu-2">
-            <li><a href="#">-2021 : 2022</a></li>
+            <li><a href="feild2021">-2021 : 2022</a></li>
             <li><a href="#">-2023 : 2024</a></li>
             <li><a href="#">-2025 : 2027</a></li>
             <li>
@@ -73,7 +76,7 @@
           </ul>
           <input type="radio" class="subbtn" id="subbtn-3" name="subMenu" onclick="showSubmenu()">
           <li>
-            <a href="#">BOX PROGRAMS</a>
+            <a href="./html/boxPrograms.html">BOX PROGRAMS</a>
             <label for="subbtn-3" class="downbtn">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
@@ -143,6 +146,7 @@
       </ul>
     </div>
   </header>
+
   <section id="section-home">
     <div id="container">
       <img src="./images/background-home.png" alt="img1" id="home_img" />
@@ -321,8 +325,9 @@
     </div>
   </section>
 
-  <!-- RODIGO -->
-  <footer class="footer">
+  <div data-include="footer"></div>
+
+  <!-- <footer class="footer">
     <div class="footer-socialMedia">
         <ul>
             <li><a href=""><img src="./images/Facebook-icon.png" alt="Facebook"></a></li>
@@ -341,11 +346,9 @@
             <input type="email" name="emailSubscribe" id="emailSubscribe" placeholder="Email">
             <button type="submit">SIGN UP</button>
         </form>
-        
     </div>
-    
 </footer>
-<footer id="copy-right"> <small>&copy; Copyright 2018, Example Corporation</small> </footer> 
+<footer id="copy-right"> <small>&copy; Copyright 2018, Example Corporation</small> </footer>  -->
 
   <script src="./js/materialize.min.js"></script>
   <script src="./js/carousel.js"></script>
@@ -354,6 +357,8 @@
     <script src="./js/instagram.js"></script>
 
 
+
   </body>
+
 
 </html>

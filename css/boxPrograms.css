@@ -1,0 +1,686 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background: url(../images/BoxProgramsHeader.png);
+  height: 294px;
+  width: 100%;
+}
+
+header h1 {
+  position: absolute;
+  width: 672px;
+  height: 71px;
+  left: 22px;
+  top: 202px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.7fr 0.5fr;
+  gap: 1px 1px;
+  grid-template-areas: "section1-grid" "section2-grid" "section3-grid";
+}
+
+.section1-grid {
+  grid-area: section1-grid;
+  background: url(../images/boxProgramsS1.png);
+}
+
+.section1 {
+  margin: 90px;
+}
+
+.section1 h1 {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 88px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section1 h2 {
+  margin-top: -20px;
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
+
+.section1 p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 34px;
+  text-align: justify;
+}
+
+.section2-grid {
+  grid-area: section2-grid;
+  margin-top: 100px;
+}
+
+/* *************************************************** */
+
+/********************** CARD CSS START ****************/
+
+/* *************************************************** */
+
+#box-programs {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.boxPrograms-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+}
+
+.boxPrograms-contents {
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.boxPrograms-contents:hover {
+  filter: grayscale(0);
+  transform: scale(1.15);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 5px rgba(68, 68, 68, 0.5);
+  border-radius: 5px;
+}
+
+.boxPrograms-contents :hover .learnMore {
+  bottom: 0;
+  visibility: visible;
+}
+
+.bp-Img {
+  height: 500px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bp-Img .learnMore {
+  bottom: -50px;
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  color: #89c64a;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+
+.learnMore h3 {
+  text-align: center;
+}
+
+.img0 {
+  background: url(../images/boxProgramsDevProg.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background: url(../images/boxProgramsMidget.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.img2 {
+  background: url(../images/boxProgramsBantam.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.img3 {
+  background: url(../images/boxProgramsPeewee.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.box-Year {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 25px;
+}
+
+.box-Year h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.boxModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(100, 100, 100, 0.85)
+    ),
+    url("../images/programs3.JPG");
+  background-size: cover;
+  margin: auto;
+  padding: 100px 100px;
+  width: 80%;
+  text-align: justify;
+  position: relative;
+  border-radius: 5px;
+}
+
+.modal-content h1 {
+  color: #89c64a;
+  text-align: center;
+  font-size: 2em;
+}
+
+.modal-content h3 {
+  color: #89c64a;
+  text-decoration: underline;
+}
+
+.modal-content ul {
+  position: relative;
+  padding-left: 50px;
+}
+
+.boxClose {
+  color: #89c64a;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  transition: all 1.5s ease;
+  top: -50px;
+  position: relative;
+}
+
+.boxClose:hover,
+.boxClose:focus {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+/* *************************************************** */
+
+/* *******************CARD CSS END******************** */
+
+/* *************************************************** */
+
+.section3-grid {
+  grid-area: section3-grid;
+  background: url(../images/programsBackground.png);
+}
+
+.section3-grid h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 59px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 90px;
+}
+
+.section3-grid ul {
+  list-style: none;
+  color: white;
+  font-size: 1em;
+  justify-content: center;
+}
+
+.section3-grid a {
+  /* text-decoration: none; */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: none;
+}
+
+.price-card {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.price-card:hover {
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.priceul {
+  line-height: 30px;
+}
+
+.price-card h2 {
+  text-align: center;
+}
+
+.button-center {
+  text-align: center;
+}
+
+.button-center button {
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #89c64a;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.priceul li {
+  margin-left: 20px;
+}
+
+.cd-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cd-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-gallery-container {
+  margin: 2em auto;
+}
+
+.cd-filter a.selected {
+  background: #89c64a;
+  color: #fff;
+}
+
+.cd-filter {
+  position: relative;
+  height: 40px;
+  width: 150px;
+  margin: 0 auto;
+  cursor: pointer;
+  /* z-index: 1000; */
+}
+
+.cd-filter li {
+  display: none;
+}
+
+.cd-filter li:first-child {
+  display: block;
+  /* this way the placehodler is alway visible */
+}
+
+.cd-filter a {
+  display: block;
+}
+
+.cd-filter li:last-child a {
+  border-radius: 0 0 0.25em 0.25em;
+}
+
+.cd-filter.is-open::after {
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+  -moz-transform: translateY(-50%) rotate(-180deg);
+  -ms-transform: translateY(-50%) rotate(-180deg);
+  -o-transform: translateY(-50%) rotate(-180deg);
+  transform: translateY(-50%) rotate(-180deg);
+  /* small arrow rotation*/
+}
+
+.cd-filter.is-open ul li {
+  display: block;
+}
+
+.cd-filter.is-open .placeholder a {
+  opacity: 0.4;
+  /* reduces the opacity of the placeholder on mobile when the menu is open */
+}
+
+.section3-grid p {
+  margin: 50px;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.3;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cd-gallery-container {
+    margin: 4em auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-filter {
+    height: auto;
+    width: auto;
+  }
+  .cd-filter::after {
+    display: none;
+  }
+  .cd-filter ul {
+    background: transparent;
+    position: static;
+    box-shadow: none;
+    text-align: center;
+  }
+  .cd-filter li {
+    display: inline-block;
+    margin: 0 0.4em;
+  }
+  .cd-filter li:first-child {
+    display: inline-block;
+  }
+  .cd-filter li.placeholder {
+    display: none !important;
+  }
+  .cd-filter li.placeholder a {
+    display: none;
+  }
+  .cd-filter a {
+    display: inline-block;
+    padding: 1em 2em;
+    height: auto;
+    width: auto;
+    line-height: 1;
+    border-radius: 50em !important;
+  }
+  .no-touch .cd-filter a:hover {
+    box-shadow: inset 0 0 0 2px rgba(56, 56, 56, 0.2);
+  }
+  .cd-filter a.selected:hover {
+    box-shadow: none;
+    /* removes the hover effect from the selected item */
+  }
+  .cd-filter.is-open ul li {
+    display: inline-block;
+  }
+}
+
+/* -------------------------------- 
+  
+  xgallery 
+  
+  -------------------------------- */
+
+.cd-gallery {
+  margin-top: 2em;
+  position: relative;
+  display: flex;
+  /* z-index: 5; */
+}
+
+.cd-gallery > li {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.cd-gallery .cd-item-wrapper {
+  /* this is the item that rotates */
+  position: relative;
+}
+
+.touch .cd-gallery .cd-item-wrapper {
+  /* fix a bug on IOS8 - rotating elements dissapear*/
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+}
+
+.cd-gallery .cd-item-wrapper.is-switched .is-visible {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-animation: cd-rotate 0.5s;
+  -moz-animation: cd-rotate 0.5s;
+  animation: cd-rotate 0.5s;
+}
+
+.cd-gallery .cd-item-wrapper.is-switched .is-hidden {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-animation: cd-rotate-inverse 0.5s;
+  -moz-animation: cd-rotate-inverse 0.5s;
+  animation: cd-rotate-inverse 0.5s;
+  opacity: 0;
+}
+
+.cd-gallery .cd-item-wrapper.is-switched .is-selected {
+  opacity: 1;
+}
+
+.cd-gallery .cd-item-wrapper > li {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cd-gallery .cd-item-wrapper > li img {
+  display: block;
+  width: 100%;
+}
+
+.cd-gallery li.is-visible {
+  /* the front item, visible by default */
+  position: relative;
+  /* z-index: 5; */
+}
+
+.cd-gallery li.is-hidden {
+  /* the hidden items, right behind the front one */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* z-index: 1; */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.cd-gallery li.is-selected {
+  /* the next item that will be visible */
+  /* z-index: 3 !important; */
+}
+
+@media only screen and (min-width: 480px) {
+  .cd-gallery > li {
+    width: 48%;
+    /* float: left; */
+    margin-right: 4%;
+    margin-bottom: 1.2em;
+  }
+  .cd-gallery > li:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-gallery > li {
+    width: 22%;
+    /* float: left; */
+  }
+  .cd-gallery > li:nth-of-type(2n) {
+    margin-right: 4%;
+  }
+  .cd-gallery > li:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cd-gallery {
+    margin-top: 4em;
+  }
+}
+
+/* -------------------------------- 
+  
+  xkeyframes 
+  
+  -------------------------------- */
+
+@-webkit-keyframes cd-rotate {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@-moz-keyframes cd-rotate {
+  0% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -moz-transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -moz-transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@keyframes cd-rotate {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(200deg);
+    -moz-transform: perspective(800px) rotateY(200deg);
+    -ms-transform: perspective(800px) rotateY(200deg);
+    -o-transform: perspective(800px) rotateY(200deg);
+    transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+    -moz-transform: perspective(800px) rotateY(180deg);
+    -ms-transform: perspective(800px) rotateY(180deg);
+    -o-transform: perspective(800px) rotateY(180deg);
+    transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes cd-rotate-inverse {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
+}
+
+@-moz-keyframes cd-rotate-inverse {
+  0% {
+    -moz-transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -moz-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
+}
+
+@keyframes cd-rotate-inverse {
+  0% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    -moz-transform: perspective(800px) rotateY(-180deg);
+    -ms-transform: perspective(800px) rotateY(-180deg);
+    -o-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    -moz-transform: perspective(800px) rotateY(20deg);
+    -ms-transform: perspective(800px) rotateY(20deg);
+    -o-transform: perspective(800px) rotateY(20deg);
+    transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
+}

@@ -1,1 +1,323 @@
-body{width:100vw;height:auto;margin:0;padding:0;box-sizing:border-box;font-family:Montserrat,sans-serif;background-color:#e5e5e5}.section-our_numbers{display:flex;max-width:1440px;height:674px;margin:0 auto;background-color:#000}span{color:#fff;font-weight:100;font-family:"Montserrat", sans-serif;font-size:60px;position:relative;bottom:5px}.first-title{color:#fff;position:relative;left:6%;top:144%;font-weight:100;font-family:"Montserrat", sans-serif;margin:auto 0;font-size:24px}.second-title{color:#89c64a;position:absolute;margin-left:80px;margin-top:80px;font-size:70px}.flexbox-container{display:flex;justify-content:center;margin:auto 0;position:relative;right:40px;top:40%}.flexbox-item{width:250px;height:200px;background-color:#dfdfdf}.flexbox-item-1{min-height:100px;background-color:#89c64a}.flexbox-item-2{min-height:200px;background-color:#fff}.flexbox-item-3{min-height:200px;background-color:#89c64a}.right_lacrosse{align-items:center;justify-content:center;margin:auto 0;position:relative;left:14%}.right_lacrosse img{width:32vw;height:633px;position:relative;top:-280px;left:70px}.boxin2{align-items:center;justify-content:center;margin:auto 0;text-align:center;display:flex;position:relative;top:10%;color:#89c64a}.boxin3{align-items:center;justify-content:center;margin:auto 0;text-align:center;display:flex;position:relative;top:10%}.boxin_sub1{text-align:center;position:relative;bottom:5%;color:#89c64a}.boxin_sub2{text-align:center;position:relative;bottom:5%;color:#fff}.title_font{font-size:2rem}.section-carousel{max-width:1800px;width:100vw;height:90vh;margin:0 auto;background-color:#000;z-index:-1}.carousel{width:100%;height:100%}.carousel .carousel-item{visibility:visible !important;width:440px !important;height:680px}.carousel .carousel-item #coach-img,.carousel .carousel-item #training-img,.carousel .carousel-item #school-img{width:100%;height:680px;transition:1s ease-in-out}.carousel .carousel-item #coach-img{background:url(../images/coach-black&white.png)}.carousel .carousel-item #training-img{background:url(../images/training-black&white.png)}.carousel .carousel-item #school-img{background:url(../images/school-black&white.png)}.carousel .carousel-item .box-description{display:flex;flex-direction:column;justify-content:center;position:absolute;top:330px;left:0px;width:100%;height:80px;background:rgba(0,0,0,0.7)}.carousel .carousel-item .box-description .title{font-weight:bold;font-size:36px;text-align:center;color:#fff}.carousel .carousel-item .box-description hr{display:none;width:287px;height:3px;background-color:#fff}.carousel .carousel-item .box-description .description,.carousel .carousel-item .box-description a{display:none;margin:10px;padding:0 40px;font-style:normal;font-weight:500;font-size:18px;line-height:22px;color:#fff}.carousel .carousel-item .box-description a{text-decoration:underline;padding:0 40px 20px 40px;cursor:pointer}.carousel .active .box-description{top:320px;height:auto;transition:1s ease-in-out}.carousel .active .box-description .title{color:#89c64a}.carousel .active .box-description .description,.carousel .active .box-description hr,.carousel .active .box-description a{display:flex}.carousel .active #coach-img{background:url(../images/coach.png)}.carousel .active #training-img{background:url(../images/training.png)}.carousel .active #school-img{background:url(../images/training.png)}#section_latest_news{background-color:#fff;display:flex;max-width:1440px;margin:0 auto;flex-direction:column;padding:5vh 5vw}#section_latest_news .latest_news_titlebandle{display:flex;flex-direction:column;position:relative;left:40px}#section_latest_news .latest_news_titlebandle .latest_news_subtitle{color:#000;font-size:18px;line-height:22px;font-family:Montserrat,sans-serif;font-style:normal;font-weight:normal}#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle{display:flex;flex-direction:row}#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle .latest_news_maintitle1{color:#000;font-size:65px;line-height:79px;font-family:Montserrat,sans-serif;margin:0}#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle .latest_news_maintitle2{color:#89c64a;font-weight:bold;font-size:70px;line-height:85px;font-family:Montserrat,sans-serif;margin:0}#section_latest_news .latest_news_contentsbandle{display:flex;flex-direction:row;justify-content:space-evenly;align-items:center}#section_latest_news .latest_news_contentsbandle img.latest_news_imgbandle{width:400px;height:480px}#section_latest_news .latest_news_contentsbandle .latest_news_content{background-color:#e5e5e5;margin:20px}#section_latest_news .latest_news_contentsbandle .latest_news_content .content_img{position:relative}#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box{background-color:#e5e5e5;display:flex;flex-direction:column;position:absolute;align-items:center;justify-content:space-evenly;left:0;bottom:0;width:50px;height:50px}#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box .content-box_date{margin:0}#section_latest_news .latest_news_contentsbandle .latest_news_content .content-box .content-box_month{margin:0}#section_latest_news .latest_news_contentsbandle .latest_news_content .content_article{display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;height:200px;padding:10px}#section_latest_news .latest_news_contentsbandle .latest_news_content .content_article .greendott{color:#89c64a;font-weight:100}
+body {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  background-color: #e5e5e5;
+}
+.section-our_numbers {
+  display: flex;
+  max-width: 1440px;
+  height: 674px;
+  margin: 0 auto;
+  background-color: #000;
+}
+span {
+  color: #fff;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  position: relative;
+  bottom: 5px;
+}
+.first-title {
+  color: #fff;
+  position: relative;
+  left: 6%;
+  top: 144%;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+  margin: auto 0;
+  font-size: 24px;
+}
+.second-title {
+  color: #89c64a;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 80px;
+  font-size: 70px;
+}
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  position: relative;
+  right: 40px;
+  top: 40%;
+}
+.flexbox-item {
+  width: 250px;
+  height: 200px;
+  background-color: #dfdfdf;
+}
+.flexbox-item-1 {
+  min-height: 100px;
+  background-color: #89c64a;
+}
+.flexbox-item-2 {
+  min-height: 200px;
+  background-color: #fff;
+}
+.flexbox-item-3 {
+  min-height: 200px;
+  background-color: #89c64a;
+}
+.right_lacrosse {
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  position: relative;
+  left: 14%;
+}
+.right_lacrosse img {
+  width: 32vw;
+  height: 633px;
+  position: relative;
+  top: -280px;
+  left: 70px;
+}
+.boxin2 {
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  text-align: center;
+  display: flex;
+  position: relative;
+  top: 10%;
+  color: #89c64a;
+}
+.boxin3 {
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  text-align: center;
+  display: flex;
+  position: relative;
+  top: 10%;
+}
+.boxin_sub1 {
+  text-align: center;
+  position: relative;
+  bottom: 5%;
+  color: #89c64a;
+}
+.boxin_sub2 {
+  text-align: center;
+  position: relative;
+  bottom: 5%;
+  color: #fff;
+}
+.title_font {
+  font-size: 2rem;
+}
+.section-carousel {
+  max-width: 1800px;
+  width: 100vw;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: #000;
+  z-index: -1;
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+.carousel .carousel-item {
+  visibility: visible !important;
+  width: 440px !important;
+  height: 680px;
+}
+.carousel .carousel-item #coach-img,
+.carousel .carousel-item #training-img,
+.carousel .carousel-item #school-img {
+  width: 100%;
+  height: 680px;
+  transition: 1s ease-in-out;
+}
+.carousel .carousel-item #coach-img {
+  background: url(../images/coach-black&white.png);
+}
+.carousel .carousel-item #training-img {
+  background: url(../images/training-black&white.png);
+}
+.carousel .carousel-item #school-img {
+  background: url(../images/school-black&white.png);
+}
+.carousel .carousel-item .box-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 330px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.carousel .carousel-item .box-description .title {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+.carousel .carousel-item .box-description hr {
+  display: none;
+  width: 287px;
+  height: 3px;
+  background-color: #fff;
+}
+.carousel .carousel-item .box-description .description,
+.carousel .carousel-item .box-description a {
+  display: none;
+  margin: 10px;
+  padding: 0 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+.carousel .carousel-item .box-description a {
+  text-decoration: underline;
+  padding: 0 40px 20px 40px;
+  cursor: pointer;
+}
+.carousel .active .box-description {
+  top: 320px;
+  height: auto;
+  transition: 1s ease-in-out;
+}
+.carousel .active .box-description .title {
+  color: #89c64a;
+}
+.carousel .active .box-description .description,
+.carousel .active .box-description hr,
+.carousel .active .box-description a {
+  display: flex;
+}
+.carousel .active #coach-img {
+  background: url(../images/coach.png);
+}
+.carousel .active #training-img {
+  background: url(../images/training.png);
+}
+.carousel .active #school-img {
+  background: url(../images/training.png);
+}
+#section_latest_news {
+  background-color: #fff;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 5vh 5vw;
+}
+#section_latest_news .latest_news_titlebandle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 40px;
+}
+#section_latest_news .latest_news_titlebandle .latest_news_subtitle {
+  color: #000;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+#section_latest_news .latest_news_titlebandle .latest_news_maintitlebandle {
+  display: flex;
+  flex-direction: row;
+}
+#section_latest_news
+  .latest_news_titlebandle
+  .latest_news_maintitlebandle
+  .latest_news_maintitle1 {
+  color: #000;
+  font-size: 65px;
+  line-height: 79px;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+}
+#section_latest_news
+  .latest_news_titlebandle
+  .latest_news_maintitlebandle
+  .latest_news_maintitle2 {
+  color: #89c64a;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 85px;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+}
+#section_latest_news .latest_news_contentsbandle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#section_latest_news .latest_news_contentsbandle img.latest_news_imgbandle {
+  width: 400px;
+  height: 480px;
+}
+#section_latest_news .latest_news_contentsbandle .latest_news_content {
+  background-color: #e5e5e5;
+  margin: 20px;
+}
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content_img {
+  position: relative;
+}
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content-box {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: space-evenly;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+}
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content-box
+  .content-box_date {
+  margin: 0;
+}
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content-box
+  .content-box_month {
+  margin: 0;
+}
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+  padding: 10px;
+}
+#section_latest_news
+  .latest_news_contentsbandle
+  .latest_news_content
+  .content_article
+  .greendott {
+  color: #89c64a;
+  font-weight: 100;
+}
