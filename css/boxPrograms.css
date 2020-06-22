@@ -355,6 +355,9 @@ header h1 {
 .cd-filter li {
     display: none;
 }
+.cd-gallery>li {
+    margin: 10px;
+}
 
 .cd-filter li:first-child {
     display: block;
@@ -542,26 +545,27 @@ header h1 {
 
 @media only screen and (min-width: 480px) {
     .cd-gallery>li {
-        width: 48%;
+        /* width: 48%; */
         /* float: left; */
-        margin-right: 4%;
+        /* margin-right: 4%; */
         margin-bottom: 1.2em;
+        /* margin: 10px; */
     }
     .cd-gallery>li:nth-of-type(2n) {
-        margin-right: 0;
+        /* margin-right: 0; */
     }
 }
 
 @media only screen and (min-width: 768px) {
     .cd-gallery>li {
-        width: 22%;
+        /* width: 22%; */
         /* float: left; */
     }
     .cd-gallery>li:nth-of-type(2n) {
-        margin-right: 4%;
+        /* margin-right: 4%; */
     }
     .cd-gallery>li:nth-of-type(4n) {
-        margin-right: 0;
+        /* margin-right: 0; */
     }
 }
 
