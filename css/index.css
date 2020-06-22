@@ -160,7 +160,8 @@ header {
   align-items: center;
   position: fixed;
   top: 25px;
-  left: 25px;
+  margin-left: 25px;/*included*/
+  /* left: 25px; */
 }
 
 /* ########################## */
@@ -265,13 +266,16 @@ input[type="checkbox"] {
 }
 
 .sidebarIconToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: all 0.3s;
   box-sizing: border-box;
   cursor: pointer;
   float: left;
   z-index: 1;
-  height: 100vw;
-  width: 100vw;
+  /* height: 100vw;
+  width: 100vw; */
   height: 22px;
   width: 22px;
 }
@@ -306,6 +310,12 @@ input[type="checkbox"] {
   position: relative;
   float: left;
   margin-top: 3px;
+}
+
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle {
+  display: block;
+  flex-direction: none;
+  justify-content: none;
 }
 
 input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .horizontal {
