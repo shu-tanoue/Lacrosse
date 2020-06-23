@@ -180,7 +180,7 @@ header {
   transform: translateX(-1000px);
   transition: transform 250ms ease-in-out;
   background-color: black;
-  z-index: 100;
+  z-index: 1;
 }
 
 .sidebarMenuInner {
@@ -235,7 +235,23 @@ header {
   display: none;
 }
 
+#hidebtn1, #hidebtn2, #hidebtn3, #hidebtn4, #hidebtn5, #hidebtn6 {
+  background-color: black;
+  z-index: 3;
+}
+
+#showbtn1, #showbtn2, #showbtn3, #showbtn4, #showbtn5, #showbtn6 {
+  background-color: black;
+  z-index: 2;
+}
+
 .downbtn {
+  position: absolute;
+  right: 0px;
+  padding-right: 10px;
+}
+
+.upbtn {
   position: absolute;
   right: 0px;
   padding-right: 10px;
@@ -247,6 +263,7 @@ header {
 
 #submenu-1, #submenu-2, #submenu-3, #submenu-4, #submenu-5, #submenu-6 {
   display: none;
+  padding: 0;
 }
 
 #btn-1:checked ~ .sidebarMenuInner li ul {
@@ -263,6 +280,10 @@ input[type="checkbox"] {
   transition: all 0.3s;
   box-sizing: border-box;
   display: none;
+}
+
+input[type="radio"] {
+  visibility: hidden;
 }
 
 .sidebarIconToggle {
@@ -696,7 +717,7 @@ input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal
   overflow: hidden;
 }
 
-span {
+.span_numbers {
   color: #fff;
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
