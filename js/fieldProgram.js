@@ -63,3 +63,12 @@ function thirdModal() {
     }
   };
 }
+
+function openPriceList(programName) {
+  var i;
+  var x = document.getElementsByClassName("priceListContent");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(programName).style.display = "flex";
+}
