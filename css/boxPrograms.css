@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -34,7 +34,7 @@ header h1 {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .grid-container {
@@ -56,7 +56,7 @@ header h1 {
 
 .section1 h1 {
     margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
@@ -68,16 +68,16 @@ header h1 {
 .section1 h2 {
     margin-top: -20px;
     margin-bottom: 60px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 59px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .section1 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
@@ -261,45 +261,134 @@ header h1 {
     line-height: 59px;
     color: rgba(0, 0, 0, 0.5);
     margin-left: 90px;
+    margin-bottom: 100px;
 }
 
-.section3-grid ul {
-    list-style: none;
-    color: white;
-    font-size: 1em;
+.priceHeaders ul {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    list-style: none;
 }
 
-.section3-grid a {
-    /* text-decoration: none; */
-    color: white;
-    background-color: rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 700;
-    align-items: center;
+.priceHeaders ul li {
+    margin: 10px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
     text-align: center;
-    text-decoration-line: none;
 }
 
-.price-card {
-    width: 280px;
-    height: auto;
-    border-radius: 10px;
+.active, .priceHeader:hover {
+    background-color: #89c64a;
+}
+
+/* .priceHeaders {
+    position: relative;
+    display: flex;
+    width: 50%;
+    margin: 25px auto;
+}
+
+.priceHeader {
+    display: inline-block;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px 20px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+} */
+
+/* .priceHeader:hover, .priceHeader:focus {
+    background-color: #89c64a;
+} */
+
+.priceListContent {
+    display: flex;
+    width: 90%;
+    min-height: 600px;
+    margin: 25px auto;
+}
+
+.priceList {
+    padding: 14px;
+    display: block;
+    margin: auto;
+    width: 30%;
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.25s ease;
 }
 
-.price-card:hover {
+.priceList:active {
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.priceul {
-    line-height: 30px;
+#Development {
+    width: 60%;
 }
 
-.price-card h2 {
+.dev {
+    width: 40%;
+}
+
+.priceList h2 {
     text-align: center;
+    color: #fff;
+}
+
+.priceList ul {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    color: #fff;
+}
+
+.lastNote {
+    margin: auto;
+    width: 90%;
+    padding: 25px;
+    height: auto;
+    position: relative;
+}
+
+.priceList {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-animation: cd-rotate 0.5s;
+    -moz-animation: cd-rotate 0.5s;
+    animation: cd-rotate 0.25s;
+}
+
+.priceList ul, .priceList h2, .priceList button, .priceList small {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-animation: cd-rotate-inverse 0.5s;
+    -moz-animation: cd-rotate-inverse 0.5s;
+    animation: cd-rotate-inverse 0.1s;
+}
+
+.priceList small {
+    float: left;
+}
+
+.lastSection {
+    background: url(../images/programsBackground.png);
 }
 
 .button-center {
@@ -312,267 +401,10 @@ header h1 {
     padding-right: 35px;
     border: none;
     border-radius: 5px;
-    background-color: #89C64A;
+    background-color: #89c64a;
     font-size: 1em;
     margin: 10px;
     cursor: pointer;
-}
-
-.priceul li {
-    margin-left: 20px;
-}
-
-.cd-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.cd-container::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.cd-gallery-container {
-    margin: 2em auto;
-}
-
-.cd-filter a.selected {
-    background: #89C64A;
-    color: #FFF;
-}
-
-.cd-filter {
-    position: relative;
-    height: 40px;
-    width: 150px;
-    margin: 0 auto;
-    cursor: pointer;
-    /* z-index: 1000; */
-}
-
-.cd-filter li {
-    display: none;
-}
-.cd-gallery>li {
-    margin: 10px;
-}
-
-.cd-filter li:first-child {
-    display: block;
-    /* this way the placehodler is alway visible */
-}
-
-.cd-filter a {
-    display: block;
-}
-
-.cd-filter li:last-child a {
-    border-radius: 0 0 .25em .25em;
-}
-
-.cd-filter.is-open::after {
-    -webkit-transform: translateY(-50%) rotate(-180deg);
-    -moz-transform: translateY(-50%) rotate(-180deg);
-    -ms-transform: translateY(-50%) rotate(-180deg);
-    -o-transform: translateY(-50%) rotate(-180deg);
-    transform: translateY(-50%) rotate(-180deg);
-    /* small arrow rotation*/
-}
-
-.cd-filter.is-open ul li {
-    display: block;
-}
-
-.cd-filter.is-open .placeholder a {
-    opacity: .4;
-    /* reduces the opacity of the placeholder on mobile when the menu is open */
-}
-
-.section3-grid p {
-    margin: 50px;
-    text-align: justify;
-    font-size: 1em;
-    line-height: 1.3;
-}
-
-@media only screen and (min-width: 1200px) {
-    .cd-gallery-container {
-        margin: 4em auto;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .cd-filter {
-        height: auto;
-        width: auto;
-    }
-    .cd-filter::after {
-        display: none;
-    }
-    .cd-filter ul {
-        background: transparent;
-        position: static;
-        box-shadow: none;
-        text-align: center;
-    }
-    .cd-filter li {
-        display: inline-block;
-        margin: 0 .4em;
-    }
-    .cd-filter li:first-child {
-        display: inline-block;
-    }
-    .cd-filter li.placeholder {
-        display: none !important;
-    }
-    .cd-filter li.placeholder a {
-        display: none;
-    }
-    .cd-filter a {
-        display: inline-block;
-        padding: 1em 2em;
-        height: auto;
-        width: auto;
-        line-height: 1;
-        border-radius: 50em !important;
-    }
-    .no-touch .cd-filter a:hover {
-        box-shadow: inset 0 0 0 2px rgba(56, 56, 56, 0.2);
-    }
-    .cd-filter a.selected:hover {
-        box-shadow: none;
-        /* removes the hover effect from the selected item */
-    }
-    .cd-filter.is-open ul li {
-        display: inline-block;
-    }
-}
-
-/* -------------------------------- 
-  
-  xgallery 
-  
-  -------------------------------- */
-
-.cd-gallery {
-    margin-top: 2em;
-    position: relative;
-    display: flex;
-    /* z-index: 5; */
-}
-
-.cd-gallery>li {
-    position: relative;
-    margin-bottom: 1em;
-}
-
-.cd-gallery .cd-item-wrapper {
-    /* this is the item that rotates */
-    position: relative;
-}
-
-.touch .cd-gallery .cd-item-wrapper {
-    /* fix a bug on IOS8 - rotating elements dissapear*/
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    perspective: 800px;
-}
-
-.cd-gallery .cd-item-wrapper.is-switched .is-visible {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    -webkit-animation: cd-rotate 0.5s;
-    -moz-animation: cd-rotate 0.5s;
-    animation: cd-rotate 0.5s;
-}
-
-.cd-gallery .cd-item-wrapper.is-switched .is-hidden {
-    -webkit-transform: rotateY(0);
-    -moz-transform: rotateY(0);
-    -ms-transform: rotateY(0);
-    -o-transform: rotateY(0);
-    transform: rotateY(0);
-    -webkit-animation: cd-rotate-inverse 0.5s;
-    -moz-animation: cd-rotate-inverse 0.5s;
-    animation: cd-rotate-inverse 0.5s;
-    opacity: 0;
-}
-
-.cd-gallery .cd-item-wrapper.is-switched .is-selected {
-    opacity: 1;
-}
-
-.cd-gallery .cd-item-wrapper>li {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.cd-gallery .cd-item-wrapper>li img {
-    display: block;
-    width: 100%;
-}
-
-.cd-gallery li.is-visible {
-    /* the front item, visible by default */
-    position: relative;
-    /* z-index: 5; */
-}
-
-.cd-gallery li.is-hidden {
-    /* the hidden items, right behind the front one */
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* z-index: 1; */
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.cd-gallery li.is-selected {
-    /* the next item that will be visible */
-    /* z-index: 3 !important; */
-}
-
-@media only screen and (min-width: 480px) {
-    .cd-gallery>li {
-        /* width: 48%; */
-        /* float: left; */
-        /* margin-right: 4%; */
-        margin-bottom: 1.2em;
-        /* margin: 10px; */
-    }
-    .cd-gallery>li:nth-of-type(2n) {
-        /* margin-right: 0; */
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .cd-gallery>li {
-        /* width: 22%; */
-        /* float: left; */
-    }
-    .cd-gallery>li:nth-of-type(2n) {
-        /* margin-right: 4%; */
-    }
-    .cd-gallery>li:nth-of-type(4n) {
-        /* margin-right: 0; */
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .cd-gallery {
-        margin-top: 4em;
-    }
 }
 
 /* -------------------------------- 
