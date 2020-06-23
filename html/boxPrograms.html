@@ -435,18 +435,20 @@
         <div class="section3-grid">
             <h1 style="color: rgba(0, 0, 0, 0.5); font-size: 2.5em; margin-top: 50px; margin-left: 125px;">FIELD
                 PROGRAMS PACKAGE PRICE LISTS</h1>
-            <div class="priceHeaders">
-                <ul id="priceHeadersUl">
+            <!-- <div class="priceHeaders"> -->
+                <!-- <ul id="priceHeadersUl">
                     <li class="priceHeader active" onclick="openPriceList('Development')">Development</li>
                     <li class="priceHeader" onclick="openPriceList('midget')">Midget</li>
                     <li class="priceHeader" onclick="openPriceList('bantam')">Bantam</li>
                     <li class="priceHeader" onclick="openPriceList('peewee')">Peewee</li>
-                </ul>
-                <!-- <div class="priceHeader" onclick="openPriceList('Development')">Development</div>
-                <div class="priceHeader" onclick="openPriceList('midget')">Midget</div>
-                <div class="priceHeader" onclick="openPriceList('bantam')">Bantam</div>
-                <div class="priceHeader" onclick="openPriceList('peewee')">Peewee</div> -->
-            </div>
+                </ul> -->
+                <div id="priceHeaders">
+                    <button class="btn active" onclick="openPriceList('Development')">Development</button>
+                    <button class="btn" onclick="openPriceList('midget')">Midget</button>
+                    <button class="btn" onclick="openPriceList('bantam')">Bantam</button>
+                    <button class="btn" onclick="openPriceList('peewee')">Peewee</button>
+                </div>
+            <!-- </div> -->
             <div>
                 <div id="Development" class="priceListContent">
                     <div class="priceList dev">
@@ -765,6 +767,18 @@
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Script part for the ACTIVE button (Price List) -->
+        <script>
+            var btnContainer = document.getElementById("priceHeaders");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
 </body>
 
 </html>

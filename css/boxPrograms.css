@@ -264,14 +264,14 @@ header h1 {
     margin-bottom: 100px;
 }
 
-.priceHeaders ul {
+#priceHeaders {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
 }
 
-.priceHeaders ul li {
+.btn {
     margin: 10px;
     width: 150px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -282,8 +282,13 @@ header h1 {
     text-align: center;
 }
 
-.active, .priceHeader:hover {
+.active, .btn:hover {
     background-color: #89c64a;
+    color: white;
+}
+
+button:focus {
+    outline: 0;
 }
 
 /* .priceHeaders {
