@@ -7,12 +7,15 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../js/utilities.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./sass/index.css">
+    <link rel="stylesheet" href="./sass/template.css">
     <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
     <script src="./js/jQuery.js"></script>
     <title>Document</title>
@@ -22,7 +25,7 @@
     <header>
       <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
       <a href="#"
-        ><img src="./images/logoGreenWhite.png" alt="logo_img" id="logo_img"
+        ><img src="./images/logo-tp.png" alt="logo_img" id="logo_img"
       /></a>
       <button id="registerBtn" name="register">Register</button>
       <div id="hamburger-bar">
@@ -54,7 +57,7 @@
           </ul>
           <input type="radio" class="subbtn" id="subbtn-2" name="subMenu" onclick="showSubmenu()">
           <li>
-            <a href="#">FIELD PROGRAMS</a>
+            <a href="./html/fieldPrograms.html">FIELD PROGRAMS</a>
             <label for="subbtn-2" class="downbtn" id="hidebtn2">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
@@ -63,13 +66,13 @@
             </label>
           </li>
           <ul id="submenu-2">
-            <li><a href="#">-2021 : 2022</a></li>
+            <li><a href="feild2021">-2021 : 2022</a></li>
             <li><a href="#">-2023 : 2024</a></li>
             <li><a href="#">-2025 : 2027</a></li>
           </ul>
           <input type="radio" class="subbtn" id="subbtn-3" name="subMenu" onclick="showSubmenu()">
           <li>
-            <a href="#">BOX PROGRAMS</a>
+            <a href="./html/boxPrograms.html">BOX PROGRAMS</a>
             <label for="subbtn-3" class="downbtn" id="hidebtn3">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
@@ -84,7 +87,7 @@
           </ul>
           <input type="radio" class="subbtn" id="subbtn-4" name="subMenu" onclick="showSubmenu()">
           <li>
-            <a href="#">CAMPS & EVENTS</a>
+            <a href="./html/camps-events.html">CAMPS & EVENTS</a>
             <label for="subbtn-4" class="downbtn" id="hidebtn4">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
@@ -92,14 +95,14 @@
               <i class="fas fa-chevron-up" style="font-size: medium;"></i>
             </label>
           </li>
-            <ul id="submenu-4">
-              <li><a href="#">Tournaments</a></li>
-              <li><a href="#">Field Camps</a></li>
-              <li><a href="#">Box Camps</a></li>
-            </ul>
+          <ul id="submenu-4">
+            <li><a href="#">Tournaments</a></li>
+            <li><a href="#">Field Camps</a></li>
+            <li><a href="#">Box Camps</a></li>
+          </ul>
           <input type="radio" class="subbtn" id="subbtn-5" name="subMenu" onclick="showSubmenu()">
           <li>
-            <a href="#">NCAA RECRUITMENTS</a>
+            <a href="./html/NCAA.html">NCAA RECRUITMENTS</a>
             <label for="subbtn-5" class="downbtn" id="hidebtn5">
               <i class="fas fa-chevron-down" style="font-size: medium;"></i>
             </label>
@@ -107,11 +110,11 @@
               <i class="fas fa-chevron-up" style="font-size: medium;"></i>
             </label>
           </li>
-            <ul id="submenu-5">
-              <li><a href="#">PCC Alumni</a></li>
-              <li><a href="#">Recruiter Info</a></li>
-              <li><a href="#">SAT Preparation</a></li>
-            </ul>
+          <ul id="submenu-5">
+            <li><a href="#">PCC Alumni</a></li>
+            <li><a href="#">Recruiter Info</a></li>
+            <li><a href="#">SAT Preparation</a></li>
+          </ul>
           <input type="radio" class="subbtn" id="subbtn-6" name="subMenu" onclick="showSubmenu()">
           <li>
             <a href="#">TRAINING</a>
@@ -127,10 +130,16 @@
             <li><a href="#">Group Training</a></li>
             <li><a href="#">Weight Training</a></li>
           </ul>
-        </li>
-      </ul>
+          <li>
+            <a href="#">Q&A</a>
+          </li>
+          <li>
+            <a href="./html/contact.html">CONTACT</a>
+          </li>
+        </ul>
     </div>
   </header>
+
   <section id="section-home">
     <div id="container">
       <img src="./images/background-home.png" alt="img1" id="home_img" />
@@ -260,69 +269,19 @@
       </div>
     </div>
   </section>
-  
-  <section id="section_latest_news">
-    <div class="latest_news_titlebandle">
-      <p class="latest_news_subtitle">PRO CALIBER LACROSSE</p>
-      <div class="latest_news_maintitlebandle">
-        <h1 class="latest_news_maintitle1">LATEST</h1>
-        <h1 class="latest_news_maintitle2">NEWS</h1>
-      </div>
-    </div>
-    <div class="latest_news_contentsbandle">
-      <img class="latest_news_imgbandle" src="./images/lacrossePlayer%201.png" alt="picture of lacrosseplayer">
-      <div class="latest_news_content">
-        <div class="content_img">
-          <img src="./images/latest_news1.png" class="content_picture" alt="content1_picture">
-          <div class="content-box">
-            <p class="content-box_date">15</p>
-            <p class="content-box_month">MAR</p>
-          </div>
-        </div>
-        <div class="content_article">
-          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
-          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
-          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
-            incidunt modi nesciunt temporibus vero?
-          </div>
+    <section id="section_latest_news">
+      <div class="latest_news_titlebandle">
+        <p class="latest_news_subtitle">PRO CALIBER LACROSSE</p>
+        <div class="latest_news_maintitlebandle">
+          <h1 class="latest_news_maintitle1">LATEST</h1>
+          <h1 class="latest_news_maintitle2">NEWS</h1>
         </div>
       </div>
-      <div class="latest_news_content">
-        <div class="content_img">
-          <img src="./images/latest_news2.png" class="content_picture" alt="content2_picture">
-          <div class="content-box">
-            <p class="content-box_date">18</p>
-            <p class="content-box_month">MAR</p>
-          </div>
-        </div>
-        <div class="content_article">
-          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
-          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
-          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
-            incidunt modi nesciunt temporibus vero?
-          </div>
-        </div>
+      <div class="latest_news_contentsbandle">
+        <img class="latest_news_imgbandle" src="./images/lacrossePlayer%201.png" alt="picture of lacrosseplayer">
+        <div id="instafeed"></div>
       </div>
-      <div class="latest_news_content">
-        <div class="content_img">
-          <img src="./images/latest_news3.png" class="content_picture" alt="content3_picture">
-          <div class="content-box">
-            <p class="content-box_date">21</p>
-            <p class="content-box_month">MAR</p>
-          </div>
-        </div>
-        <div class="content_article">
-          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
-          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
-          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
-            incidunt modi nesciunt temporibus vero?
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
+    </section>
   <section class="section-our_numbers">
     <div class="sub_title_from">
       <h1 class="first-title">FROM THE CLUB</h1>
@@ -359,8 +318,9 @@
     </div>
   </section>
 
-  <!-- RODIGO -->
-  <footer class="footer">
+  <div data-include="footer"></div>
+
+  <!-- <footer class="footer">
     <div class="footer-socialMedia">
         <ul>
             <li><a href=""><img src="./images/Facebook-icon.png" alt="Facebook"></a></li>
@@ -379,17 +339,19 @@
             <input type="email" name="emailSubscribe" id="emailSubscribe" placeholder="Email">
             <button type="submit">SIGN UP</button>
         </form>
-        
     </div>
-    
 </footer>
-<footer id="copy-right"> <small>&copy; Copyright 2018, Example Corporation</small> </footer> 
+<footer id="copy-right"> <small>&copy; Copyright 2018, Example Corporation</small> </footer>  -->
 
   <script src="./js/materialize.min.js"></script>
   <script src="./js/carousel.js"></script>
   <script src="./js/customize-carousel.js"></script>
   <script src="./js/index.js"></script>
+    <script src="./js/instagram.js"></script>
 
-</body>
+
+
+  </body>
+
 
 </html>

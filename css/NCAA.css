@@ -1,33 +1,54 @@
 /* ========== SHINYA ========== */
+body {
+    background: url("../images/programsBackground.png");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
 
 /* #################################### */
 
 /* ########## NCAA container ########## */
 
 /* #################################### */
+#title_section {
+    display: flex;
+    flex-direction: row;
+}
 
-.grid-container {
+h1 {
+    font-size: 4em;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 50px 30px 15px 30px;
+}
+
+#NCAA_link {
+    width: 5vw;
+    height: 9vh;
+    margin-top: 50px;
+}
+
+/* .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "NCAA-contents" "NCAA-links";
-}
+} */
   
 .NCAA-contents {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 1px 1px;
     grid-template-areas: "NCAA-container";
     grid-area: NCAA-contents;
+    margin: 50px;
 }
   
 .NCAA-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 50px 1px;
+    gap: 50px 0px;
     grid-template-areas: "Josh-Jackson Drew-Kask Noah-Armitage" "Beau-Chetner Tyler-Kralj Drew-Andre" "Thomas-Mackiewich Kyle-Brunsch Luke-Evans" "John-Sterling-Blake Ben-Stewart Cooper-Gettel" "Zack-Kyriacethys Joey-Cote Liam-Chernoff" "Stuart-Chernoff Noah-Bradley Austin-Ducommun" "Aidan-Lalonde Carter-Calrk Kai-George" "Cole-Lowe Brian-Simmons empty";
     grid-area: NCAA-container;
     
@@ -144,8 +165,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 360px;
-    height: 400px;
+    width: 18vw;
+    height: 35vh;
     background: #000;
 }
 
