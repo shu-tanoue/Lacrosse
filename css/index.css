@@ -135,8 +135,7 @@ body {
 .carousel .active #school-img {
   background: url(../images/training.png);
 }
-
-/* ========== SHINYA ========== */
+//* ========== SHINYA ========== */
 
 header {
   width: 100%;
@@ -147,7 +146,7 @@ header {
   z-index: 1000;
   font-family: Montserrat;
   margin: 0 auto;
-  text-align: center;
+  text-align: center !important;
 }
 
 #hamburger-bar {
@@ -160,7 +159,8 @@ header {
   align-items: center;
   position: fixed;
   top: 25px;
-  left: 25px;
+  margin-left: 25px;/*included*/
+  /* left: 25px; */
 }
 
 /* ########################## */
@@ -179,10 +179,11 @@ header {
   transform: translateX(-1000px);
   transition: transform 250ms ease-in-out;
   background-color: black;
-  z-index: 100;
+  z-index: 1;
 }
 
 .sidebarMenuInner {
+  text-align: center;
   margin: 0;
   padding: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -234,7 +235,23 @@ header {
   display: none;
 }
 
+#hidebtn1, #hidebtn2, #hidebtn3, #hidebtn4, #hidebtn5, #hidebtn6 {
+  background-color: black;
+  z-index: 3;
+}
+
+#showbtn1, #showbtn2, #showbtn3, #showbtn4, #showbtn5, #showbtn6 {
+  background-color: black;
+  z-index: 2;
+}
+
 .downbtn {
+  position: absolute;
+  right: 0px;
+  padding-right: 10px;
+}
+
+.upbtn {
   position: absolute;
   right: 0px;
   padding-right: 10px;
@@ -246,6 +263,7 @@ header {
 
 #submenu-1, #submenu-2, #submenu-3, #submenu-4, #submenu-5, #submenu-6 {
   display: none;
+  padding: 0;
 }
 
 #btn-1:checked ~ .sidebarMenuInner li ul {
@@ -264,14 +282,21 @@ input[type="checkbox"] {
   display: none;
 }
 
+input[type="radio"] {
+  visibility: hidden;
+}
+
 .sidebarIconToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: all 0.3s;
   box-sizing: border-box;
   cursor: pointer;
   float: left;
   z-index: 1;
-  height: 100vw;
-  width: 100vw;
+  /* height: 100vw;
+  width: 100vw; */
   height: 22px;
   width: 22px;
 }
@@ -308,6 +333,12 @@ input[type="checkbox"] {
   margin-top: 3px;
 }
 
+input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle {
+  display: block;
+  flex-direction: none;
+  justify-content: none;
+}
+
 input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .horizontal {
   transition: all 0.3s;
   box-sizing: border-box;
@@ -332,6 +363,11 @@ input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal
   height: 100%;
 }
 
+#logo_menu {
+  width: 130px;
+  margin-top: 100px;
+}
+
 #registerBtn {
   width: 160px;
   height: 45px;
@@ -347,13 +383,26 @@ input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal
   border: none;/*modified*/
 }
 
+#register_btn p{
+    width: 10vw;
+    height: 5vh;
+    background-color: #89C64A;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 20px;
+    border-radius: 1%;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
 
+     
 /* ############################### */
 
 /* ########## container ########## */
 
 /* ############################### */
-
+      
 /* slider container */
 
 #section-home {
@@ -370,6 +419,13 @@ input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal
   margin: 0 auto;
   width: 100%;
   height: 100%;
+
+}
+
+#slide_container {
+    text-align: center;
+    background-color: black;
+
 }
 
 #home_img {
@@ -417,6 +473,7 @@ input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal
   max-height: 800px;
   background-color: white;
   align-items: center;
+  overflow: hidden;
 }
 
 .about-grid {
@@ -510,6 +567,7 @@ input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5vh 5vw;
+  overflow: hidden;
 }
 
 #section_latest_news .latest_news_titlebandle {
@@ -681,6 +739,7 @@ input[type="checkbox"]:checked ~ #hamburger-bar > .sidebarIconToggle > .diagonal
   margin: 0 auto;
   background-color: #000;
   flex-direction: column;
+  overflow: hidden;
 }
 
 span {
@@ -830,7 +889,7 @@ span {
 /*========*/
 /* FOOTER */
 /*========*/
-.footer {
+/* .footer {
   background: url(/images/footerbackground.png);
   display: flex;
   flex-direction: row;
@@ -839,7 +898,6 @@ span {
   background-color: black;
 }
 .footer-socialMedia {
-  /* float: left; */
   width: 75%;
 }
 .footer-socialMedia ul {
@@ -863,11 +921,11 @@ footer p {
   font-weight: bold;
   font-size: 15px;
   line-height: 19px;
-}
+} */
 /* .footer-subscribe { */
   /* float: right; */
 /* } */
-.subscribe-title {
+/* .subscribe-title {
   display: flex;
   height: 100px;
 }
@@ -899,4 +957,6 @@ bottom: 0px;
   background-color: black;
   color: white;
   text-align: center;
-}
+} */
+
+

@@ -1,26 +1,29 @@
-* {
-    box-sizing: border-box;
+ing* {
+
+    box-siz: border-box;
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+
 }
 
 body {
-    width: 100%;
+  width: 100%;
 }
 
 html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
-    background: url(../images/BoxProgramsHeader.png);
-    height: 294px;
-    width: 100%;
+  background: url(../images/BoxProgramsHeader.png);
+  height: 294px;
+  width: 100%;
 }
 
 header h1 {
+
     position: absolute;
     width: 672px;
     height: 71px;
@@ -35,26 +38,28 @@ header h1 {
     align-items: center;
     text-align: center;
     color: #ffffff;
+
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.7fr 0.5fr;
-    gap: 1px 1px;
-    grid-template-areas: "section1-grid" "section2-grid" "section3-grid";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.7fr 0.5fr;
+  gap: 1px 1px;
+  grid-template-areas: "section1-grid" "section2-grid" "section3-grid";
 }
 
 .section1-grid {
-    grid-area: section1-grid;
-    background: url(../images/boxProgramsS1.png);
+  grid-area: section1-grid;
+  background: url(../images/boxProgramsS1.png);
 }
 
 .section1 {
-    margin: 90px;
+  margin: 90px;
 }
 
 .section1 h1 {
+
     margin-top: 20px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -83,11 +88,12 @@ header h1 {
     font-size: 1em;
     line-height: 34px;
     text-align: justify;
+
 }
 
 .section2-grid {
-    grid-area: section2-grid;
-    margin-top: 100px;
+  grid-area: section2-grid;
+  margin-top: 100px;
 }
 
 /* *************************************************** */
@@ -97,150 +103,156 @@ header h1 {
 /* *************************************************** */
 
 #box-programs {
-    background-color: #fff;
-    padding: 50px 0;
+  background-color: #fff;
+  padding: 50px 0;
 }
 
 .boxPrograms-container {
-    width: 85%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2em;
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
 }
 
 .boxPrograms-contents {
-    cursor: pointer;
-    filter: grayscale(100%);
-    transition: all 1s;
-    overflow: hidden;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: all 1s;
+  overflow: hidden;
 }
 
 .boxPrograms-contents:hover {
-    filter: grayscale(0);
-    transform: scale(1.15);
-    z-index: 1;
-    box-shadow: 0px 0px 10px 5px rgba(68, 68, 68, 0.5);
-    border-radius: 5px;
+  filter: grayscale(0);
+  transform: scale(1.15);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 5px rgba(68, 68, 68, 0.5);
+  border-radius: 5px;
 }
 
 .boxPrograms-contents :hover .learnMore {
-    bottom: 0;
-    visibility: visible;
+  bottom: 0;
+  visibility: visible;
 }
 
 .bp-Img {
-    height: 500px;
-    position: relative;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+  height: 500px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bp-Img .learnMore {
-    bottom: -50px;
-    visibility: hidden;
-    position: absolute;
-    display: block;
-    color: #89c64a;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
+  bottom: -50px;
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  color: #89c64a;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
 }
 
 .learnMore h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .img0 {
-    background: url(../images/boxProgramsDevProg.JPG) center center no-repeat;
-    background-size: cover;
+  background: url(../images/boxProgramsDevProg.JPG) center center no-repeat;
+  background-size: cover;
 }
 
 .img1 {
-    background: url(../images/boxProgramsMidget.JPG) center center no-repeat;
-    background-size: cover;
+  background: url(../images/boxProgramsMidget.JPG) center center no-repeat;
+  background-size: cover;
 }
 
 .img2 {
-    background: url(../images/boxProgramsBantam.JPG) center center no-repeat;
-    background-size: cover;
+  background: url(../images/boxProgramsBantam.JPG) center center no-repeat;
+  background-size: cover;
 }
 
 .img3 {
-    background: url(../images/boxProgramsPeewee.JPG) center center no-repeat;
-    background-size: cover;
+  background: url(../images/boxProgramsPeewee.JPG) center center no-repeat;
+  background-size: cover;
 }
 
 .box-Year {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 25px;
 }
 
 .box-Year h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 1.8em;
-    cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8em;
+  cursor: pointer;
 }
 
 .boxModal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
-    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 1), rgba(100, 100, 100, 0.85)), url("../images/programs3.JPG");
-    background-size: cover;
-    margin: auto;
-    padding: 100px 100px;
-    width: 80%;
-    text-align: justify;
-    position: relative;
-    border-radius: 5px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(100, 100, 100, 0.85)
+    ),
+    url("../images/programs3.JPG");
+  background-size: cover;
+  margin: auto;
+  padding: 100px 100px;
+  width: 80%;
+  text-align: justify;
+  position: relative;
+  border-radius: 5px;
 }
 
 .modal-content h1 {
-    color: #89c64a;
-    text-align: center;
-    font-size: 2em;
+  color: #89c64a;
+  text-align: center;
+  font-size: 2em;
 }
 
 .modal-content h3 {
-    color: #89c64a;
-    text-decoration: underline;
+  color: #89c64a;
+  text-decoration: underline;
 }
 
 .modal-content ul {
-    position: relative;
-    padding-left: 50px;
+  position: relative;
+  padding-left: 50px;
 }
 
 .boxClose {
-    color: #89c64a;
-    float: right;
-    font-size: 50px;
-    font-weight: bold;
-    transition: all 1.5s ease;
-    top: -50px;
-    position: relative;
+  color: #89c64a;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  transition: all 1.5s ease;
+  top: -50px;
+  position: relative;
 }
 
-.boxClose:hover, .boxClose:focus {
-    transform: rotate(180deg);
-    cursor: pointer;
+.boxClose:hover,
+.boxClose:focus {
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 
 /* *************************************************** */
@@ -250,11 +262,12 @@ header h1 {
 /* *************************************************** */
 
 .section3-grid {
-    grid-area: section3-grid;
-    background: url(../images/programsBackground.png);
+  grid-area: section3-grid;
+  background: url(../images/programsBackground.png);
 }
 
 .section3-grid h1 {
+
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -291,26 +304,7 @@ button:focus {
     outline: 0;
 }
 
-/* .priceHeaders {
-    position: relative;
-    display: flex;
-    width: 50%;
-    margin: 25px auto;
-}
 
-.priceHeader {
-    display: inline-block;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 25px 20px;
-    border-radius: 50px;
-    color: #fff;
-    cursor: pointer;
-} */
-
-/* .priceHeader:hover, .priceHeader:focus {
-    background-color: #89c64a;
-} */
 
 .priceListContent {
     display: flex;
@@ -410,6 +404,7 @@ button:focus {
     font-size: 1em;
     margin: 10px;
     cursor: pointer;
+
 }
 
 /* -------------------------------- 
@@ -419,103 +414,103 @@ button:focus {
   -------------------------------- */
 
 @-webkit-keyframes cd-rotate {
-    0% {
-        -webkit-transform: perspective(800px) rotateY(0);
-    }
-    70% {
-        -webkit-transform: perspective(800px) rotateY(200deg);
-        /* this creates the bounce effect */
-    }
-    100% {
-        -webkit-transform: perspective(800px) rotateY(180deg);
-    }
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+  }
 }
 
 @-moz-keyframes cd-rotate {
-    0% {
-        -moz-transform: perspective(800px) rotateY(0);
-    }
-    70% {
-        -moz-transform: perspective(800px) rotateY(200deg);
-        /* this creates the bounce effect */
-    }
-    100% {
-        -moz-transform: perspective(800px) rotateY(180deg);
-    }
+  0% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -moz-transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -moz-transform: perspective(800px) rotateY(180deg);
+  }
 }
 
 @keyframes cd-rotate {
-    0% {
-        -webkit-transform: perspective(800px) rotateY(0);
-        -moz-transform: perspective(800px) rotateY(0);
-        -ms-transform: perspective(800px) rotateY(0);
-        -o-transform: perspective(800px) rotateY(0);
-        transform: perspective(800px) rotateY(0);
-    }
-    70% {
-        -webkit-transform: perspective(800px) rotateY(200deg);
-        -moz-transform: perspective(800px) rotateY(200deg);
-        -ms-transform: perspective(800px) rotateY(200deg);
-        -o-transform: perspective(800px) rotateY(200deg);
-        transform: perspective(800px) rotateY(200deg);
-        /* this creates the bounce effect */
-    }
-    100% {
-        -webkit-transform: perspective(800px) rotateY(180deg);
-        -moz-transform: perspective(800px) rotateY(180deg);
-        -ms-transform: perspective(800px) rotateY(180deg);
-        -o-transform: perspective(800px) rotateY(180deg);
-        transform: perspective(800px) rotateY(180deg);
-    }
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(200deg);
+    -moz-transform: perspective(800px) rotateY(200deg);
+    -ms-transform: perspective(800px) rotateY(200deg);
+    -o-transform: perspective(800px) rotateY(200deg);
+    transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+    -moz-transform: perspective(800px) rotateY(180deg);
+    -ms-transform: perspective(800px) rotateY(180deg);
+    -o-transform: perspective(800px) rotateY(180deg);
+    transform: perspective(800px) rotateY(180deg);
+  }
 }
 
 @-webkit-keyframes cd-rotate-inverse {
-    0% {
-        -webkit-transform: perspective(800px) rotateY(-180deg);
-    }
-    70% {
-        -webkit-transform: perspective(800px) rotateY(20deg);
-        /* this creates the bounce effect */
-    }
-    100% {
-        -webkit-transform: perspective(800px) rotateY(0);
-    }
+  0% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
 }
 
 @-moz-keyframes cd-rotate-inverse {
-    0% {
-        -moz-transform: perspective(800px) rotateY(-180deg);
-    }
-    70% {
-        -moz-transform: perspective(800px) rotateY(20deg);
-        /* this creates the bounce effect */
-    }
-    100% {
-        -moz-transform: perspective(800px) rotateY(0);
-    }
+  0% {
+    -moz-transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -moz-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
 }
 
 @keyframes cd-rotate-inverse {
-    0% {
-        -webkit-transform: perspective(800px) rotateY(-180deg);
-        -moz-transform: perspective(800px) rotateY(-180deg);
-        -ms-transform: perspective(800px) rotateY(-180deg);
-        -o-transform: perspective(800px) rotateY(-180deg);
-        transform: perspective(800px) rotateY(-180deg);
-    }
-    70% {
-        -webkit-transform: perspective(800px) rotateY(20deg);
-        -moz-transform: perspective(800px) rotateY(20deg);
-        -ms-transform: perspective(800px) rotateY(20deg);
-        -o-transform: perspective(800px) rotateY(20deg);
-        transform: perspective(800px) rotateY(20deg);
-        /* this creates the bounce effect */
-    }
-    100% {
-        -webkit-transform: perspective(800px) rotateY(0);
-        -moz-transform: perspective(800px) rotateY(0);
-        -ms-transform: perspective(800px) rotateY(0);
-        -o-transform: perspective(800px) rotateY(0);
-        transform: perspective(800px) rotateY(0);
-    }
+  0% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    -moz-transform: perspective(800px) rotateY(-180deg);
+    -ms-transform: perspective(800px) rotateY(-180deg);
+    -o-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+  }
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    -moz-transform: perspective(800px) rotateY(20deg);
+    -ms-transform: perspective(800px) rotateY(20deg);
+    -o-transform: perspective(800px) rotateY(20deg);
+    transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
 }
