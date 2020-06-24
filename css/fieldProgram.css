@@ -11,7 +11,7 @@
   *****************************************/
 #section-feild {
   width: auto; /*included*/
-  height: 60vh;
+
   /* height: 920px; */
   margin: 0 auto;
   overflow: hidden;
@@ -22,7 +22,6 @@
   align-items: flex-end;
   margin: 0 auto;
   width: 100%;
-  height: 60vh;
   position: absolute;
 }
 
@@ -30,7 +29,6 @@
   width: 100%;
   position: absolute;
   top: 0;
-  height: 60vh;
   z-index: -1;
 }
 
@@ -42,8 +40,7 @@
 }
 .firstSection {
   position: relative;
-  top: 250px;
-  height: 550px;
+  top: 0;
 }
 .feild-section {
   width: 100%;
@@ -242,6 +239,8 @@
   color: #fff;
   cursor: pointer;
   font-size: 14px;
+  border: none;
+  outline: none;
 }
 .active {
   background-color: #89c64a;
@@ -448,4 +447,22 @@ xkeyframes
   }
 }
 @media all and (max-width: 1024px) {
+  .feild-section {
+    position: relative;
+    top: -75px;
+  }
+  #feild-programs {
+    position: relative;
+    top: -75px;
+  }
+  .feild-Year h1 {
+    font-size: 1em;
+  }
+  .priceHeaders {
+    width: 80%;
+  }
+  footer {
+    position: relative;
+    top: -75px;
+  }
 }
