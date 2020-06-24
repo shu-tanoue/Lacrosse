@@ -71,4 +71,15 @@ function openPriceList(programName) {
     x[i].style.display = "none";
   }
   document.getElementById(programName).style.display = "flex";
+
+  var header = document.getElementById("priceHeadersButtons");
+  var btns = header.getElementsByClassName("priceHeader");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active ");
+      current[0].className = current[0].className.replace("active", "");
+      this.className += " active";
+    });
+    var current;
+  }
 }
