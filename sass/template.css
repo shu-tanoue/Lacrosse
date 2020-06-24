@@ -81,7 +81,7 @@ header #header #box-title #title-section {
 
 @-webkit-keyframes title-section {
   from {
-    left: -300px;
+    left: -500px;
   }
   to {
     left: 0px;
@@ -90,7 +90,7 @@ header #header #box-title #title-section {
 
 @keyframes title-section {
   from {
-    left: -300px;
+    left: -500px;
   }
   to {
     left: 0px;
