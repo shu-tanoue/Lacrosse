@@ -5,7 +5,7 @@
   padding: 0;
   font-family: Montserrat, sans-serif;
 }
-body {
+/* body {
   max-width: 1800px;
   height: auto;
   margin: 0 auto;
@@ -48,15 +48,15 @@ body {
 }
 
 .carousel .carousel-item #coach-img {
-  background: url(./images/coach-black&white.png);
+  background: url("../images/coach-black&white.png");
 }
 
 .carousel .carousel-item #training-img {
-  background: url(./images/training-black&white.png);
+  background: url("../images/training-black&white.png");
 }
 
 .carousel .carousel-item #school-img {
-  background: url(./images/school-black&white.png);
+  background: url("../images/school-black&white.png");
 }
 
 .carousel .carousel-item .box-description {
@@ -130,19 +130,19 @@ body {
 }
 
 .carousel .active #coach-img {
-  background: url(./images/coach.png);
+  background: url("../images/coach.png");
 }
 
 .carousel .active #training-img {
-  background: url(./images/training.png);
+  background: url("../images/training.png");
 }
 
 .carousel .active #school-img {
-  background: url(./images/training.png);
+  background: url("../images/training.png");
 }
 
 /* ===== SHINYA=========*/
-
+/* 
 header {
   width: 100%;
   max-width: 1800px;
@@ -153,7 +153,7 @@ header {
   font-family: Montserrat;
   margin: 0 auto;
   text-align: center;
-}
+} */
 
 /* ########################## */
 
@@ -163,7 +163,7 @@ header {
 
 /* The necessary CSS styles for the navigation. */
 
-#sidebarMenu {
+/* #sidebarMenu {
   width: 20vw;
   position: fixed;
   top: 80px;
@@ -221,7 +221,7 @@ header {
     pointer-events: auto !important;
   } */
 
-#submenu-1,
+/* #submenu-1,
 #submenu-2,
 #submenu-3,
 #submenu-4,
@@ -236,7 +236,7 @@ header {
 
 /* Style & animate the hamburger toggle button. */
 
-input[type="checkbox"]:checked ~ #sidebarMenu {
+/* input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
 }
 
@@ -328,7 +328,8 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-right: 50px;
   margin-top: 20px;
   border-radius: 5px;
-}
+} */
+
 /****************************************
   ***********FEILD PROGRAMS START**********
   *****************************************/
@@ -363,8 +364,12 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   padding: 0;
   font-family: Montserrat;
 }
+.firstSection {
+  position: relative;
+  top: 250px;
+  height: 550px;
+}
 .feild-section {
-  margin: 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -506,7 +511,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
       rgba(255, 255, 255, 1),
       rgba(100, 100, 100, 0.85)
     ),
-    url("images/programs3.JPG");
+    url("../images/programs3.JPG");
   background-size: cover;
   margin: auto;
   padding: 100px 100px;
@@ -545,14 +550,101 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 /* *************************************************** */
 /* *******************CARD CSS END******************** */
 /* *************************************************** */
+.priceHeaders {
+  position: relative;
+  display: flex;
+  width: 50%;
+  margin: 25px auto;
+}
+.priceHeader {
+  display: inline-block;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px 20px;
+  border-radius: 50px;
+  color: #fff;
+}
+.priceHeader:hover,
+.priceHeader:focus {
+  background-color: #89c64a;
+}
+.priceListContent {
+  display: flex;
+  width: 90%;
+  margin: 25px auto;
+}
+.priceList {
+  padding: 14px;
+  display: block;
+  margin: auto;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+.priceList:active {
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#Development {
+  width: 60%;
+}
+.dev {
+  width: 40%;
+}
+.priceList h2 {
+  text-align: center;
+  color: #fff;
+}
+.priceList ul {
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  color: #fff;
+}
+.lastNote {
+  margin: auto;
+  width: 90%;
+  padding: 25px;
+  height: auto;
+  position: relative;
+}
 
-#priceSection {
+.priceList {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-animation: cd-rotate 0.5s;
+  -moz-animation: cd-rotate 0.5s;
+  animation: cd-rotate 0.25s;
+}
+
+.priceList ul,
+.priceList h2,
+.priceList button,
+.priceList small {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-animation: cd-rotate-inverse 0.5s;
+  -moz-animation: cd-rotate-inverse 0.5s;
+  animation: cd-rotate-inverse 0.1s;
+}
+/* #priceSection {
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 1),
       rgba(68, 68, 68, 0.9)
     ),
-    url("images/programs3.JPG");
+    url("../images/programs3.JPG");
   background-size: cover;
   background-attachment: scroll;
   width: 100%;
@@ -638,7 +730,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 #secondPriceContents,
 #thirdPriceContents {
   display: none;
-}
+} */
 /* .programPackets {
   filter: drop-shadow(8px 8px 10px #000);
   border-radius: 5px;
@@ -751,13 +843,8 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   display: none;
   background-color: #fff;
 } */
-footer {
-  height: 100px;
-  background-color: #000;
-}
 
-.section3-grid {
-  grid-area: section3-grid;
+.lastSection {
   background: url(../images/programsBackground.png);
 }
 

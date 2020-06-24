@@ -1,8 +1,8 @@
 /* ========== SHINYA ========== */
-body {
+
+#NCAA_body {
     background: url("../images/programsBackground.png");
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
+    padding: 70px;
 }
 
 /* #################################### */
@@ -11,20 +11,14 @@ body {
 
 /* #################################### */
 #title_section {
-    display: flex;
-    flex-direction: row;
+    text-align: center;
 }
 
 h1 {
     font-size: 4em;
-    color: rgba(0, 0, 0, 0.5);
-    margin: 50px 30px 15px 30px;
-}
-
-#NCAA_link {
-    width: 5vw;
-    height: 9vh;
-    margin-top: 50px;
+    text-transform: uppercase;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /* .grid-container {
@@ -151,7 +145,39 @@ h1 {
 }
 
 .NCAA-links { 
-    grid-area: NCAA-links; 
+    /* text-align: center; */
+    padding: 70px;
+}
+
+.links_p {
+    display: flex;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.links_p:nth-child(2) {
+    margin: 50px 0px;
+}
+
+.links_p:nth-child(3) {
+    margin: 50px 0px 0px 0px;
+}
+
+.links_p p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.links_p a {
+    margin-left: 30px;
+}
+
+.links_p button {
+    background-color: #89c64a;
+    color: #fff;
+    border: none;
+    width: 200%;
+    height: 100%;
 }
 
 /* ################################ */
@@ -165,8 +191,8 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 18vw;
-    height: 35vh;
+    width: 65%;
+    height: 65%;
     background: #000;
 }
 
