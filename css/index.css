@@ -867,6 +867,10 @@ span {
   height: auto;
 }
 
+footer .copy-right {
+  display: block;
+}
+
 
 
 
