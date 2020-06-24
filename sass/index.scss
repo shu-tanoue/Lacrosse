@@ -35,6 +35,7 @@ body {
   position: relative;
   bottom: 5px;
 }
+
 .first-title {
   color: #fff;
   position: relative;
@@ -62,29 +63,35 @@ body {
   right: 40px;
   top: 40%;
 }
+
 .flexbox-item {
   width: 250px;
   height: 200px;
   background-color: #dfdfdf;
 }
+
 .flexbox-item-1 {
   min-height: 100px;
   background-color: #89c64a;
 }
+
 .flexbox-item-2 {
   min-height: 200px;
   background-color: #fff;
 }
+
 .flexbox-item-3 {
   min-height: 200px;
   background-color: #89c64a;
 }
+
 .right_lacrosse {
   align-items: center;
   justify-content: center;
   margin: auto 0;
   position: relative;
   left: 14%;
+
   img {
     width: 32vw;
     height: 633px;
@@ -114,6 +121,7 @@ body {
   position: relative;
   top: 10%;
 }
+
 .boxin_sub1 {
   text-align: center;
   position: relative;
@@ -127,9 +135,11 @@ body {
   bottom: 5%;
   color: #fff;
 }
+
 .title_font {
   font-size: 2rem;
 }
+
 .section-carousel {
   max-width: $max-width;
   width: 100vw;
@@ -159,9 +169,11 @@ body {
     #coach-img {
       background: url(../images/coach-black&white.png);
     }
+
     #training-img {
       background: url(../images/training-black&white.png);
     }
+
     #school-img {
       background: url(../images/school-black&white.png);
     }
@@ -231,9 +243,11 @@ body {
     #coach-img {
       background: url(../images/coach.png);
     }
+
     #training-img {
       background: url(../images/training.png);
     }
+
     #school-img {
       background: url(../images/training.png);
     }
@@ -256,11 +270,13 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 40px;
+    left: 0;
+    margin: 0 auto;
+    align-items: center;
 
     .latest_news_subtitle {
       color: $blackColor;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 22px;
       font-family: $font-family;
       font-style: normal;
@@ -273,8 +289,8 @@ body {
 
       .latest_news_maintitle1 {
         color: $blackColor;
-        font-size: 65px;
-        line-height: 79px;
+        font-size: 35px;
+        line-height: 45px;
         font-family: $font-family;
         margin: 0;
       }
@@ -282,8 +298,8 @@ body {
       .latest_news_maintitle2 {
         color: $greenColor;
         font-weight: bold;
-        font-size: 70px;
-        line-height: 85px;
+        font-size: 35px;
+        line-height: 45px;
         font-family: $font-family;
         margin: 0;
       }
@@ -292,22 +308,62 @@ body {
 
   .latest_news_contentsbandle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
     img.latest_news_imgbandle {
-      width: 400px;
-      height: 480px;
+      width: 250px;
+      height: 330px;
     }
 
-    .latest_news_content {
-      background-color: $BackgroundColor;
+    #instafeed {
       margin: 20px;
-      .content_img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .insta-bandle {
+        margin: 10px;
+        background-color: $BackgroundColor;
         position: relative;
+        width: 270px;
+        img.content_img {
+          position: relative;
+          object-fit: cover;
+          max-width: 100%;
+          height: 270px;
+        }
+
+        video.content_img {
+          max-width: 100%;
+          object-fit: cover;
+          height: 270px;
+        }
+
+        .btn-flat-border {
+          display: inline-block;
+          padding: 0.3em 1em;
+          text-decoration: none;
+          color: $greenColor;
+          border: solid 2px $greenColor;
+          border-radius: 3px;
+          transition: .4s;
+          position: absolute;
+          top: 85%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
       }
+
+      .btn-flat-border:hover {
+        background: $greenColor;
+        color: white;
+      }
+
       .content-box {
-        background-color: #e5e5e5;
+        background-color: white;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -317,25 +373,755 @@ body {
         bottom: 0;
         width: 50px;
         height: 50px;
+
         .content-box_date {
           margin: 0;
         }
+
         .content-box_month {
           margin: 0;
         }
       }
-      .content_article {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 200px;
-        padding: 10px;
-        .greendott {
-          color: $greenColor;
-          font-weight: 100;
+
+      .insta_captionbandle {
+        height: 180px;
+        display: inline-block;
+
+        .insta_caption {
+          display: inline-block;
+          color: black;
+          padding: 15px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          height: 80px;
         }
       }
     }
   }
 }
+
+
+
+
+@media screen and(min-width:375px)and(max-width: 425px){
+  #section_latest_news {
+    .latest_news_contentsbandle {
+      #instafeed {
+        .insta-bandle {
+
+        }
+      }
+    }
+  }
+
+}
+@media screen and(min-width:425px)and(max-width: 768px){
+  #section_latest_news {
+    .latest_news_contentsbandle {
+      #instafeed {
+        .insta-bandle {
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width:1024px)and(max-width: 1440px){
+  #section_latest_news{
+    .latest_news_titlebandle{
+      margin: 0;
+      align-items: flex-start;
+      .latest_news_subtitle{
+        font-size: 18px;
+      }
+      .latest_news_maintitlebandle{
+        .latest_news_maintitle1{
+          font-size: 50px;
+          line-height: 70px;
+        }
+        .latest_news_maintitle2{
+          font-size: 50px;
+          line-height: 70px;
+        }
+      }
+    }
+    .latest_news_contentsbandle{
+      flex-direction: row;
+      #instafeed{
+        flex-direction: row;
+        .insta-bandle{
+          width: 220px;
+          height: 440px;
+          img.content_img{
+            height: 270px;
+          }
+          video.content_img{
+            height: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width:1440px)and(max-width: 2560px){
+  #section_latest_news{
+    .latest_news_contentsbandle{
+      flex-direction: row;
+      .latest_news_titlebandle{
+        margin: 0;
+        align-items: flex-start;
+        .latest_news_subtitle{
+          font-size: 18px;
+        }
+        .latest_news_maintitlebandle{
+          .latest_news_maintitle1{
+            font-size: 50px;
+            line-height: 70px;
+          }
+          .latest_news_maintitle2{
+            font-size: 50px;
+            line-height: 70px;
+          }
+        }
+      }
+      img.latest_news_imgbandle{
+        width: 400px;
+        height: 480px;
+      }
+      #instafeed{
+        flex-direction: row;
+        .insta-bandle{
+          width: 100%;
+          height: 440px;
+          img.content_img{
+            height: 270px;
+
+          }
+          video.content_img{
+            height: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//Aki conponent section start//
+
+// start tounaments section//
+
+section#tournaments {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+
+  .tournaments_titlebandle {
+    max-width: 50%;
+    h1.tournaments_maintitle1 {
+      font-size: 50px;
+    }
+    h2.tournaments_subtitle {
+      font-size: 30px;
+      margin: 30px 0;
+      span.tournaments_subtitle2 {
+        color: #89c64a;
+        font-size: 30px;
+        font-weight: 800;
+        bottom: 0;
+      }
+    }
+    button.jamboree-detail-btn {
+      display: block;
+      padding: 0.3em 1em;
+      font-size: 25px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #89c64a;
+      border: solid 2px #89c64a;
+      border-radius: 3px;
+      transition: .4s;
+      margin: 50px auto 0;
+    }
+
+    button.jamboree-detail-btn:hover {
+      background: #89c64a;
+      color: white;
+    }
+  }
+}
+
+
+p.tounaments-caption {
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+img.tounaments-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tournaments_titlebandle {
+  max-width: 50%;
+}
+
+
+
+
+
+//start box camp section//
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.boxcamp-section2-grid{
+  padding: 100px;
+  background-color: $blackColor;
+
+  .box_camps_titlebandle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 70px;
+
+    .box_camps_subtitle {
+      color: $whiteColor;
+      font-size: 20px;
+      line-height: 22px;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .box_camps_maintitlebandle {
+      display: flex;
+      flex-direction: row;
+
+      .box_camps_maintitle1 {
+        color: $whiteColor;
+        font-size: 60px;
+        line-height: 79px;
+        font-family: $font-family;
+        margin: 0;
+      }
+
+      .box_camps_maintitle2 {
+        color: $greenColor;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 80px;
+        font-family: $font-family;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.boxPrograms-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4em;
+}
+
+.boxPrograms-contents {
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: all 1s;
+  overflow: hidden;
+
+  &:hover {
+    filter: grayscale(0);
+    transform: scale(1.15);
+    z-index: 1;
+    box-shadow: 0px 0px 10px 5px rgba(68, 68, 68, 0.5);
+    border-radius: 5px;
+  }
+
+  :hover .learnMore {
+    bottom: 0;
+    visibility: visible;
+  }
+}
+
+.bp-Img {
+  height: 500px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  .learnMore {
+    bottom: -50px;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    color: #89c64a;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+}
+
+.learnMore h3 {
+  text-align: center;
+}
+
+.img0 {
+  background: url(../images/boxcamp1.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background: url(../images/boxcamp2.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.img2 {
+  background: url(../images/boxcamp3.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+
+.box-Year {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 25px;
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+}
+
+.boxModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(100, 100, 100, 0.85)), url("../images/programs3.JPG");
+  background-size: cover;
+  margin: auto;
+  padding: 100px 100px;
+  width: 80%;
+  text-align: justify;
+  position: relative;
+  border-radius: 5px;
+
+  h1 {
+    color: #89c64a;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  h3 {
+    color: #89c64a;
+    text-decoration: underline;
+  }
+
+  ul {
+    position: relative;
+    padding-left: 50px;
+  }
+}
+
+.boxClose {
+  color: #89c64a;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  transition: all 1.5s ease;
+  top: -50px;
+  position: relative;
+
+  &:hover, &:focus {
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+}
+//section fieldcamps//
+.fieldcamp-section2-grid{
+  padding: 100px;
+
+  .field_camps_titlebandle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 70px;
+
+    .field_camps_subtitle {
+      color: $blackColor;
+      font-size: 20px;
+      line-height: 22px;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .field_camps_maintitlebandle {
+      display: flex;
+      flex-direction: row;
+
+      .field_camps_maintitle1 {
+        color: $blackColor;
+        font-size: 60px;
+        line-height: 79px;
+        font-family: $font-family;
+        margin: 0;
+      }
+
+      .field_camps_maintitle2 {
+        color: $greenColor;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 80px;
+        font-family: $font-family;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.boxPrograms-container2 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8em;
+}
+
+.boxPrograms-contents2 {
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: all 1s;
+  overflow: hidden;
+
+  &:hover {
+    filter: grayscale(0);
+    transform: scale(1.15);
+    z-index: 1;
+    box-shadow: 0px 0px 10px 5px rgba(68, 68, 68, 0.5);
+    border-radius: 5px;
+  }
+
+  :hover .learnMore2 {
+    bottom: 0;
+    visibility: visible;
+  }
+}
+
+.bp-Img2 {
+  height: 400px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  .learnMore2 {
+    bottom: -50px;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    color: #89c64a;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+}
+
+.learnMore2 h3 {
+  text-align: center;
+}
+
+.img0 {
+  background: url(../images/boxcamp1.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background: url(../images/boxcamp2.JPG) center center no-repeat;
+  background-size: cover;
+}
+
+.box-Year2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 25px;
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+}
+
+.boxModal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content2 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(100, 100, 100, 0.85)), url("../images/programs3.JPG");
+  background-size: cover;
+  margin: auto;
+  padding: 100px 100px;
+  width: 80%;
+  text-align: justify;
+  position: relative;
+  border-radius: 5px;
+
+  h1 {
+    color: #89c64a;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  h3 {
+    color: #89c64a;
+    text-decoration: underline;
+  }
+
+  ul {
+    position: relative;
+    padding-left: 50px;
+  }
+}
+
+.boxClose2 {
+  color: #89c64a;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  transition: all 1.5s ease;
+  top: -50px;
+  position: relative;
+
+  &:hover, &:focus {
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+}
+
+
+// Aki media query secton start//
+
+@media screen and(max-width: 1024px) {
+  section#tournaments {
+    flex-direction: column;
+    align-items: center;
+
+    .tournaments_titlebandle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .tournaments_subtitle {
+        text-align: center;
+      }
+
+      .tounaments-caption {
+        padding: 0;
+        width: 500px;
+      }
+
+      button.jamboree-detail-btn {
+        margin: 50px auto;
+      }
+    }
+
+    .tounaments-imgbandle {
+      img.tounaments-img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .box_camps_titlebandle{
+    align-items: center;
+  }
+  .field_camps_titlebandle{
+    align-items: center;
+  }
+  .boxPrograms-container {
+    width: 80%;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+
+  }
+  .bp-Img {
+    height: 250px;
+  }
+  .boxPrograms-container2 {
+    width: 80%;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 4em;
+  }
+  .bp-Img2 {
+    height: 250px;
+
+  }
+}
+@media screen and(max-width: 768px){
+  section#tournaments{
+    .tournaments_titlebandle{
+      .tounaments-caption{
+        width: 300px;
+      }
+      button.jamboree-detail-btn{
+        font-size: 20px;
+      }
+    }
+    .tounaments-imgbandle{
+      img.tounaments-img{
+        width: 300px;
+      }
+    }
+  }
+  .boxcamp-section2-grid{
+    .box_camps_titlebandle {
+      .box_camps_subtitle {
+        font-size: 15px;
+      }
+      .box_camps_maintitlebandle {
+        .box_camps_maintitle1 {
+          font-size: 45px;
+        }
+        .box_camps_maintitle2 {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+  .boxPrograms-container {
+    width: 100%;
+
+  }
+  .fieldcamp-section2-grid{
+    .field_camps_titlebandle {
+      .field_camps_subtitle {
+        font-size: 15px;
+      }
+      .field_camps_maintitlebandle {
+        .field_camps_maintitle1 {
+          font-size: 45px;
+        }
+        .field_camps_maintitle2 {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+  .boxPrograms-container2 {
+    width: 100%;
+  }
+}
+@media screen and(max-width: 425px){
+  section#tournaments{
+    padding: 50px;
+    .tournaments_titlebandle{
+      h1.tournaments_maintitle1{
+        font-size: 35px;
+      }
+      h2.tournaments_subtitle{
+        font-size: 25px;
+      }
+      .tounaments-caption{
+        width: 250px;
+        font-size: 20px;
+      }
+      button.jamboree-detail-btn{
+        font-size: 15px;
+      }
+    }
+    .tounaments-imgbandle{
+      img.tounaments-img{
+        width: 300px;
+      }
+    }
+  }
+
+  .boxcamp-section2-grid{
+    padding: 50px;
+    .box_camps_titlebandle {
+      margin-bottom: 35px;
+      .box_camps_subtitle {
+        font-size: 12px;
+      }
+      .box_camps_maintitlebandle {
+        .box_camps_maintitle1 {
+          font-size: 35px;
+        }
+        .box_camps_maintitle2 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  .fieldcamp-section2-grid{
+    padding: 50px;
+    .field_camps_titlebandle {
+      margin-bottom: 35px;
+      .field_camps_subtitle {
+        font-size: 12px;
+      }
+      .field_camps_maintitlebandle {
+        .field_camps_maintitle1 {
+          font-size: 35px;
+        }
+        .field_camps_maintitle2 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+
+//Aki media query section finish//
+
+//Aki conponent section finish//
