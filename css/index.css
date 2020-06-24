@@ -225,12 +225,6 @@ header {
   display: none;
 }
 
-/* .subbtn {
-  opacity: 1 !important;
-  display: block !important;
-  pointer-events: auto !important;
-} */
-
 #offradio-1 {
   display: none;
 }
@@ -770,16 +764,6 @@ span {
 }
 
 .flexbox-container {
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: auto 0;
-  position: relative;
-  right: 5%;
-  top: 10%; */
   display: flex;
   flex-direction: row;
   margin-top: 100px;
@@ -884,79 +868,6 @@ span {
 }
 
 
-/* RODRIGO */
 
-/*========*/
-/* FOOTER */
-/*========*/
-/* .footer {
-  background: url(/images/footerbackground.png);
-  display: flex;
-  flex-direction: row;
-  height: 384px;
-  color: white;
-  background-color: black;
-}
-.footer-socialMedia {
-  width: 75%;
-}
-.footer-socialMedia ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin-top: 10%;
-}
-.footer-socialMedia li {
-  margin: 10px;
-}
-footer h3 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-}
-footer p {
-  font-family: Libre Baskerville;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 19px;
-} */
-/* .footer-subscribe { */
-  /* float: right; */
-/* } */
-/* .subscribe-title {
-  display: flex;
-  height: 100px;
-}
-#subscribe-green {
-  color: #89C64A;
-  margin-left: 10px;
-  font-weight: 800;
-}
-.footer-subscribe input {
-  width: 300px;
-  padding: 10px;
-}
-.footer-subscribe button {
-  background: #89C64A;
-  width: 120px;
-  height: 40px;
-  padding: 10px;
-  color: white;
-}
-.footer-subscribe form {
-  display: flex;
-  flex-direction: row;
-}
-#copy-right{
-position: relative;
-width: 100%;
-height: 50PX;
-bottom: 0px;
-  background-color: black;
-  color: white;
-  text-align: center;
-} */
 
 
