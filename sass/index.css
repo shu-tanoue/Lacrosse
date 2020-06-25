@@ -551,6 +551,76 @@ span {
   }
 }
 
+section#tournaments {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section#tournaments .tournaments_titlebandle {
+  max-width: 50%;
+}
+
+section#tournaments .tournaments_titlebandle h1.tournaments_maintitle1 {
+  font-size: 50px;
+}
+
+section#tournaments .tournaments_titlebandle h2.tournaments_subtitle {
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+section#tournaments .tournaments_titlebandle h2.tournaments_subtitle span.tournaments_subtitle2 {
+  color: #89c64a;
+  font-size: 30px;
+  font-weight: 800;
+  bottom: 0;
+}
+
+section#tournaments .tournaments_titlebandle button.jamboree-detail-btn {
+  display: block;
+  padding: 0.3em 1em;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #89c64a;
+  border: solid 2px #89c64a;
+  border-radius: 3px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin: 50px auto 0;
+}
+
+section#tournaments .tournaments_titlebandle button.jamboree-detail-btn:hover {
+  background: #89c64a;
+  color: white;
+}
+
+p.tounaments-caption {
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+img.tounaments-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tournaments_titlebandle {
+  max-width: 50%;
+}
+
+body {
+  width: 100%;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -615,7 +685,7 @@ html {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 4em;
 }
 
@@ -676,22 +746,17 @@ html {
 }
 
 .img0 {
-  background: url(../images/boxProgramsDevProg.JPG) center center no-repeat;
+  background: url(../images/boxcamp1.JPG) center center no-repeat;
   background-size: cover;
 }
 
 .img1 {
-  background: url(../images/boxProgramsMidget.JPG) center center no-repeat;
+  background: url(../images/boxcamp2.JPG) center center no-repeat;
   background-size: cover;
 }
 
 .img2 {
-  background: url(../images/boxProgramsBantam.JPG) center center no-repeat;
-  background-size: cover;
-}
-
-.img3 {
-  background: url(../images/boxProgramsPeewee.JPG) center center no-repeat;
+  background: url(../images/boxcamp3.JPG) center center no-repeat;
   background-size: cover;
 }
 
@@ -821,7 +886,7 @@ html {
 }
 
 .boxPrograms-container2 {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -887,22 +952,12 @@ html {
 }
 
 .img0 {
-  background: url(../images/boxProgramsDevProg.JPG) center center no-repeat;
+  background: url(../images/boxcamp1.JPG) center center no-repeat;
   background-size: cover;
 }
 
 .img1 {
-  background: url(../images/boxProgramsMidget.JPG) center center no-repeat;
-  background-size: cover;
-}
-
-.img2 {
-  background: url(../images/boxProgramsBantam.JPG) center center no-repeat;
-  background-size: cover;
-}
-
-.img3 {
-  background: url(../images/boxProgramsPeewee.JPG) center center no-repeat;
+  background: url(../images/boxcamp2.JPG) center center no-repeat;
   background-size: cover;
 }
 
@@ -977,5 +1032,163 @@ html {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  section#tournaments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#tournaments .tournaments_titlebandle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#tournaments .tournaments_titlebandle .tournaments_subtitle {
+    text-align: center;
+  }
+  section#tournaments .tournaments_titlebandle .tounaments-caption {
+    padding: 0;
+    width: 500px;
+  }
+  section#tournaments .tournaments_titlebandle button.jamboree-detail-btn {
+    margin: 50px auto;
+  }
+  section#tournaments .tounaments-imgbandle img.tounaments-img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .box_camps_titlebandle {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .field_camps_titlebandle {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .boxPrograms-container {
+    width: 80%;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .bp-Img {
+    height: 250px;
+  }
+  .boxPrograms-container2 {
+    width: 80%;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-gap: 4em;
+  }
+  .bp-Img2 {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#tournaments .tournaments_titlebandle .tounaments-caption {
+    width: 300px;
+  }
+  section#tournaments .tournaments_titlebandle button.jamboree-detail-btn {
+    font-size: 20px;
+  }
+  section#tournaments .tounaments-imgbandle img.tounaments-img {
+    width: 300px;
+  }
+  .boxcamp-section2-grid .box_camps_titlebandle .box_camps_subtitle {
+    font-size: 15px;
+  }
+  .boxcamp-section2-grid .box_camps_titlebandle .box_camps_maintitlebandle .box_camps_maintitle1 {
+    font-size: 45px;
+  }
+  .boxcamp-section2-grid .box_camps_titlebandle .box_camps_maintitlebandle .box_camps_maintitle2 {
+    font-size: 45px;
+  }
+  .boxPrograms-container {
+    width: 100%;
+  }
+  .fieldcamp-section2-grid .field_camps_titlebandle .field_camps_subtitle {
+    font-size: 15px;
+  }
+  .fieldcamp-section2-grid .field_camps_titlebandle .field_camps_maintitlebandle .field_camps_maintitle1 {
+    font-size: 45px;
+  }
+  .fieldcamp-section2-grid .field_camps_titlebandle .field_camps_maintitlebandle .field_camps_maintitle2 {
+    font-size: 45px;
+  }
+  .boxPrograms-container2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section#tournaments {
+    padding: 50px;
+  }
+  section#tournaments .tournaments_titlebandle h1.tournaments_maintitle1 {
+    font-size: 35px;
+  }
+  section#tournaments .tournaments_titlebandle h2.tournaments_subtitle {
+    font-size: 25px;
+  }
+  section#tournaments .tournaments_titlebandle .tounaments-caption {
+    width: 250px;
+    font-size: 20px;
+  }
+  section#tournaments .tournaments_titlebandle button.jamboree-detail-btn {
+    font-size: 15px;
+  }
+  section#tournaments .tounaments-imgbandle img.tounaments-img {
+    width: 300px;
+  }
+  .boxcamp-section2-grid {
+    padding: 50px;
+  }
+  .boxcamp-section2-grid .box_camps_titlebandle {
+    margin-bottom: 35px;
+  }
+  .boxcamp-section2-grid .box_camps_titlebandle .box_camps_subtitle {
+    font-size: 12px;
+  }
+  .boxcamp-section2-grid .box_camps_titlebandle .box_camps_maintitlebandle .box_camps_maintitle1 {
+    font-size: 35px;
+  }
+  .boxcamp-section2-grid .box_camps_titlebandle .box_camps_maintitlebandle .box_camps_maintitle2 {
+    font-size: 35px;
+  }
+  .fieldcamp-section2-grid {
+    padding: 50px;
+  }
+  .fieldcamp-section2-grid .field_camps_titlebandle {
+    margin-bottom: 35px;
+  }
+  .fieldcamp-section2-grid .field_camps_titlebandle .field_camps_subtitle {
+    font-size: 12px;
+  }
+  .fieldcamp-section2-grid .field_camps_titlebandle .field_camps_maintitlebandle .field_camps_maintitle1 {
+    font-size: 35px;
+  }
+  .fieldcamp-section2-grid .field_camps_titlebandle .field_camps_maintitlebandle .field_camps_maintitle2 {
+    font-size: 35px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
