@@ -1,0 +1,88 @@
+/*##########################################################*/
+.our-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../images/ourHISTORY.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-left: 80px;
+}
+
+.our-history .our-history-main-title h1 {
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.our-history .our-history-main-title h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+
+.our-history .our-history-box-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 220px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-history .our-history-box-content .our-history-sub-title h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.our-history .our-history-box-content .our-history-sub-title span {
+  color: #89c64a;
+}
+
+.our-history .our-history-box-content .our-history-sub-title p {
+  width: 560px;
+  font-size: 1.75em;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+.our-history .our-history-box-content .img-over-background {
+  width: 650px;
+  height: 640px;
+}
+
+.our-history .our-history-box-content .img-over-background img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.time-line {
+  height: 820px;
+  background-color: #e5e5e5;
+}
+
+.staff {
+  height: 820px;
+  background-color: #e5e5e5;
+}
+/*# sourceMappingURL=about.css.map */

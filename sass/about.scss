@@ -1,0 +1,92 @@
+// DEFAULT PARAMETERS
+
+$max-width: 1800px;
+$font-family: Montserrat, sans-serif !default;
+$greenColor: #89c64a;
+$blackColor: #000;
+$whiteColor: #fff;
+$BackgroundColor: #e5e5e5;
+
+/*##########################################################*/
+
+
+.our-history {
+    display: flex;
+    flex-direction: column;
+    // height: 920px;
+    background: url(../images/ourHISTORY.png) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-left: 80px;
+
+    .our-history-main-title {
+        h1 {
+            font-size: 4em;
+            font-weight: 900;
+            line-height: 60px;
+            color: rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    
+        h2 {
+            font-size: 2.5em;
+            font-weight: 900;
+            line-height: 59px;
+            text-transform: uppercase;
+            color: $whiteColor;
+            margin: 0;
+        }
+    }
+
+    .our-history-box-content {
+        display: flex;
+        padding-top: 220px;
+        justify-content: space-between;
+        align-items: center;
+        .our-history-sub-title {
+            h2 {
+                font-size: 2.5em;
+                font-weight: 900;
+                line-height: 59px;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.5);
+                margin: 0;
+                
+            }
+    
+            span {
+                color: $greenColor;
+            }
+    
+            p {
+                width: 560px;
+                font-size: 1.75em;
+                font-weight: 300;
+                line-height: 34px;
+            }
+        }
+    
+        .img-over-background {
+            width: 650px;
+            height: 640px;
+            
+            img {
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.time-line {
+    height: 820px;
+    background-color: $BackgroundColor;
+}
+
+.staff {
+    height: 820px;
+    background-color: $BackgroundColor;
+}
