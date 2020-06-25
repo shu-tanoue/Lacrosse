@@ -20,6 +20,13 @@
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
+    <!--メールフォームプロ用CSS-->
+    <link
+      rel="stylesheet"
+      href="../mfp.statics/mailformpro.css"
+      type="text/css"
+    />
+    <!--/メールフォームプロ用CSS-->
   </head>
   <body>
     <div class="all_select">
@@ -27,8 +34,10 @@
         <div class="wrapper">
           <div class="company-info">
             <i class="far fa-envelope fa-3x"></i>
-            <ul>
-              <li><i class="fa fa-road"></i> 44 Something st</li>
+            <ul class="details">
+              <li><i class="fas fa-user-alt"></i> Tyler Pace</li>
+              <li><i class="fa fa-phone"></i> (604) 445 1434</li>
+              <li><i class="fa fa-phone"></i> (604) 445 1434</li>
               <li><i class="fa fa-phone"></i> (604) 445 1434</li>
               <li>
                 <i class="fa fa-envelope"></i>sandy@procaliberlacrosse.net
@@ -38,18 +47,38 @@
           <div class="contact">
             <h3>Contact Us</h3>
             <div class="alert">Your message has been sent</div>
-            <form id="contactForm">
+            <!--メールフォームプロ-->
+            <form
+              id="mailformpro"
+              action="../mailformpro/mailformpro.cgi"
+              method="POST"
+            >
               <p class="full">
-                <label>Message</label>
-                <textarea name="message" rows="5" id="message"></textarea>
-              </p>
-              <p>
                 <label>Your Name</label>
-                <input type="email" name="email" id="email" required />
+                <input type="text" name="name" id="name" required="required" />
               </p>
               <p>
                 <label>Your Email</label>
-                <input type="text" name="phone" id="phone" />
+                <input
+                  type="email"
+                  data-type="email"
+                  name="email"
+                  id="email"
+                  required="required"
+                />
+              </p>
+              <p>
+                <label>Phone</label>
+                <input type="text" name="Phone" id="Phone" />
+              </p>
+              <p class="full">
+                <label>Message</label>
+                <textarea
+                  name="message"
+                  rows="5"
+                  id="message"
+                  required="required"
+                ></textarea>
               </p>
               <p class="buttonarea">
                 <button type="reset" class="reset">Cancel</button>
@@ -58,6 +87,13 @@
                 <button type="submit" class="submit">Send</button>
               </p>
             </form>
+            <script
+              type="text/javascript"
+              id="mfpjs"
+              src="../mailformpro/mailformpro.cgi"
+              charset="UTF-8"
+            ></script>
+            <!--/メールフォームプロ-->
           </div>
         </div>
       </div>

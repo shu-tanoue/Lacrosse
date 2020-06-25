@@ -12,9 +12,9 @@ body {
 }
 
 header {
+  text-align: center;
   width: 100%;
   max-height: 290px;
-  overflow: hidden;
 }
 
 header #header {
@@ -47,6 +47,7 @@ header #header #box-title #rectangle {
 }
 
 header #header #box-title #title-section {
+  text-align: left;
   position: relative;
   bottom: 0px;
   left: 0px;
