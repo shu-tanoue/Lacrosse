@@ -1,11 +1,7 @@
 /*##########################################################*/
-* {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  font-family: Montserrat, sans-serif;
+body {
+  overflow-x: hidden;
 }
-
 /****************************************
   ***********FEILD PROGRAMS START**********
   *****************************************/
@@ -41,6 +37,7 @@
 .firstSection {
   position: relative;
   top: 0;
+  z-index: -1;
 }
 .feild-section {
   width: 100%;
@@ -129,7 +126,7 @@
   color: #89c64a;
   width: 100%;
   height: 50px;
-  line-height: 50px;
+  line-height: 15px;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
 }
@@ -454,16 +451,7 @@ xkeyframes
   margin-top: 50px;
   margin-left: 125px;
 }
-.footer-content {
-  position: relative;
-  height: 400px;
-}
 
-.footer-subscribe {
-  left: -325px;
-  top: 50px;
-  position: relative;
-}
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1024px) {
@@ -526,6 +514,7 @@ xkeyframes
     display: block;
     font-size: 1.5em;
   }
+
   .priceHeaders {
     width: 80%;
   }
@@ -545,7 +534,6 @@ xkeyframes
     font-size: 14px;
 
     height: auto;
-    overflow: scroll;
     width: 32%;
   }
   .priceListContent {
@@ -562,31 +550,20 @@ xkeyframes
 }
 
 @media only screen and (max-width: 425px) {
-  body {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-  }
   .intro-text {
     width: 100%;
     padding: 0px;
   }
   .feildPrograms-container {
+    display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     position: relative;
+    width: 100%;
   }
   .priceHeader {
-    padding: 10px 15px;
+    padding: 10px 5px;
   }
-  .section3-grid {
-    background: url(../images/rsz_programsbackground.png);
-    max-width: 100vw;
-  }
-  .section3 h1 {
-    font-size: 1.1em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+
   .btn {
     font-size: 0.2em;
     padding: 10px;
@@ -618,19 +595,6 @@ xkeyframes
 }
 
 @media only screen and (max-width: 375px) {
-  .grid-container {
-    max-width: 100vw;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
-  }
-  .section1-grid {
-    max-width: 100vw;
-  }
-  .section1 h1 {
-    font-size: 1.5em;
-  }
-  .section1 h2 {
-    font-size: 1em;
-  }
   .intro-text {
     font-size: 14px;
     padding: 10px 30px;
