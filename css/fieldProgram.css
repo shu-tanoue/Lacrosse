@@ -134,19 +134,19 @@ body {
   text-align: center;
 }
 .img0 {
-  background: url(/images/devprogram.jpg) center center no-repeat;
+  background: url(../images/devprogram.jpg) center center no-repeat;
   background-size: cover;
 }
 .img1 {
-  background: url(/images/programs1.JPG) center center no-repeat;
+  background: url(../images/programs1.JPG) center center no-repeat;
   background-size: cover;
 }
 .img2 {
-  background: url(/images/programs2.JPG) center center no-repeat;
+  background: url(../images/programs2.JPG) center center no-repeat;
   background-size: cover;
 }
 .img3 {
-  background: url(/images/programs3.JPG) center center no-repeat;
+  background: url(../images/programs3.JPG) center center no-repeat;
   background-size: cover;
 }
 .feild-Year {
