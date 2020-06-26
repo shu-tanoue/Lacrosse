@@ -29,59 +29,70 @@ body {
   color: white;
 }
 
-.flip-box, .flip-box1, .flip-box2 {
-    background-color: transparent;
-    width: 400px;
-    height: 300px;
-    /* border: 1px solid #f1f1f1; */
-    /* perspective: 1000px; */
+.flip-box,
+.flip-box1,
+.flip-box2 {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  /* perspective: 1000px; */
   float: left;
   margin: 35px;
   /* padding: 5px; */
-  }
-  
-  .flip-box-inner, .flip-box-inner1, .flip-box-inner2 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    display: inline-block;
-    content: "";
-    clear: both;
-  }
-  
-  .flip-box:hover .flip-box-inner, .flip-box1:hover .flip-box-inner1, .flip-box2:hover .flip-box-inner2{
-    transform: rotateY(180deg);
-  }
-  
-  .flip-box-front, .flip-box-back, .flip-box-front1, .flip-box-back1, .flip-box-front2, .flip-box-back2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+}
 
-  }
-  
-  .flip-box-front, .flip-box-front1,.flip-box-front2 {
-    background: url(../images/coach-black&white.png);
-    background-repeat: no-repeat;
-    background-size: 400px 300px;
-    color: white;
-  }
-  
-  .flip-box-back, .flip-box-back1, .flip-box-back2 {
-    background: url(../images/coach.png);
-    background-repeat: no-repeat;
-    background-size: 400px 300px;
-    color: black;
-    transform: rotateY(180deg);
-  }
+.flip-box-inner,
+.flip-box-inner1,
+.flip-box-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: inline-block;
+  content: "";
+  clear: both;
+}
 
+.flip-box:hover .flip-box-inner,
+.flip-box1:hover .flip-box-inner1,
+.flip-box2:hover .flip-box-inner2 {
+  transform: rotateY(180deg);
+}
 
+.flip-box-front,
+.flip-box-back,
+.flip-box-front1,
+.flip-box-back1,
+.flip-box-front2,
+.flip-box-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
+.flip-box-front,
+.flip-box-front1,
+.flip-box-front2 {
+  background: url(../images/coach-black&white.png);
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  color: white;
+}
+
+.flip-box-back,
+.flip-box-back1,
+.flip-box-back2 {
+  background: url(../images/coach.png);
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  color: black;
+  transform: rotateY(180deg);
+}
 
 /* ===== SHINYA=========*/
 
@@ -163,7 +174,12 @@ header {
   pointer-events: auto !important;
 } */
 
-#submenu-1, #submenu-2, #submenu-3, #submenu-4, #submenu-5, #submenu-6 {
+#submenu-1,
+#submenu-2,
+#submenu-3,
+#submenu-4,
+#submenu-5,
+#submenu-6 {
   display: none;
 }
 
@@ -265,9 +281,8 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-right: 50px;
   margin-top: 20px;
   border-radius: 5px;
-  border: none;/*modified*/
+  border: none; /*modified*/
 }
-
 
 /* ############################### */
 
@@ -278,7 +293,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 /* slider container */
 
 #section-home {
-  width: auto;/*included*/  
+  width: auto; /*included*/
   height: 100vh;
   /* height: 920px; */
   margin: 0 auto;
@@ -428,8 +443,8 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 5vh 5vw;
 }
 
@@ -616,11 +631,12 @@ span {
 .first-title {
   color: #fff;
   position: relative;
-  /* left: 20%;
-  top: 5%; */
+  left: 4.8%;
+  top: 144%;
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
   margin: auto 0;
+  font-size: 24px;
 }
 
 .second-title {
@@ -744,7 +760,180 @@ span {
 .sub_title_from {
   height: auto;
 }
+@media (max-width: 2560px) {
+  .first-title {
+    color: #fff;
+    position: relative;
+    left: 4.8% !important;
+    top: 144%;
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+    margin: auto 0;
+    font-size: 24px;
+  }
+  .right_lacrosse {
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    position: relative;
+    left: 18% !important;
+  }
+}
 
+@media (max-width: 1440px) {
+  .section-our_numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: 674px;
+    margin: 0 auto;
+    background-color: #000;
+    flex-direction: column;
+  }
+
+  span {
+    color: #fff;
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .first-title {
+    color: #fff;
+    position: relative;
+    left: 6% !important;
+    top: 144%;
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+    margin: auto 0;
+    font-size: 24px;
+  }
+
+  .second-title {
+    color: #89c64a;
+    position: relative;
+    /* left: 2%;
+  top: 5%; */
+    font-size: 70px;
+  }
+
+  .flexbox-container {
+    /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto 0;
+  position: relative;
+  right: 5%;
+  top: 10%; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+
+  .flexbox-item {
+    width: 250px;
+    height: 200px;
+    background-color: #dfdfdf;
+  }
+
+  .flexbox-item-2 {
+    min-height: 200px;
+    background-color: #fff;
+  }
+
+  .flexbox-item-3 {
+    min-height: 200px;
+    background-color: #89c64a;
+  }
+
+  .right_lacrosse {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto 0;
+    margin-left: 100px;
+  }
+
+  .right_lacrosse img {
+    /* width: 32vw; */
+    max-width: 400px;
+    max-height: 633px;
+    /* margin: 0 20px; */
+  }
+
+  .boxin2 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 10%;
+    color: #89c64a;
+  }
+
+  .boxin2 h1 {
+    font-size: 50px;
+    padding-left: 20px;
+    color: #89c64a;
+  }
+
+  .boxin3 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 10%;
+  }
+
+  .boxin3 h1 {
+    font-size: 50px;
+    padding-left: 20px;
+    color: #fff;
+  }
+
+  .boxin_sub1 {
+    text-align: center;
+    position: relative;
+    bottom: 5%;
+    color: #89c64a;
+  }
+
+  .boxin_sub2 {
+    text-align: center;
+    position: relative;
+    bottom: 5%;
+    color: #fff;
+  }
+
+  .sub_title_from {
+    height: auto;
+  }
+}
 
 /* RODRIGO */
 
@@ -786,14 +975,14 @@ footer p {
   line-height: 19px;
 }
 /* .footer-subscribe { */
-  /* float: right; */
+/* float: right; */
 /* } */
 .subscribe-title {
   display: flex;
   height: 100px;
 }
 #subscribe-green {
-  color: #89C64A;
+  color: #89c64a;
   margin-left: 10px;
   font-weight: 800;
 }
@@ -802,7 +991,7 @@ footer p {
   padding: 10px;
 }
 .footer-subscribe button {
-  background: #89C64A;
+  background: #89c64a;
   width: 120px;
   height: 40px;
   padding: 10px;
@@ -812,11 +1001,11 @@ footer p {
   display: flex;
   flex-direction: row;
 }
-#copy-right{
-position: relative;
-width: 100%;
-height: 50PX;
-bottom: 0px;
+#copy-right {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
   background-color: black;
   color: white;
   text-align: center;
