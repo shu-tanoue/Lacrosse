@@ -1,338 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/training.css">
+    <script src="../js/boxprograms.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="/css/training.css">
-    <link rel="stylesheet" href="/sass/index.css">
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Training</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="stylesheet" href="../sass/template.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
-    <script src="./js/jQuery.js"></script>
-    <title>Document</title>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-      </label>
-      <a href="#"
-        ><img src="/images/logoGreenWhite.png" alt="logo_img" id="logo_img"
-      /></a>
-      <button id="registerBtn" name="register">Register</button>
-      <div id="sidebarMenu">
-        <ul class="sidebarMenuInner">
-          <p>MENU</p>
-          <input type="checkbox" class="subbtn" id="subbtn-1" onclick="showSubmenu()">
-          <li>
-            <a href="#">ABOUT</a>
-            <label for="subbtn-1">
-              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-            </label>
-          </li>
-          <ul id="submenu-1">
-            <li><a href="#">Staff</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Policies</a></li>
-            <li><a href="#">Payment Plans</a></li>
-          </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-2" onclick="showSubmenu()">
-          <li>
-            <a href="#">FIELD PROGRAMS</a>
-            <label for="subbtn-2">
-              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-            </label>
-          </li>
-          <ul id="submenu-2">
-            <li><a href="#">-2021 : 2022</a></li>
-            <li><a href="#">-2023 : 2024</a></li>
-            <li><a href="#">-2025 : 2027</a></li>
-          </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-3" onclick="showSubmenu()">
-          <li>
-            <a href="#">BOX PROGRAMS</a>
-            <label for="subbtn-3">
-              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-            </label>
-          </li>
-          <ul id="submenu-3">
-            <li><a href="#">Midget</a></li>
-            <li><a href="#">Bantam</a></li>
-            <li><a href="#">PeeWee</a></li>
-          </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-4" onclick="showSubmenu()">
-          <li>
-            <a href="#">CAMPS & EVENTS</a>
-            <label for="subbtn-4">
-              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-            </label>
-          </li>
-            <ul id="submenu-4">
-              <li><a href="#">Tournaments</a></li>
-              <li><a href="#">Field Camps</a></li>
-              <li><a href="#">Box Camps</a></li>
-            </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-5" onclick="showSubmenu()">
-          <li>
-            <a href="#">NCAA RECRUITMENTS</a>
-            <label for="subbtn-5">
-              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-            </label>
-          </li>
-            <ul id="submenu-5">
-              <li><a href="#">PCC Alumni</a></li>
-              <li><a href="#">Recruiter Info</a></li>
-              <li><a href="#">SAT Preparation</a></li>
-            </ul>
-          <input type="checkbox" class="subbtn" id="subbtn-6" onclick="showSubmenu()">
-            <ul id="submenu-6">
-          <li>
-            <a href="#">TRAINING</a>
-            <label for="subbtn-6">
-              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-            </label>
-          </li>
-            <li><a href="#">Private Training</a></li>
-            <li><a href="#">Group Training</a></li>
-            <li><a href="#">Weight Training</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <section id="section-home">
-    <div id="container">
-      <img src="/images/background-home.png" alt="img1" id="home_img" />
-      <div id="text_container">
-        <p>LACROSSE CLUB</p>
-        <p id="rectangle"></p>
-        <h1 style="color: #fff; font-weight: bold; font-size: 3em;">
-          Meet the champs
-        </h1>
-        <h1 style="color: #89c64a; font-weight: bold; font-size: 4.5em;">
-          <b>PRO CALIBER LACROSSE</b>
-        </h1>
-      </div>
-    </div>
+<body>
+    <!-- HEADER -->
+    <div data-include="header"></div>
 
-  </section>
+    <div class="grid-container">
+        <div class="section1-grid">
+            <div class="section1">
+                <h1>Pro Caliber Lacrosse</h1>
+                <h2>General Information</h2>
+                <br>
+                <p>AIndividual lessons, Small Group lessons and Dryland training are all services that our world-class coaching staff provides. We can cater to every athlete's individual needs based on their personal goals, their position, their skill level, and their physical fitness.</p>
+               <br>
+                <h2>Individual and Small group lessons</h2>
+            <p>Based on your request, we will send one of our coaches, to a neutral location for one hour to work with the individual or group on skills that will promote growth in their overall lacrosse game. We can cater to goalies, defenders, midfielders, attackers and face-off specialists. </p>
+            <br>
+            <h2>Dryland Training</h2>
 
-  <section class="section-about">
-    <div class="about-grid">
-      <div class="box-info">
-        <div class="about-info">
-          <a href="#">GENERAL INFORMATION</a>
-          <div class="aboutclub-text">
-            <h2>ABOUT </h2>
-            <h2 id="club-title">TRAINING</h2>
-          </div>
-          <h6>
-            The Club provides children the opportunity to learn and develop
-            football skills.
-          </h6>
-          <p>
-            Individual lessons, Small Group lessons and Dryland training are all services that our world-class coaching staff provides. 
-            We can cater to every athlete's individual needs based on their personal goals, their position, their skill level, and their physical fitness.
+            <p>
+                Ryan Sarazin will handle all of the dryland training for PCL. As a kinesiologist, Ryan has studied the human body for years, and he understands how to optimize athletic performance. Athletes' age, physical fitness and experience with strength and conditioning act as variables for each individual. Athletes will experience physical changes and increased athletic performance. 
 
+              Families can choose from a 4-week, an 8-week and a 12-week program; each program will begin with a physical assessment session which will allow Ryan to put together an appropriate workout plan for each athlete at the workouts to follow. Sessions will run twice a week at a designated park for the duration of your scheduled program. 
 
-          </p>
-          <img src="./images/Signature.png" alt="" />
-          <p>SENIOR TEAM CAPTAIN</p>
-          <h4>TYLER PACE</h4>
-        </div>
-      </div>
-      <div class="about-picture">
-        <img src="/images/TYLER PACE.jpeg" alt="pic1" />
-      </div>
-    </div>
-  </section>
+            </p>
 
-  <section class="section-individual">
-    <div class="individual">
-        <h4> Individual and Small group lessons:  </h4>
-        <p>
-            Based on your request, we will send one of our coaches, to a neutral location for one hour to work with the individual or group on skills that will promote growth in their overall lacrosse game. 
-            We can cater to goalies, defenders, midfielders, attackers and face-off specialists. 
-
-        </p>
-        <h4>PRICE BREAKDOWN</h4>
-        <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <h2>1 Player</h2>
-              </div>
-              <div class="flip-box-back">
-                <h6>1 Coach</h6>
-                <h6>$100 / Hour</h6>
-              </div>
             </div>
-          </div>
-          
-          <div class="flip-box1">
-            <div class="flip-box-inner1">
-              <div class="flip-box-front1">
-                <h2>Front Side</h2>
-              </div>
-              <div class="flip-box-back1">
-                <h2>Back Side</h2>
-              </div>
+        </div>
+        <!-- <div class="section2-grid">
+            <div class="boxPrograms-container">
+                <div class="boxPrograms-contents" onclick="BPdevelopment()">
+                    <div class="bp-Img img0">
+                        <div class="box-Year">
+                            <h1>Development Program</h1>
+                        </div>
+                         <div class="learnMore">
+                            <h3>Learn More</h3> -->
+                        <!-- </div>
+                    </div>
+                </div>
+               
+                <div class="boxPrograms-contents" onclick="BPFirstModal()">
+                    <div class="bp-Img img1">
+                        <div class="box-Year">
+                            <h1>Midget <br> Program</h1>
+                        </div>  -->
+                        <!-- <div class="learnMore">
+                            <h3>Learn More</h3>
+                        </div> -->
+                    <!-- </div>
+                </div>
+                
+                <div class="boxPrograms-contents" onclick="BPSecondModal()">
+                    <div class="bp-Img img2">
+                        <div class="box-Year">
+                            <h1>Bantam <br> Program</h1>
+                        </div>
+                        <div class="learnMore">
+                            <h3>Learn More</h3>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div id="boxBantam" class="boxModal">
+                    <div class="modal-content">
+                        <span class="boxClose" id="secondSpan">&times;</span>
+                        <h1>2023-2024 FIELD PROGRAM</h1>
+                        <br>
+                        <p>
+                            The goal of this Travel Program is to prepare players
+                            for the recruiting process and to provide aspiring student-athletes
+                            with opportunities to earn athletic/academic scholarships.
+                            Our staff is in constant communication with Universities all across
+                            North America who are eager to recruit PCL's athletes.
+                        </p>
+                        <br>
+                        <p>
+                            We will host 4 hours of try-outs to evaluate and select
+                            the top team made up of 16 players and 2 goalies. Try-out fee - $25
+                        </p>
+                        <br>
+                        <p>
+                            The team selected will be put to the test in an intense eight week,
+                            14-hour program preparing for one of two heavily recruited tournaments
+                            which will be decided upon by the parents, players coaches and program
+                            directors. Before a decision is made, the pros and cons of both events
+                            will be laid out by the program director, Tyler Pace. Each player will
+                            learn how to become a more appealing recruit by preparing for college
+                            lacrosse on and off the field.
+                        </p>
+                        <br>
+                        <p>
+                            Every player will receive monthly progress reports,
+                            healthy meals/snacks/supplements suggestions and an 8-week workout plan.
+                            We will also host an optional, themed Zoom meeting bi-weekly to build
+                            relationships between players and coaches, speak with special guests,
+                            learn to create highlight tapes, do chalk-talk, etc..
+                        </p>
+                        <br>
+                        <p>
+                            The boys will also have the option to join in via Zoom to Scholastic
+                            Aptitude Test (SAT) preparation classes taught by a high-school teacher
+                            who played NCAA soccer and who understands strategies to score more
+                            successfully on the test.
+                        </p>
+                        <br>
+                        <p>
+                            Parents will receive a breakdown of what the recruiting process looks l
+                            ike, scholarship expectations, information on the NCAA Clearing House,
+                            and NCAA recruiting rules and information (DI, DII, DIII). We ask that
+                            parents provide us with monthly academic progress reports from their
+                            son's councillor so that we can do a better job of helping to work with
+                            each individual based on their athletic and academic abilities.
+                        </p>
+                        <br>
+                        <p>
+                            The pedigree of our coaching staff is our most significant separating
+                            factor. Team Canada, PLL, NLL, MLL, NCAA, our staff has not only done it
+                            all, but they continue to do it. With 4-6 coaches present at every session,
+                            each having extensive coaching experience in their own rights and who brings
+                            a unique skillset and approach to the game, we can provide different perspectives
+                            on what it takes to be a successful lacrosse player.
+                        </p>
+                        <br>
+                        <p>
+                            Since the high-level recruiting events take place during the NLL season,
+                            many of our coaches are unable to attend travel events. With this in mind,
+                            two "travelling coaches" will work alongside our current pros at every session.
+                            The team will travel with those twocoaches as well as two managers who will
+                            have their travel expenses covered by program fees.
+                        </p>
+                        <br>
+                        <p>
+                            Our annual "Pro-D Jamboree" is still in question with the status of
+                            COVID-19. If we are able to host the event, the team will participate in
+                            front of recruiters as a "warm-up" to build in-game chemistry leading
+                            up to the travel tournament.
+                        </p>
+                        <br>
+                        <h3>Coaches</h3>
+                        <br>
+                        <ul>
+                            <li>Tyler Pace (NLL Calgary Roughnecks, U of Denver)</li>
+                            <li>Wesley Berg (Canada, NLL San Diego Seals, PLL Water Dogs, U of Denver)</li>
+                            <li>Curtis Dickson (Canada, NLL Calgary Roughnecks, PLL Chaos, U of Delaware)</li>
+                            <li>Ryland Rees (Canada, NLL Rochester Knighthawks, PLL Water Dogs, Stony Brook U)</li>
+                            <li>Christian Del Bianco (Canada, Calgary Roughnecks)</li>
+                            <li>Connor Robinson (NLL Saskatchewan Rush, High Point U)</li>
+                            <li>Reece Callies (NLL Calgary Roughnecks, Colorado Mesa U)</li>
+                            <li>Kyle Sorensen (NLL Stealth, MLL Toronto Nationals, Bellarmine U)</li>
+                            <li>Scott Jones (NLL Swarm, U of Maryland, Baltimore County (UMBC))</li>
+                            <li>Ryan Sarazin (Marquette U)</li>
+                            <li>More coaches TBA</li>
+                        </ul>
+                        <br>
+                        <h3>Managers</h3>
+                        <br>
+                        <ul>
+                            <li>Sandy Pace</li>
+                            <li>Dawna Rogers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxPrograms-contents" onclick="BPThirdModal()">
+                    <div class="bp-Img img3">
+                        <div class="box-Year">
+                            <h1>PeeWee <br>Program</h1>
+                        </div>
+                        <div class="learnMore">
+                            <h3>Learn More</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div id="boxPeeWee" class="boxModal">
+                <div class="modal-content">
+                    <span class="boxClose" id="thirdSpan">&times;</span>
+                    <h1>2025-2027 FIELD PROGRAM</h1>
+                    <br>
+                    <p>
+                        The goal of this Travel Program is to develop young,
+                        talented, hardworking players and prepare them for
+                        high school lacrosse both on and off the field.
+                    </p>
+                    <br>
+                    <p>
+                        We will host 4 hours of try-outs to evaluate and select
+                        the top team made up of 16 players and 2 goalies. Try-out fee - $25
+                    </p>
+                    <br>
+                    <p>
+                        The team selected will be put to the test in an intense eight week,
+                        14-hour program preparing for one of two heavily competitive tournaments
+                        which will be decided upon by the parents, players coaches and program
+                        directors. Before a decision is made, the pros and cons of both events
+                        will be laid out by the program director, Tyler Pace.
+                    </p>
+                    <br>
+                    <p>
+                        Every player will receive monthly progress reports, healthy
+                        meals/snacks/supplements suggestions, and 8-weeks of lacrosse related
+                        "homework". "Homework" assignments will include logging hours of wall ball,
+                        workouts and time spent on schoolwork, extracurriculars, hobbies, or other
+                        sporting events, etc..
+                    </p>
+                    <br>
+                    <p>
+                        We will also host an optional, themed Zoom meeting bi-weekly to build
+                        relationships between players and coaches, speak with special guests, do chalk-talk, etc..
+                    </p>
+                    <br>
+                    <p>
+                        We ask that parents provide us with monthly academic progress reports
+                        from their son'scouncillor so that we can do a better job of helping
+                        to work with each individual based on their athletic and academic abilities.
+                    </p>
+                    <br>
+                    <p>
+                        The pedigree of our coaching staff is our most significant separating factor.
+                        Team Canada, PLL, NLL, MLL, NCAA, our staff has not only done it all, but they
+                        continue to do it. With 4-6 coaches present at every session, each having
+                        extensive coaching experience in their own rights and who brings a unique
+                        skillset and approach to the game, we can provide different perspectives on what
+                        it takes to be a successful lacrosse player.
+                    </p>
+                    <br>
+                    <p>
+                        Since the high-level travel events take place during the NLL season, many of
+                        our coaches are unable to attend travel events. With this in mind, two "travelling coaches"
+                        will work alongside our current pros at every session. The team will travel with
+                        those twocoaches as well as two managers who will have their travel expenses covered by program
+                        fees.
+                    </p>
+                    <br>
+                    <p>
+                        Our annual "Pro-D Jamboree" is still in question with the status of COVID-19.
+                        If we are able to host the event, the team will participate in front of recruiters
+                        as a "warm-up" to build in-game chemistry leading up to travel event.
+                    </p>
+                    <br>
+                    <h3>Coaches</h3>
+                    <br>
+                    <ul>
+                        <li>Tyler Pace (NLL Calgary Roughnecks, U of Denver)</li>
+                        <li>Wesley Berg (Canada, NLL San Diego Seals, PLL Water Dogs, U of Denver)</li>
+                        <li>Curtis Dickson (Canada, NLL Calgary Roughnecks, PLL Chaos, U of Delaware)</li>
+                        <li>Ryland Rees (Canada, NLL Rochester Knighthawks, PLL Water Dogs, Stony Brook U)</li>
+                        <li>Christian Del Bianco (Canada, Calgary Roughnecks)</li>
+                        <li>Connor Robinson (NLL Saskatchewan Rush, High Point U)</li>
+                        <li>Reece Callies (NLL Calgary Roughnecks, Colorado Mesa U)</li>
+                        <li>Kyle Sorensen (NLL Stealth, MLL Toronto Nationals, Bellarmine U)</li>
+                        <li>Scott Jones (NLL Swarm, U of Maryland, Baltimore County (UMBC))</li>
+                        <li>Ryan Sarazin (Marquette U)</li>
+                        <li>Conner Stroup (2016 Minto Cup champion, Currently a firefighter)</li>
+                        <li>More coaches TBA</li>
+                    </ul>
+                    <br>
+                    <h3>Managers</h3>
+                    <br>
+                    <ul>
+                        <li>Sandy Pace</li>
+                        <li>Dawna Rogers</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="flip-box2">
-            <div class="flip-box-inner2">
-              <div class="flip-box-front2">
-                <h2>Front Side</h2>
-              </div>
-              <div class="flip-box-back2">
-                <h2>Back Side</h2>
-              </div>
+        </div> -->
+        <div class="section3-grid">
+            <div class="section3">
+                <h1>TRAINING PROGRAMS PACKAGE PRICE LISTS</h1>
+
+                <div id="priceHeaders">
+                    <!-- <button class="btn active" onclick="openPriceList('Development')">Development</button> -->
+                    <button class="btn" onclick="openPriceList('midget')">Individual</button>
+                    <button class="btn" onclick="openPriceList('bantam')">Dryland</button>
+                    <!-- <button class="btn" onclick="openPriceList('peewee')">Peewee</button> -->
+                </div>
+
+                <div id="priceListContainter">
+                    <!-- <div id="Development" class="priceListContent">
+                        <div id="devList" class="priceList dev">
+                            <h2>8-Week Program</h2>
+                            <br>
+                            <ul id="priceListDevUl">
+                                <li>✓ World-class coaches</li>
+                                <li>✓ 14 hours of development</li>
+                                <li>✓ Monthly progress reports</li>
+                                <li>✓ 8 Dynamic workouts</li>
+                                <li>✓ Healthy eating suggestion</li>
+                                <li>✓ Bi-weekly Zoom meetings</li>
+                                <li>✓ Practice Pinny</li>
+                                <li>✓ Shooting Shirt (Legends)</li>
+                                <li>✓ Hoodie (Legends)</li>
+                            </ul>
+                            <br>
+                            <h2>$425</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                        </div> -->
+                        <!-- <div id="devList" class="priceList dev">
+                            <h2>16-Week Program</h2>
+                            <br>
+                            <ul id="priceListDevUl">
+                                <li>✓ World-class coaches</li>
+                                <li>✓ 28 hours of development</li>
+                                <li>✓ Monthly progress reports</li>
+                                <li>✓ 16 Dynamic workouts</li>
+                                <li>✓ Healthy eating suggestion</li>
+                                <li>✓ Bi-weekly Zoom meetings</li>
+                                <li>✓ Practice Pinny</li>
+                                <li>✓ Shooting Shirt (Legends)</li>
+                                <li>✓ Hoodie (Legends)</li>
+                            </ul>
+                            <br>
+                            <h2>$750</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <div id="midget" class="priceListContent" style="display: none;">
+                        <div class="priceList midget">
+                            <h2>I want the works</h2>
+                            <br>
+                            <ul>
+                                <li>✓ 1 Coach</li>
+                                <li>✓ 1 Player</li>
+                              
+                                <br>
+                                <br>
+                            </ul>
+                            <br>
+                            <h2>$100/hour</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                            
+                        </div>
+                        <div class="priceList midget">
+                            <h2>I'll take one of each.</h2>
+                            <br>
+                            <ul>
+                                <li>✓ 1 Coach</li>
+                                <li>✓ 2-3 Players</li>
+                               
+                                <br>
+                                <br>
+                               
+                            </ul>
+                            <br>
+                            
+                                <h2>$150/hour</h2>
+                                <div class="button-center">
+                                    <button>Register</button>
+                                </div>
+                           
+                            
+                            
+                           
+                        </div>
+                        <div class="priceList midget">
+                            <h2>Oh, this looks good.</h2>
+                            <br>
+                            <ul>
+                                <li>✓ 1 Coach</li>
+                                <li>✓ 4-8 Players</li>
+                               
+                            </ul>
+                            <br>
+                            <h2>$200/hour</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+
+                    <div id="bantam" class="priceListContent" style="display: none;">
+                        <div class="priceList bantam">
+                            <h2>I want the works</h2>
+                            <br>
+                            <ul>
+                                <li>✓ 4 Weeks</li>
+                                <li>✓ 1 assessment workout </li>
+                                <li>✓ 7 custom workouts</li>
+                             
+                                <br>
+                                <br>
+                            </ul>
+                            <br>
+                            <h2>$200</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                           
+                        </div>
+                        <div class="priceList bantam">
+                            <h2>I'll take one of each.</h2>
+                            <br>
+                            <ul>
+                                <li>✓ 8 Weeks</li>
+                                <li>✓ 1 assessment workout</li>
+                                <li>✓ 15 custom workouts</li>
+                                
+                                <br>
+                                <br>
+                            </ul>
+                            <br>
+                            <h2>$360</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                           
+                        </div>
+                        <div class="priceList bantam">
+                            <h2>Oh, this looks good.</h2>
+                            <br>
+                            <ul>
+                                <li>✓ 12 Weeks</li>
+                                <li>✓ 1 assessment workout</li>
+                                <li>✓ 23 custom workouts</li>
+                               
+                            </ul>
+                            <br>
+                            <h2>$480</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+
+                    <!-- <div id="peewee" class="priceListContent" style="display: none;">
+                        <div class="priceList peewee">
+                            <h2>I want the works</h2>
+                            <br>
+                            <ul>
+                                <li>✓ World-class coaches</li>
+                                <li>✓ 14 hours of practice</li>
+                                <li>✓ Tournament Fee (Tournament TBD)</li>
+                                <li>✓ Game-day lunches, snacks and beverages</li>
+                                <li>✓ Monthly progress reports</li>
+                                <li>8 weeks of homework.</li>
+                                <li>✓ Healthy eating suggestions</li>
+                                <li>✓ Bi-weekly Zoom meetings</li>
+                                <li>✓ Sublimated uniform</li>
+                                <li>✓ *Pro-D Day Jamboree*</li>
+                                <br>
+                                <br>
+                            </ul>
+                            <br>
+                            <h2>$925</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                            <h6>NOTE:*Choose this if you joined the 8-week development
+                                program*</h6>
+                        </div>
+                        <div class="priceList peewee">
+                            <h2>I'll take one of each.</h2>
+                            <br>
+                            <ul>
+                                <li>✓ World-class coaches</li>
+                                <li>✓ 14 hours of practice</li>
+                                <li>✓ Tournament Fee (Tournament TBD)</li>
+                                <li>✓ Game-day lunches, snacks and beverages</li>
+                                <li>✓ Monthly progress reports</li>
+                                <li>✓ 8 weeks of homework.</li>
+                                <li>✓ Healthy eating suggestions</li>
+                                <li>✓ Bi-weekly Zoom meetings</li>
+                                <li>✓ Sublimated uniform</li>
+                                <li>✓ *Pro-D Day Jamboree*</li>
+                                <br>
+                                <br>
+                            </ul>
+                            <br>
+                            <h2>$1075</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div>
+                           
+                        </div>
+                        <div class="priceList peewee">
+                            <h2>Oh, this looks good.</h2>
+                            <br>
+                            <ul>
+                                <li>✓ World-class coaches</li>
+                                <li>✓ 14 hours of practice</li>
+                                <li>✓ Tournament Fee (Tournament TBD)</li>
+                                <li>✓ Game-day lunches, snacks and beverages</li>
+                                <li>✓ Monthly progress reports</li>
+                                <li>✓ 8-week workout plan</li>
+                                <li>✓ Healthy eating suggestions</li>
+                                <li>✓ Bi-weekly Zoom meetings</li>
+                                <li>✓ Sublimated uniform</li>
+                                <li>✓ Hoodie (Legends)</li>
+                                <li>✓ Shirt (Legends)</li>
+                                <li>✓ *Pro-D Day Jamboree*</li>
+                            </ul>
+                            <br>
+                            <h2>$1305</h2>
+                            <div class="button-center">
+                                <button>Register</button>
+                            </div> -->
+                          
+                        </div>
+                    </div>
+                </div>
+              
             </div>
-          </div>
-
-
-
-      </div>
-    </div>
-  </section>
-  
-  <section id="section_latest_news">
-    <div class="latest_news_titlebandle">
-      <p class="latest_news_subtitle">PRO CALIBER LACROSSE</p>
-      <div class="latest_news_maintitlebandle">
-        <h1 class="latest_news_maintitle1">LATEST</h1>
-        <h1 class="latest_news_maintitle2">NEWS</h1>
-      </div>
-    </div>
-    <div class="latest_news_contentsbandle">
-      <img class="latest_news_imgbandle" src="/images/lacrossePlayer%201.png" alt="picture of lacrosseplayer">
-      <div class="latest_news_content">
-        <div class="content_img">
-          <img src="/images/latest_news1.png" class="content_picture" alt="content1_picture">
-          <div class="content-box">
-            <p class="content-box_date">15</p>
-            <p class="content-box_month">MAR</p>
-          </div>
+            
         </div>
-        <div class="content_article">
-          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
-          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
-          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
-            incidunt modi nesciunt temporibus vero?
-          </div>
-        </div>
-      </div>
-      <div class="latest_news_content">
-        <div class="content_img">
-          <img src="/images/latest_news2.png" class="content_picture" alt="content2_picture">
-          <div class="content-box">
-            <p class="content-box_date">18</p>
-            <p class="content-box_month">MAR</p>
-          </div>
-        </div>
-        <div class="content_article">
-          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
-          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
-          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
-            incidunt modi nesciunt temporibus vero?
-          </div>
-        </div>
-      </div>
-      <div class="latest_news_content">
-        <div class="content_img">
-          <img src="/images/latest_news3.png" class="content_picture" alt="content3_picture">
-          <div class="content-box">
-            <p class="content-box_date">21</p>
-            <p class="content-box_month">MAR</p>
-          </div>
-        </div>
-        <div class="content_article">
-          <div class="content_article_maintitle">AWARDS<span class="greendott"> &#149; </span> LACROSSE</div>
-          <div class="content_article_subtitle">Lorem ipsum dolor sit amet.</div>
-          <div class="content_article_caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim
-            incidunt modi nesciunt temporibus vero?
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </section>
+ <!-- footer -->
+ <div data-include="footer"></div>
 
-  <section class="section-our_numbers">
-    <div class="sub_title_from">
-      <h1 class="first-title">FROM THE CLUB</h1>
-      <h2 class="second-title"><span>NCAA</span>COMMITMENTS</h2>
-    </div>
-
-    <div class="flexbox-container">
-
-      <div class="flexbox-item flexbox-item-2">
-        <div class="boxin2">
-          <img src="/images/graduation.png" alt="" width="70" height="70" />
-          <h1>7</h1>
-        </div>
-        <div class="boxin_sub1">
-          <h1 class="title_font">
-            SCHOLARSHIP
-          </h1>
-        </div>
-      </div>
-
-      <div class="flexbox-item flexbox-item-3">
-        <div class="boxin3">
-          <img src="/images/Star.png" alt="" width="60" height="60" color="#89c64a" />
-          <h1>73</h1>
-        </div>
-        <div class="boxin_sub2">
-          <h1 class="title_font">PLAYERS</h1>
-        </div>
-      </div>
-      <div class="right_lacrosse">
-        <img src="/images/lacrosse01 1.png" alt="lacrosse01" />
-
-      </div>
-    </div>
-  </section>
-
-  <!-- RODIGO -->
-  <footer class="footer">
-    <div class="footer-socialMedia">
-        <ul>
-            <li><a href=""><img src="/images/Facebook-icon.png" alt="Facebook"></a></li>
-            <li><a href=""><img src="/images/Twiter-icon.png" alt="Twitter"></a></li>
-            <li><a href=""><img src="/images/Instagran-icon.png" alt="Instagram"></a></li>
-            <li><a href=""><img src="/images/Youtube-icon.png" alt="Youtube"></a></li>
-        </ul>
-    </div>
-    <div class="footer-subscribe">
-        <div class="subscribe-title">
-            <h3>Subscribe</h3>
-            <h3 id="subscribe-green">Now</h3>
-        </div>
-        <p>Don't miss our latest news and lacrosse game reports. We track record of success in training players.</p>
-        <form action="_POST">
-            <input type="email" name="emailSubscribe" id="emailSubscribe" placeholder="Email">
-            <button type="submit">SIGN UP</button>
-        </form>
-        
-    </div>
-    
-</footer>
-<footer id="copy-right"> <small>&copy; Copyright 2018, Example Corporation</small> </footer> 
-
-  <script src="/js/materialize.min.js"></script>
-  <script src="/js/carousel.js"></script>
-  <script src="/js/customize-carousel.js"></script>
-  <script src="/js/index.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Script part for the ACTIVE button (Price List) -->
+        <script>
+            var btnContainer = document.getElementById("priceHeaders");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+        <script>
+            setTimeout(function () {
+                checkSection();
+                function checkSection() {
+                    const title = "Training"/* PLEASE TYPE YOUR TITLE HERE*/
+                    document.getElementById('title-section').innerHTML = title;
+                }
+            }, 500)           
+        </script>
 
 </body>
 
