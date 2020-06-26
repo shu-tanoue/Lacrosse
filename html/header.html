@@ -24,7 +24,7 @@
           onclick="radioDeselection()"
         ></button>
         <li>
-          <a href="#">ABOUT</a>
+          <a href="../html/About.html">ABOUT</a>
           <label for="subbtn-1" class="downbtn" id="hidebtn1">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -46,7 +46,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/fieldPrograms.html">FIELD PROGRAMS</a>
+          <a href="../html/fieldPrograms.html">FIELD PROGRAMS</a>
           <label for="subbtn-2" class="downbtn" id="hidebtn2">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -55,9 +55,9 @@
           </label>
         </li>
         <ul id="submenu-2">
-          <li><a href="feild2021">-2021 : 2022</a></li>
-          <li><a href="#">-2023 : 2024</a></li>
-          <li><a href="#">-2025 : 2027</a></li>
+          <li><a href="../html/fieldPrograms.html#feild2021">-2021 : 2022</a></li>
+          <li><a href="../html/fieldPrograms.html#feild2023">-2023 : 2024</a></li>
+          <li><a href="../html/fieldPrograms.html#feild2025">-2025 : 2027</a></li>
         </ul>
         <input
           type="radio"
@@ -67,7 +67,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/boxPrograms.html">BOX PROGRAMS</a>
+          <a href="../html/boxPrograms.html">BOX PROGRAMS</a>
           <label for="subbtn-3" class="downbtn" id="hidebtn3">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -76,9 +76,9 @@
           </label>
         </li>
         <ul id="submenu-3">
-          <li><a href="#">Midget</a></li>
-          <li><a href="#">Bantam</a></li>
-          <li><a href="#">PeeWee</a></li>
+          <li><a href="../html/boxPrograms.html#boxMidget">Midget</a></li>
+          <li><a href="../html/boxPrograms.html#boxBantam">Bantam</a></li>
+          <li><a href="../html/boxPrograms.html#boxPeeWee">PeeWee</a></li>
         </ul>
         <input
           type="radio"
@@ -88,7 +88,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/camps-events.html">CAMPS & EVENTS</a>
+          <a href="../html/camps-events.html">CAMPS & EVENTS</a>
           <label for="subbtn-4" class="downbtn" id="hidebtn4">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -97,9 +97,9 @@
           </label>
         </li>
         <ul id="submenu-4">
-          <li><a href="#">Tournaments</a></li>
-          <li><a href="#">Field Camps</a></li>
-          <li><a href="#">Box Camps</a></li>
+          <li><a href="../html/camps-events.html#tournaments">Tournaments</a></li>
+          <li><a href="../html/camps-events.html#section_field_camps">Field Camps</a></li>
+          <li><a href="../html/camps-events.html#boxDev2">Box Camps</a></li>
         </ul>
         <input
           type="radio"
@@ -109,7 +109,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/NCAA.html">NCAA RECRUITMENTS</a>
+          <a href="../html/NCAA.html">NCAA RECRUITMENTS</a>
           <label for="subbtn-5" class="downbtn" id="hidebtn5">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -118,9 +118,9 @@
           </label>
         </li>
         <ul id="submenu-5">
-          <li><a href="#">PCC Alumni</a></li>
-          <li><a href="#">Recruiter Info</a></li>
-          <li><a href="#">SAT Preparation</a></li>
+          <li><a href="../NCAA.html#NCAAlink1">PCC Alumni</a></li>
+          <li><a href="../NCAA.html#NCAAlink2">Recruiter Info</a></li>
+          <li><a href="../NCAA.html#NCAAlink2">SAT Preparation</a></li>
         </ul>
         <input
           type="radio"
@@ -147,7 +147,7 @@
           <a href="#">Q&A</a>
         </li>
         <li>
-          <a href="./html/contact.html">CONTACT</a>
+          <a href="../html/contact.html">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -160,3 +160,16 @@
     /></a>
   </div>
 </header>
+<script>
+  $(function() {
+    var backColor = $('#hamburger-bar');  
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 220) {
+            backColor.css("background-color", "#89c64a");
+        }else if ($(this).scrollTop() < 220) {
+            backColor.css("background-color", "");
+        }
+    })
+})
+</script>
+
