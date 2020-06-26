@@ -20,6 +20,15 @@ h1 {
     margin: 0px;
     color: rgba(0, 0, 0, 0.7);
 }
+
+.namePlate {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.fa-user-circle {
+    margin-right: 5px;
+}
   
 .NCAA-contents {
     display: grid;
@@ -338,6 +347,10 @@ h1 {
         font-size: 2.8em;
     }
 
+    .namePlate {
+        font-size: 1em;
+    }
+    
     .card .details .center {
         width: 70%;
     }
@@ -368,6 +381,10 @@ h1 {
     h1 {
         font-size: 2.5em;
         margin: 20px;
+    }
+
+    .namePlate {
+        margin-bottom: 0px;
     }
 
     .NCAA-container {
