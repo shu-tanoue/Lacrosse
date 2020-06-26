@@ -7,11 +7,12 @@
         <div class="spinner horizontal"></div>
         <div class="spinner diagonal part-2"></div>
       </label>
-  
     </div>
     <div id="sidebarMenu">
       <ul class="sidebarMenuInner">
-        <p>MENU</p>
+        <p>
+          <a href="../index.html"><i class="fas fa-home"></i></a>MENU
+        </p>
         <input
           type="radio"
           class="subbtn"
@@ -98,8 +99,14 @@
           </label>
         </li>
         <ul id="submenu-4">
-          <li><a href="../html/camps-events.html#tournaments">Tournaments</a></li>
-          <li><a href="../html/camps-events.html#section_field_camps">Field Camps</a></li>
+          <li>
+            <a href="../html/camps-events.html#tournaments">Tournaments</a>
+          </li>
+          <li>
+            <a href="../html/camps-events.html#section_field_camps"
+              >Field Camps</a
+            >
+          </li>
           <li><a href="../html/camps-events.html#boxDev2">Box Camps</a></li>
         </ul>
         <input
@@ -162,15 +169,14 @@
   </div>
 </header>
 <script>
-  $(function() {
-    var backColor = $('#hamburger-bar');  
+  $(function () {
+    var backColor = $("#hamburger-bar");
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 220) {
-            backColor.css("background-color", "#89c64a");
-        }else if ($(this).scrollTop() < 220) {
-            backColor.css("background-color", "");
-        }
-    })
-})
+      if ($(this).scrollTop() > 220) {
+        backColor.css("background-color", "#89c64a");
+      } else if ($(this).scrollTop() < 220) {
+        backColor.css("background-color", "");
+      }
+    });
+  });
 </script>
-

@@ -12,9 +12,11 @@
     <script src="../js/utilities.js"></script>
     <link rel="stylesheet" href="../sass/template.css">
     <link rel="stylesheet" href="../sass/index.css">
-    <link rel ="stylesheet" href ="../css/menu.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="icon" href="../images/image0.png" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 
@@ -26,13 +28,16 @@
             <h1 class="tournaments_maintitle1">Tounaments</h1>
         </div>
         <h2 class="tournaments_subtitle">The Pro-D <span class="tournaments_subtitle2">Jamboree</span></h2>
-        <p class ="tounaments-caption">
-            The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase their talent. University coaches from all across North America attend the event in hopes of recruiting some of BC's top student-athletes. Pro Caliber Lacrosse aims to provide a high-quality opportunity for all in attendance.
+        <p class="tounaments-caption">
+            The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase their
+            talent. University coaches from all across North America attend the event in hopes of recruiting some of
+            BC's top student-athletes. Pro Caliber Lacrosse aims to provide a high-quality opportunity for all in
+            attendance.
         </p>
         <button type="button" class=" jamboree-detail-btn" onclick="BPZeroModal()">Learn More</button>
     </div>
     <div class="tounaments-imgbandle">
-        <img src ="../images/tounaments.png" class="tounaments-img"alt="player of Laccrosse">
+        <img src="../images/tounaments.png" class="tounaments-img" alt="player of Laccrosse">
     </div>
     <div id="jamboree-container" class="boxModal">
         <div class="modal-content">
@@ -40,12 +45,17 @@
             <h1>The Pro-D Jamboree</h1>
             <br>
             <p>
-                The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase their talent. University coaches from all across North America attend the event in hopes of recruiting some of BC's top student-athletes. Pro Caliber Lacrosse aims to provide a high-quality opportunity for all in attendance.
+                The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase
+                their talent. University coaches from all across North America attend the event in hopes of recruiting
+                some of BC's top student-athletes. Pro Caliber Lacrosse aims to provide a high-quality opportunity for
+                all in attendance.
 
             </p>
             <br>
             <p>
-                Hosted at one of the most accomodating venues in British Columbia, the Pro-D Jamboree takes advantage of a provincial-wide day off of school to provide players with a unique opportunity to play games and potentially earn scholarships without hindering their academic progress.
+                Hosted at one of the most accomodating venues in British Columbia, the Pro-D Jamboree takes advantage of
+                a provincial-wide day off of school to provide players with a unique opportunity to play games and
+                potentially earn scholarships without hindering their academic progress.
             </p>
             <br>
             <h2>Event Format & Features</h2>
@@ -73,7 +83,8 @@
             <h3>High School :: $2,500 per team</h3>
             <h3>Youth Divisions :: $1,750 per team</h3>
             <h3>Free Agent :: $175 per player</h3>
-            <p class="zeromodal-caption1">**$500 deposit will save your teams' spot – this event sold out last year**</p>
+            <p class="zeromodal-caption1">**$500 deposit will save your teams' spot – this event sold out last
+                year**</p>
             <br>
             <h2>Contact</h2>
             <p class="zeromodal-caption1">To Enter a Team or for general inquiries, contact:
@@ -567,15 +578,19 @@
 </section>
 <!-- footer -->
 <div data-include="footer"></div>
-<script src ="../js/camps-events.js"></script>
+<script src="../js/camps-events.js"></script>
+<script src="../js/jQuery.js"></script>
+<script src="../js/index.js"></script>
 <script>
     setTimeout(function () {
         checkSection();
+
         function checkSection() {
             const title = "Camps & Events"/* PLEASE TYPE YOUR TITLE HERE*/
             document.getElementById('title-section').innerHTML = title;
         }
     }, 500)
 </script>
+
 </body>
 </html>
