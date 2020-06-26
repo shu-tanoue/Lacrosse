@@ -176,7 +176,7 @@ header {
   height: 100vh;
   position: fixed;
   top: 80px;
-  transform: translateX(-1000px);
+  transform: translateX(-1200px);
   transition: transform 250ms ease-in-out;
   background-color: black;
   z-index: 1;
@@ -871,6 +871,43 @@ footer .copy-right {
   display: block;
 }
 
+/* ################################# */
+
+/* ########## @media part ########## */
+
+/* ################################# */
+
+@media screen and (max-width:1440px) {
+  #sidebarMenu {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  #sidebarMenu {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .sidebarMenuInner li {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #hamburger-bar {
+    top: 8px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  #hamburger-bar {
+    top: 2px;
+    margin-left: 3px;
+  }
+}
 
 
 

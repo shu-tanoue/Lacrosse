@@ -242,7 +242,8 @@
   border: none;
   outline: none;
 }
-.active {
+.active,
+.active:hover {
   background-color: #89c64a;
 }
 .priceListContent {
@@ -446,23 +447,280 @@ xkeyframes
     transform: perspective(800px) rotateY(0);
   }
 }
-@media all and (max-width: 1024px) {
-  .feild-section {
-    position: relative;
-    top: -75px;
+
+.packateTitle {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5em;
+  margin-top: 50px;
+  margin-left: 125px;
+}
+.footer-content {
+  position: relative;
+  height: 400px;
+}
+
+.footer-subscribe {
+  left: -325px;
+  top: 50px;
+  position: relative;
+}
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.6fr 1fr;
   }
-  #feild-programs {
-    position: relative;
-    top: -75px;
+  .section3-grid h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 0px;
   }
   .feild-Year h1 {
-    font-size: 1em;
+    font-size: 1.1em;
+  }
+
+  .priceHeaders {
+    width: 80%;
+  }
+  .packateTitle {
+    margin-left: 75px;
+    position: relative;
+    display: block;
+  }
+  .footer-content {
+    height: 500px;
+  }
+
+  .footer-subscribe {
+    left: -125px;
+    top: 50px;
+    position: relative;
+  }
+  .subscribe-title h3 {
+    position: relative;
+    font-size: 14em;
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    max-width: 100vw;
+  }
+  .section3-grid {
+    max-width: 100vw;
+  }
+  .feildPrograms-container {
+    width: 95%;
+  }
+  .feild-Year h1 {
+    font-size: 0.9em;
+  }
+  .packateTitle {
+    margin-left: 75px;
+    position: relative;
+    display: block;
+    font-size: 1.5em;
   }
   .priceHeaders {
     width: 80%;
   }
-  footer {
+  .priceHeader {
+    padding: 15px 30px;
+  }
+  #Development {
+    justify-content: center;
+    width: auto;
+  }
+  #devList {
+    width: 200px;
+    height: 230px;
+  }
+  .priceList {
+    padding: 2px;
+    font-size: 14px;
+
+    height: auto;
+    overflow: scroll;
+    width: 32%;
+  }
+  .priceListContent {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .priceList h2 {
+    margin-top: 10px;
+  }
+  .modal-content {
+    padding: 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .intro-text {
+    width: 100%;
+    padding: 0px;
+  }
+  .feildPrograms-container {
+    grid-template-columns: repeat(2, 0.5fr);
     position: relative;
-    top: -75px;
+  }
+  .priceHeader {
+    padding: 10px 15px;
+  }
+  .section3-grid {
+    background: url(../images/rsz_programsbackground.png);
+    max-width: 100vw;
+  }
+  .section3 h1 {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    font-size: 0.2em;
+    padding: 10px;
+  }
+  .priceListContent {
+    margin: 0 auto;
+    min-height: 450px;
+  }
+  .priceListContent h2 {
+    font-size: 1em;
+  }
+  .priceList {
+    max-width: 100vw;
+    height: 420px;
+  }
+  .priceList ul {
+    height: 250px;
+  }
+  .lastNote {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+  }
+  .lastNote p {
+    font-size: 0.5em;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .grid-container {
+    max-width: 100vw;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  }
+  .section1-grid {
+    max-width: 100vw;
+  }
+  .section1 h1 {
+    font-size: 1.5em;
+  }
+  .section1 h2 {
+    font-size: 1em;
+  }
+  .intro-text {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .priceHeader {
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+
+  #priceListContainter {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: 500px;
+    margin: 0 auto;
+  }
+  #Development {
+    width: 80%;
+  }
+  #devList {
+    height: 150px;
+  }
+  .priceListContent {
+    max-width: 100vw;
+    height: 200px;
+  }
+  .priceList {
+    height: 350px;
+    margin: 10px 10px;
+  }
+  .priceList ul {
+    height: 190px;
+  }
+  .priceListContent ul li {
+    padding: 0;
+    font-size: 7px;
+  }
+  .priceListContent button {
+    font-size: 8px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .grid-container {
+    max-width: 100vw;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-row: 1fr 1fr 1fr;
+  }
+  .section1-grid {
+    max-width: 100vw;
+  }
+  .section1 {
+    max-width: 100vw;
+    margin: 20px;
+  }
+  .priceHeader {
+    padding: 10px 4px;
+    font-size: 9px;
+  }
+  .section1 h1 {
+    font-size: 1em;
+  }
+  .section1 h2 {
+    font-size: 1em;
+  }
+  .section1 p {
+    font-size: 10px;
+  }
+  .section2-grid {
+    max-width: 100vw;
+  }
+  .section3-grid {
+    max-width: 100vw;
+  }
+  .priceList {
+    height: 380px;
+  }
+  #devList {
+    height: 240px;
+  }
+  .priceList ul {
+    height: 220px;
+  }
+  .priceList h2 {
+    font-size: 8px;
+  }
+  .priceList h6 {
+    font-size: 6px;
   }
 }

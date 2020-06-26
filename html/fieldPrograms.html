@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/fieldProgram.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../sass/template.css">
+    <link rel="stylesheet" href="../css/menu.css">
     
 
     <script src="../js/fieldProgram.js"></script>
@@ -21,112 +22,185 @@
  
 </head>
 <body>
+      <!-- HEADER -->
+      <div data-include="header"></div>
+
+      <!-- footer -->
+      <div data-include="footer"></div>
+      <script src="../js/index.js"></script>
+      <script>
+          setTimeout(function () {
+              checkSection();
+              function checkSection() {
+                  const title = "FIELD PROGRAM"/* PLEASE TYPE YOUR TITLE HERE*/
+                  document.getElementById('title-section').innerHTML = title;
+              } 
+          }, 500)           
+      </script>
    
-      <header style="height: 100%;" >
-        <div id="header">
-          <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-          </label>
-    
-          <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-              <p>MENU</p>
-              <input type="checkbox" class="subbtn" id="subbtn-1" onclick="showSubmenu()">
-              <li>
-                <a href="#">ABOUT</a>
-                <label for="subbtn-1">
-                  <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-                </label>
-              </li>
-              <ul id="submenu-1">
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Sponsors</a></li>
-                <li><a href="#">Policies</a></li>
-                <li><a href="#">Payment Plans</a></li>
-              </ul>
-              <input type="checkbox" class="subbtn" id="subbtn-2" onclick="showSubmenu()">
-              <li>
-                <a href="fieldPrograms.html">FIELD PROGRAMS</a>
-                <label for="subbtn-2">
-                  <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-                </label>
-              </li>
-              <ul id="submenu-2">
-                <li><a href="#">-2021 : 2022</a></li>
-                <li><a href="#">-2023 : 2024</a></li>
-                <li><a href="#">-2025 : 2027</a></li>
-              </ul>
-              <input type="checkbox" class="subbtn" id="subbtn-3" onclick="showSubmenu()">
-              <li>
-                <a href="#">BOX PROGRAMS</a>
-                <label for="subbtn-3">
-                  <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-                </label>
-              </li>
-              <ul id="submenu-3">
-                <li><a href="#">Midget</a></li>
-                <li><a href="#">Bantam</a></li>
-                <li><a href="#">PeeWee</a></li>
-              </ul>
-              <input type="checkbox" class="subbtn" id="subbtn-4" onclick="showSubmenu()">
-              <li>
-                <a href="#">CAMPS & EVENTS</a>
-                <label for="subbtn-4">
-                  <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-                </label>
-              </li>
-                <ul id="submenu-4">
-                  <li><a href="#">Tournaments</a></li>
-                  <li><a href="#">Field Camps</a></li>
-                  <li><a href="#">Box Camps</a></li>
-                </ul>
-              <input type="checkbox" class="subbtn" id="subbtn-5" onclick="showSubmenu()">
-              <li>
-                <a href="#">NCAA RECRUITMENTS</a>
-                <label for="subbtn-5">
-                  <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-                </label>
-              </li>
-                <ul id="submenu-5">
-                  <li><a href="#">PCC Alumni</a></li>
-                  <li><a href="#">Recruiter Info</a></li>
-                  <li><a href="#">SAT Preparation</a></li>
-                </ul>
-              <input type="checkbox" class="subbtn" id="subbtn-6" onclick="showSubmenu()">
-                <ul id="submenu-6">
-              <li>
-                <a href="#">TRAINING</a>
-                <label for="subbtn-6">
-                  <i class="fas fa-chevron-down" style="font-size: medium;"></i>
-                </label>
-              </li>
-                <li><a href="#">Private Training</a></li>
-                <li><a href="#">Group Training</a></li>
-                <li><a href="#">Weight Training</a></li>
-              </ul>
-            </li>
+  <header>
+    <div id="header">
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+      <div id="hamburger-bar">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+      </div>
+      <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+          <p>MENU</p>
+          <input
+            type="radio"
+            class="subbtn"
+            id="subbtn-1"
+            name="subMenu"
+            onclick="showSubmenu()"
+          />
+          <button
+            type="button"
+            id="offradio-1"
+            onclick="radioDeselection()"
+          ></button>
+          <li>
+            <a href="#">ABOUT</a>
+            <label for="subbtn-1" class="downbtn" id="hidebtn1">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+            <label for="offradio-1" class="upbtn" id="showbtn1">
+              <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-1">
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Payment Plans</a></li>
           </ul>
-        </div>
-        <div id="header">
-          <div id="box-title">
-              <div id="rectangle"></div>
-              <h1 id="title-section">FIELD PROGRAM</h1>
-          </div>
-          <a id="logo-tp" href="#"><img src="../images/logo-tp.png" alt="logo Lacrosse Pro Caliber" ></a>
+          <input
+            type="radio"
+            class="subbtn"
+            id="subbtn-2"
+            name="subMenu"
+            onclick="showSubmenu()"
+          />
+          <li>
+            <a href="../html/fieldPrograms.html">FIELD PROGRAMS</a>
+            <label for="subbtn-2" class="downbtn" id="hidebtn2">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+            <label for="offradio-1" class="upbtn" id="showbtn2">
+              <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-2">
+            <li><a href="feild2021">-2021 : 2022</a></li>
+            <li><a href="#">-2023 : 2024</a></li>
+            <li><a href="#">-2025 : 2027</a></li>
+          </ul>
+          <input
+            type="radio"
+            class="subbtn"
+            id="subbtn-3"
+            name="subMenu"
+            onclick="showSubmenu()"
+          />
+          <li>
+            <a href="./html/boxPrograms.html">BOX PROGRAMS</a>
+            <label for="subbtn-3" class="downbtn" id="hidebtn3">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+            <label for="offradio-1" class="upbtn" id="showbtn3">
+              <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-3">
+            <li><a href="#">Midget</a></li>
+            <li><a href="#">Bantam</a></li>
+            <li><a href="#">PeeWee</a></li>
+          </ul>
+          <input
+            type="radio"
+            class="subbtn"
+            id="subbtn-4"
+            name="subMenu"
+            onclick="showSubmenu()"
+          />
+          <li>
+            <a href="./html/camps-events.html">CAMPS & EVENTS</a>
+            <label for="subbtn-4" class="downbtn" id="hidebtn4">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+            <label for="offradio-1" class="upbtn" id="showbtn4">
+              <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-4">
+            <li><a href="#">Tournaments</a></li>
+            <li><a href="#">Field Camps</a></li>
+            <li><a href="#">Box Camps</a></li>
+          </ul>
+          <input
+            type="radio"
+            class="subbtn"
+            id="subbtn-5"
+            name="subMenu"
+            onclick="showSubmenu()"
+          />
+          <li>
+            <a href="./html/NCAA.html">NCAA RECRUITMENTS</a>
+            <label for="subbtn-5" class="downbtn" id="hidebtn5">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+            <label for="offradio-1" class="upbtn" id="showbtn5">
+              <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-5">
+            <li><a href="#">PCC Alumni</a></li>
+            <li><a href="#">Recruiter Info</a></li>
+            <li><a href="#">SAT Preparation</a></li>
+          </ul>
+          <input
+            type="radio"
+            class="subbtn"
+            id="subbtn-6"
+            name="subMenu"
+            onclick="showSubmenu()"
+          />
+          <li>
+            <a href="#">TRAINING</a>
+            <label for="subbtn-6" class="downbtn" id="hidebtn6">
+              <i class="fas fa-chevron-down" style="font-size: medium;"></i>
+            </label>
+            <label for="offradio-1" class="upbtn" id="showbtn6">
+              <i class="fas fa-chevron-up" style="font-size: medium;"></i>
+            </label>
+          </li>
+          <ul id="submenu-6">
+            <li><a href="#">Private Training</a></li>
+            <li><a href="#">Group Training</a></li>
+            <li><a href="#">Weight Training</a></li>
+          </ul>
+          <li>
+            <a href="#">Q&A</a>
+          </li>
+          <li>
+            <a href="./html/contact.html">CONTACT</a>
+          </li>
+        </ul>
       </div>
-        </div>
-    </header>
-  <!-- <section id="section-feild" style="background: url(../images/header-tp.png) no-repeat; background-size:100%;">
-        <div id="header">
-          <div id="box-title">
-              <div id="rectangle"></div>
-              <h1 id="title-section">ABOUT</h1>
-          </div>
-          <a id="logo-tp" href="#"><img src="../images/logo-tp.png" alt="logo Lacrosse Pro Caliber" ></a>
+      <div id="box-title">
+        <div id="rectangle"></div>
+        <h1 id="title-section"></h1>
       </div>
-      </section> -->
+      <a id="logo-tp" href="#"
+        ><img src="../images/logo-tp.png" alt="logo Lacrosse Pro Caliber"
+      /></a>
+    </div>
+  </header>
+  
       <section class="feild-section firstSection">
         <div class="feild-conteiner">
           <div class="intro-text">
@@ -438,7 +512,7 @@
               <div class="learnMore"><h3>Learn More</h3></div>
             </div>
           </div>
-        </div>
+       
         <div id="feild2025" class="feildModal">
           <div class="modal-content">
             <span class="feildClose" id="thirdSpan">&times;</span>
@@ -529,6 +603,7 @@
             </ul>
           </div>
         </div>
+      </div>
       </section>
 
       <!-- **************************************************************** -->
@@ -539,7 +614,7 @@
 
 
       <section class="feild-section" style="background: url(../images/programsBackground.png);">
-        <h1 style="color: rgba(0, 0, 0, 0.5); font-size: 2.5em; margin-top: 50px; margin-left: 125px;">FIELD PROGRAMS PACKAGE PRICE LISTS</h1>
+        <h1 class="packateTitle" >FIELD PROGRAMS PACKAGE PRICE LISTS</h1>
         <div class="priceHeaders" id="priceHeadersButtons">
           <button class="priceHeader active" onclick="openPriceList('Development')">Development</button>
           <button class="priceHeader" onclick="openPriceList('2021-2022')">2021 - 2022</button>
@@ -849,9 +924,9 @@
       </div>
 
         </section>
-        <footer>
-          <div class="footer-content">
-              <div class="footer-socialMedia">
+        <footer style="height: auto;">
+          <div class="footer-content" >
+              <div class="footer-socialMedia" style="position: relative; margin-left: 25px;">
                   <ul>
                       <div class="svg-icon">
                           <a href="#"><svg class="new-shape" height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m297.277344 508.667969c-2.132813.347656-4.273438.667969-6.421875.960937 2.148437-.292968 4.289062-.613281 6.421875-.960937zm0 0"/><path d="m302.398438 507.792969c-1.019532.1875-2.039063.359375-3.058594.535156 1.019531-.175781 2.039062-.347656 3.058594-.535156zm0 0"/><path d="m285.136719 510.339844c-2.496094.28125-5.007813.53125-7.527344.742187 2.519531-.210937 5.03125-.460937 7.527344-.742187zm0 0"/><path d="m290.054688 509.738281c-1.199219.160157-2.40625.308594-3.609376.449219 1.203126-.140625 2.410157-.289062 3.609376-.449219zm0 0"/><path d="m309.367188 506.410156c-.898438.191406-1.800782.382813-2.703126.566406.902344-.183593 1.804688-.375 2.703126-.566406zm0 0"/><path d="m326.664062 502.113281c-.726562.207031-1.453124.402344-2.179687.605469.726563-.203125 1.453125-.398438 2.179687-.605469zm0 0"/><path d="m321.433594 503.542969c-.789063.207031-1.582032.417969-2.375.617187.792968-.199218 1.585937-.40625 2.375-.617187zm0 0"/><path d="m314.589844 505.253906c-.835938.195313-1.679688.378906-2.523438.566406.84375-.1875 1.6875-.371093 2.523438-.566406zm0 0"/><path d="m277.527344 511.089844c-1.347656.113281-2.695313.214844-4.046875.304687 1.351562-.089843 2.699219-.191406 4.046875-.304687zm0 0"/><path d="m512 256c0-141.363281-114.636719-256-256-256s-256 114.636719-256 256 114.636719 256 256 256c1.503906 0 3-.03125 4.5-.058594v-199.285156h-55v-64.097656h55v-47.167969c0-54.703125 33.394531-84.476563 82.191406-84.476563 23.367188 0 43.453125 1.742188 49.308594 2.519532v57.171875h-33.648438c-26.546874 0-31.6875 12.617187-31.6875 31.128906v40.824219h63.476563l-8.273437 64.097656h-55.203126v189.453125c107.003907-30.675781 185.335938-129.257813 185.335938-246.109375zm0 0"/><path d="m272.914062 511.429688c-2.664062.171874-5.339843.308593-8.023437.398437 2.683594-.089844 5.359375-.226563 8.023437-.398437zm0 0"/><path d="m264.753906 511.835938c-1.414062.046874-2.832031.082031-4.25.105468 1.417969-.023437 2.835938-.058594 4.25-.105468zm0 0"/></svg></a>
@@ -867,18 +942,18 @@
                       </div>
                   </ul>
               </div>
-              <div class="footer-subscribe">
+              <div class="footer-subscribe" >
                   <div class="subscribe-title">
                       <h3>SUBSCRIBE <span>NOW</span></h3>
                   </div>
                   <p>Don't miss our latest news and lacrosse game reports. We track record of success in training players.</p>
                   <form action="#">
-                      <input type="email" name="emailSubscribe" id="emailSubscribe" placeholder="E-mail">
-                      <button type="submit">SIGN UP</button>
+                      <input type="email" name="emailSubscribe" id="emailSubscribe" placeholder="E-mail" style="position: relative; padding: 0 25px;">
+                      <button type="submit" style=" position: relative; padding:0 25px;">SIGN UP</button>
                   </form>
               </div>
           </div>
-          <div class="copy-right">
+          <div class="copy-right" style="display: block; position: relative;">
               <h3>PRO CALIBER LACROSSE © 2020 All Rights Reserved</h3>
           </div>
       </footer>

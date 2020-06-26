@@ -33,7 +33,7 @@ h1 {
 .NCAA-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
     gap: 50px 0px;
     grid-template-areas: "Josh-Jackson Drew-Kask Noah-Armitage" "Beau-Chetner Tyler-Kralj Drew-Andre" "Thomas-Mackiewich Kyle-Brunsch Luke-Evans" "John-Sterling-Blake Ben-Stewart Cooper-Gettel" "Zack-Kyriacethys Joey-Cote Liam-Chernoff" "Stuart-Chernoff Noah-Bradley Austin-Ducommun" "Aidan-Lalonde Carter-Calrk Kai-George" "Cole-Lowe Brian-Simmons Jaxon-Brandt" "Trevor-Funk Wesley-Phillips empty";
     grid-area: NCAA-container; 
@@ -154,7 +154,7 @@ h1 {
     grid-template-rows: 1fr;
     gap: 1px 1px;
     grid-template-areas: "link img";
-    padding: 70px;
+    padding: 50px 70px;
 }
 
 .NCAA-links { 

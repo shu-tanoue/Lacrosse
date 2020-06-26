@@ -15,19 +15,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../js/utilities.js"></script>
     <link rel="stylesheet" href="../sass/template.css">
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
-        <div id="header">
-            <div id="box-title">
-                <div id="rectangle"></div>
-                <h1 id="title-section">Box Programs</h1>
-            </div>
-            <a id="logo-tp" href="#"><img src="../images/logo-tp.png" alt="logo Lacrosse Pro Caliber"></a>
-        </div>
-    </header>
+    <div data-include="header"></div>
 
     <div class="grid-container">
         <div class="section1-grid">
@@ -771,9 +764,11 @@
                         decide on potentially attending a different tournament.</p>
                 </div>
             </div>
+            <!-- footer -->
+            <div data-include="footer"></div>
+
         </div>
-        <!-- footer -->
-        <!-- <div data-include="footer"></div> -->
+
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Script part for the ACTIVE button (Price List) -->
@@ -787,6 +782,15 @@
                     this.className += " active";
                 });
             }
+        </script>
+        <script>
+            setTimeout(function () {
+                checkSection();
+                function checkSection() {
+                    const title = "Box Programs"/* PLEASE TYPE YOUR TITLE HERE*/
+                    document.getElementById('title-section').innerHTML = title;
+                }
+            }, 500)           
         </script>
 
 </body>
