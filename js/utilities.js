@@ -1,7 +1,7 @@
 /* Includes header and footer*/
 
 $(document).ready(function() {
-
+    console.log(1);
     $(function() {
         var includes = $('[data-include]');
         jQuery.each(includes, function() {
@@ -10,3 +10,5 @@ $(document).ready(function() {
         });
     });
 });
+// console.log(2);
+
