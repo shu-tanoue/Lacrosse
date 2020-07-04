@@ -15,19 +15,14 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../js/utilities.js"></script>
     <link rel="stylesheet" href="../sass/template.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/image0.png" type="image/gif" sizes="16x16">
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
-        <div id="header">
-            <div id="box-title">
-                <div id="rectangle"></div>
-                <h1 id="title-section">Box Programs</h1>
-            </div>
-            <a id="logo-tp" href="#"><img src="../images/logo-tp.png" alt="logo Lacrosse Pro Caliber"></a>
-        </div>
-    </header>
+    <div data-include="header"></div>
 
     <div class="grid-container">
         <div class="section1-grid">
@@ -117,7 +112,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="boxPrograms-contents" onclick="BPFirstModal()">
+                <div id="idmidget" class="boxPrograms-contents" onclick="BPFirstModal()">
                     <div class="bp-Img img1">
                         <div class="box-Year">
                             <h1>Midget <br> Program</h1>
@@ -225,7 +220,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="boxPrograms-contents" onclick="BPSecondModal()">
+                <div id="idbantam"class="boxPrograms-contents" onclick="BPSecondModal()">
                     <div class="bp-Img img2">
                         <div class="box-Year">
                             <h1>Bantam <br> Program</h1>
@@ -335,7 +330,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="boxPrograms-contents" onclick="BPThirdModal()">
+                <div id="idpeewee" class="boxPrograms-contents" onclick="BPThirdModal()">
                     <div class="bp-Img img3">
                         <div class="box-Year">
                             <h1>PeeWee <br>Program</h1>
@@ -771,9 +766,12 @@
                         decide on potentially attending a different tournament.</p>
                 </div>
             </div>
+            <!-- footer -->
+            <div data-include="footer"></div>
+
         </div>
-        <!-- footer -->
-        <div data-include="footer"></div>
+        <script src="../js/index.js"></script>
+
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Script part for the ACTIVE button (Price List) -->
@@ -787,6 +785,15 @@
                     this.className += " active";
                 });
             }
+        </script>
+        <script>
+            setTimeout(function () {
+                checkSection();
+                function checkSection() {
+                    const title = "Box Programs"/* PLEASE TYPE YOUR TITLE HERE*/
+                    document.getElementById('title-section').innerHTML = title;
+                }
+            }, 500)           
         </script>
 
 </body>

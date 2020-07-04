@@ -12,7 +12,11 @@
     <script src="../js/utilities.js"></script>
     <link rel="stylesheet" href="../sass/template.css">
     <link rel="stylesheet" href="../sass/index.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3a0ca3b7f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/image0.png" type="image/gif" sizes="16x16">
+
 </head>
 <body>
 
@@ -21,20 +25,79 @@
 <section id="tournaments">
     <div class="tournaments_titlebandle">
         <div class="tournaments_maintitlebandle">
-            <h1 class="tournaments_maintitle1">Tounaments</h1>
+            <h1 class="tournaments_maintitle1">Tournaments</h1>
         </div>
         <h2 class="tournaments_subtitle">The Pro-D <span class="tournaments_subtitle2">Jamboree</span></h2>
-        <p class ="tounaments-caption">
-            The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase their talent. University coaches from all across North America attend the event in hopes of recruiting some of BC's top student-athletes. Pro Caliber Lacrosse aims to provide a high-quality opportunity for all in attendance.
+        <p class="tounaments-caption">
+            The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase their
+            talent. University coaches from all across North America attend the event in hopes of recruiting some of
+            BC's top student-athletes. Pro Caliber Lacrosse aims to provide a high-quality opportunity for all in
+            attendance.
         </p>
-        <button type="button" class=" jamboree-detail-btn">Learn More</button>
+        <button id="idtournaments" type="button" class=" jamboree-detail-btn" onclick="BPZeroModal()">Learn More</button>
     </div>
     <div class="tounaments-imgbandle">
-        <img src ="../images/tounaments.png" class="tounaments-img"alt="player of Laccrosse">
+        <img src="../images/tounaments.png" class="tounaments-img" alt="player of Laccrosse">
+    </div>
+    <div id="jamboree-container" class="boxModal">
+        <div class="modal-content">
+            <span class="boxClose" id="ZeroSpan">&times;</span>
+            <h1>The Pro-D Jamboree</h1>
+            <br>
+            <p>
+                The Pro-D Jamboree is the only recruiting tournament hosted in British Columbia for teams to showcase
+                their talent. University coaches from all across North America attend the event in hopes of recruiting
+                some of BC's top student-athletes. Pro Caliber Lacrosse aims to provide a high-quality opportunity for
+                all in attendance.
+
+            </p>
+            <br>
+            <p>
+                Hosted at one of the most accomodating venues in British Columbia, the Pro-D Jamboree takes advantage of
+                a provincial-wide day off of school to provide players with a unique opportunity to play games and
+                potentially earn scholarships without hindering their academic progress.
+            </p>
+            <br>
+            <h2>Event Format & Features</h2>
+            <ul>
+                <li>4 game guaranteed with potential for more via playoffs!</li>
+                <li>Champion crowned per division</li>
+                <li>All-Star Game for the top High School players</li>
+                <li>Games are filmed</li>
+                <li>Travel to Beautiful British Columbia</li>
+            </ul>
+            <br>
+            <h2>Dates</h2>
+            <p class="zeromodal-caption1">October 23rd - 25th, 2020 (Friday, Saturday & Sunday)</p>
+            <br>
+            <h2>Location</h2>
+            <p class="zeromodal-caption1">TBD</p>
+            <br>
+            <h2>Eligibility</h2>
+            <ul>
+                <li>High School: 2021 – 2024 Grad Years</li>
+                <li>Youth: 2025 – 2027 Grad Years</li>
+            </ul>
+            <br>
+            <h2>Price</h2>
+            <h3>High School :: $2,500 per team</h3>
+            <h3>Youth Divisions :: $1,750 per team</h3>
+            <h3>Free Agent :: $175 per player</h3>
+            <p class="zeromodal-caption1">**$500 deposit will save your teams' spot – this event sold out last
+                year**</p>
+            <br>
+            <h2>Contact</h2>
+            <p class="zeromodal-caption1">To Enter a Team or for general inquiries, contact:
+                Sandy Pace - Event Manager
+                sandy@procaliberlacrosse.net
+            </p>
+
+            <br>
+        </div>
     </div>
 
 </section>
-<div class="boxcamp-section2-grid">
+<div id="idboxcamps"class="boxcamp-section2-grid">
     <div class="box_camps_titlebandle">
         <p class="box_camps_subtitle">PRO CALIBER LACROSSE</p>
         <div class="box_camps_maintitlebandle">
@@ -43,7 +106,7 @@
         </div>
     </div>
     <div class="boxPrograms-container">
-        <div class="boxPrograms-contents" onclick="BPdevelopment()">
+        <div class="boxPrograms-contents" onclick="BPFirstModal()">
             <div class="bp-Img img0">
                 <div class="box-Year">
                     <h1>SPRING BREAKS</h1>
@@ -53,9 +116,9 @@
                 </div>
             </div>
         </div>
-        <div id="boxDev" class="boxModal">
+        <div id="box-springbreak" class="boxModal">
             <div class="modal-content">
-                <span class="boxClose" id="devSpan">&times;</span>
+                <span class="boxClose" id="FirstSpan">&times;</span>
                 <h1>FIELD LACROSSE DEVELOPMENT PROGRAM</h1>
                 <br>
                 <p>
@@ -107,7 +170,7 @@
                 </ul>
             </div>
         </div>
-        <div class="boxPrograms-contents" onclick="BPFirstModal()">
+        <div class="boxPrograms-contents" onclick="BPSecondModal()">
             <div class="bp-Img img1">
                 <div class="box-Year">
                     <h1>SUMMER BREAKS</h1>
@@ -117,9 +180,9 @@
                 </div>
             </div>
         </div>
-        <div id="boxMidget" class="boxModal">
+        <div id="box-summerbreak" class="boxModal">
             <div class="modal-content">
-                <span class="boxClose" id="firstSpan">&times;</span>
+                <span class="boxClose" id="SecondSpan">&times;</span>
                 <h1>2021-2022 FIELD PROGRAM</h1>
                 <br>
                 <p>
@@ -215,7 +278,7 @@
                 </ul>
             </div>
         </div>
-        <div class="boxPrograms-contents" onclick="BPSecondModal()">
+        <div class="boxPrograms-contents" onclick="BPThirdModal()">
             <div class="bp-Img img2">
                 <div class="box-Year">
                     <h1>WINTER BREAK</h1>
@@ -225,9 +288,9 @@
                 </div>
             </div>
         </div>
-        <div id="boxBantam" class="boxModal">
+        <div id="box-winterbreak" class="boxModal">
             <div class="modal-content">
-                <span class="boxClose" id="secondSpan">&times;</span>
+                <span class="boxClose" id="ThirdSpan">&times;</span>
                 <h1>2023-2024 FIELD PROGRAM</h1>
                 <br>
                 <p>
@@ -515,5 +578,19 @@
 </section>
 <!-- footer -->
 <div data-include="footer"></div>
+<script src="../js/camps-events.js"></script>
+<script src="../js/jQuery.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    setTimeout(function () {
+        checkSection();
+
+        function checkSection() {
+            const title = "Camps & Events"/* PLEASE TYPE YOUR TITLE HERE*/
+            document.getElementById('title-section').innerHTML = title;
+        }
+    }, 500)
+</script>
+
 </body>
 </html>

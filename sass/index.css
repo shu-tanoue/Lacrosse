@@ -408,7 +408,7 @@ body {
   -webkit-transition: .4s;
   transition: .4s;
   position: absolute;
-  top: 85%;
+  top: 90%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -460,7 +460,7 @@ body {
   padding: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 80px;
+  height: 40px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -617,18 +617,14 @@ img.tounaments-img {
   max-width: 50%;
 }
 
-body {
-  width: 100%;
-}
-
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .boxcamp-section2-grid {
   padding: 100px;
   background-color: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .boxcamp-section2-grid .box_camps_titlebandle {
@@ -735,7 +731,6 @@ html {
   color: #89c64a;
   width: 100%;
   height: 50px;
-  line-height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -801,25 +796,42 @@ html {
 }
 
 .modal-content h1 {
+  font-size: 5rem;
   color: #89c64a;
   text-align: center;
-  font-size: 2em;
 }
 
-.modal-content h3 {
-  color: #89c64a;
-  text-decoration: underline;
+.modal-content p {
+  font-size: 3rem;
+  margin: 20px;
+}
+
+.modal-content h2 {
+  font-size: 4rem;
+  margin-top: 30px;
 }
 
 .modal-content ul {
-  position: relative;
   padding-left: 50px;
+  position: relative;
+}
+
+.modal-content .zeromodal-caption1 {
+  font-size: 2rem;
+}
+
+.modal-content li {
+  font-size: 2rem;
+}
+
+.modal-content h3 {
+  font-size: 3rem;
 }
 
 .boxClose {
   color: #89c64a;
   float: right;
-  font-size: 50px;
+  font-size: 100px;
   font-weight: bold;
   -webkit-transition: all 1.5s ease;
   transition: all 1.5s ease;
@@ -941,7 +953,6 @@ html {
   color: #89c64a;
   width: 100%;
   height: 50px;
-  line-height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1034,6 +1045,39 @@ html {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1440px) {
+  .boxClose {
+    font-size: 75px;
+  }
+  .modal-content h1 {
+    font-size: 3rem;
+    color: #89c64a;
+    text-align: center;
+  }
+  .modal-content p {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+  .modal-content h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  .modal-content ul {
+    padding-left: 50px;
+    position: relative;
+    margin-top: 20px;
+  }
+  .modal-content .zeromodal-caption1 {
+    font-size: 1.5rem;
+  }
+  .modal-content li {
+    font-size: 1.5rem;
+  }
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   section#tournaments {
     -webkit-box-orient: vertical;
@@ -1102,6 +1146,39 @@ html {
   .bp-Img2 {
     height: 250px;
   }
+  .boxClose {
+    font-size: 50px;
+  }
+  .modal-content {
+    padding: 75px 75px;
+  }
+  .modal-content h1 {
+    font-size: 2.2rem;
+    color: #89c64a;
+    text-align: center;
+  }
+  .modal-content p {
+    font-size: 1.1rem;
+    margin: 10px;
+  }
+  .modal-content h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  .modal-content ul {
+    padding-left: 50px;
+    position: relative;
+    margin-top: 20px;
+  }
+  .modal-content .zeromodal-caption1 {
+    font-size: 1.1rem;
+  }
+  .modal-content li {
+    font-size: 1.1rem;
+  }
+  .modal-content h3 {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1137,6 +1214,41 @@ html {
   }
   .boxPrograms-container2 {
     width: 100%;
+  }
+  .boxClose {
+    font-size: 50px;
+    position: relative;
+    top: -20px;
+  }
+  .modal-content {
+    padding: 35px 35px;
+  }
+  .modal-content h1 {
+    font-size: 1.3rem;
+    color: #89c64a;
+    text-align: center;
+  }
+  .modal-content p {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+  .modal-content h2 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  .modal-content ul {
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px;
+  }
+  .modal-content .zeromodal-caption1 {
+    font-size: 0.9rem;
+  }
+  .modal-content li {
+    font-size: 0.9rem;
+  }
+  .modal-content h3 {
+    font-size: 0.9rem;
   }
 }
 
@@ -1189,6 +1301,39 @@ html {
   }
   .fieldcamp-section2-grid .field_camps_titlebandle .field_camps_maintitlebandle .field_camps_maintitle2 {
     font-size: 35px;
+  }
+  .boxClose {
+    font-size: 50px;
+  }
+  .modal-content {
+    padding: 35px 35px;
+  }
+  .modal-content h1 {
+    font-size: 1rem;
+    color: #89c64a;
+    text-align: center;
+  }
+  .modal-content p {
+    font-size: 0.7rem;
+    margin: 10px;
+  }
+  .modal-content h2 {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+  .modal-content ul {
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px;
+  }
+  .modal-content .zeromodal-caption1 {
+    font-size: 0.7rem;
+  }
+  .modal-content li {
+    font-size: 0.7rem;
+  }
+  .modal-content h3 {
+    font-size: 0.7rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

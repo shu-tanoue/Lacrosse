@@ -1,21 +1,29 @@
-function openPriceList(programName) {
-    var i;
-    var x = document.getElementsByClassName("priceListContent");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    document.getElementById(programName).style.display = "flex";
+//section tournaments MODAL FUNCTION//
+function BPZeroModal() {
+    var modal0 = document.getElementById("jamboree-container");
+    modal0.style.display = "block";
+    var span0 = document.getElementById("ZeroSpan");
+    span0.onclick = function () {
+        modal0.style.display = "none";
+    };
+    window.onclick = function (event) {
+        if (event.target == modal0) {
+            modal0.style.display = "none";
+        }
+    };
 }
 
 
 
-//MODAL FUNCTIONS
+
+
+// section box-camp MODAL FUNCTIONS//
 
 
 function BPFirstModal() {
-    var modal1 = document.getElementById("boxMidget");
+    var modal1 = document.getElementById("box-springbreak");
     modal1.style.display = "block";
-    var span1 = document.getElementById("firstSpan");
+    var span1 = document.getElementById("FirstSpan");
     span1.onclick = function () {
         modal1.style.display = "none";
     };
@@ -27,9 +35,9 @@ function BPFirstModal() {
 }
 
 function BPSecondModal() {
-    var modal2 = document.getElementById("boxBantam");
+    var modal2 = document.getElementById("box-summerbreak");
     modal2.style.display = "block";
-    var span2 = document.getElementById("secondSpan");
+    var span2 = document.getElementById("SecondSpan");
     span2.onclick = function () {
         modal2.style.display = "none";
     };
@@ -41,9 +49,9 @@ function BPSecondModal() {
 }
 
 function BPThirdModal() {
-    var modal3 = document.getElementById("boxPeeWee");
+    var modal3 = document.getElementById("box-winterbreak");
     modal3.style.display = "block";
-    var span3 = document.getElementById("thirdSpan");
+    var span3 = document.getElementById("ThirdSpan");
     span3.onclick = function () {
         modal3.style.display = "none";
     };

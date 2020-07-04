@@ -12,3 +12,4 @@ $(document).ready(function() {
 });
 // console.log(2);
 
+let checkFile = document.getElementById('active');

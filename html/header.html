@@ -10,7 +10,9 @@
     </div>
     <div id="sidebarMenu">
       <ul class="sidebarMenuInner">
-        <p>MENU</p>
+        <p>
+          <a href="../index.html"><i class="fas fa-home"></i></a>MENU
+        </p>
         <input
           type="radio"
           class="subbtn"
@@ -24,7 +26,7 @@
           onclick="radioDeselection()"
         ></button>
         <li>
-          <a href="#">ABOUT</a>
+          <a href="../html/About.html">ABOUT</a>
           <label for="subbtn-1" class="downbtn" id="hidebtn1">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -46,7 +48,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/fieldPrograms.html">FIELD PROGRAMS</a>
+          <a href="fieldPrograms.html">FIELD PROGRAMS</a>
           <label for="subbtn-2" class="downbtn" id="hidebtn2">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -55,9 +57,9 @@
           </label>
         </li>
         <ul id="submenu-2">
-          <li><a href="feild2021">-2021 : 2022</a></li>
-          <li><a href="#">-2023 : 2024</a></li>
-          <li><a href="#">-2025 : 2027</a></li>
+          <li><a href="fieldPrograms.html?par=id2021" >-2021 : 2022</a></li>
+          <li><a href="fieldPrograms.html?par=id2324">-2023 : 2024</a></li>
+          <li><a href="fieldPrograms.html?par=id2527">-2025 : 2027</a></li>
         </ul>
         <input
           type="radio"
@@ -67,7 +69,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/boxPrograms.html">BOX PROGRAMS</a>
+          <a href="boxPrograms.html">BOX PROGRAMS</a>
           <label for="subbtn-3" class="downbtn" id="hidebtn3">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -76,9 +78,9 @@
           </label>
         </li>
         <ul id="submenu-3">
-          <li><a href="#">Midget</a></li>
-          <li><a href="#">Bantam</a></li>
-          <li><a href="#">PeeWee</a></li>
+          <li><a href="boxPrograms.html?par=idmidget">Midget</a></li>
+          <li><a href="boxPrograms.html?par=idbantam">Bantam</a></li>
+          <li><a href="boxPrograms.html?par=idpeewee">PeeWee</a></li>
         </ul>
         <input
           type="radio"
@@ -88,7 +90,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/camps-events.html">CAMPS & EVENTS</a>
+          <a href="camps-events.html">CAMPS & EVENTS</a>
           <label for="subbtn-4" class="downbtn" id="hidebtn4">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -97,9 +99,15 @@
           </label>
         </li>
         <ul id="submenu-4">
-          <li><a href="#">Tournaments</a></li>
-          <li><a href="#">Field Camps</a></li>
-          <li><a href="#">Box Camps</a></li>
+          <li>
+            <a href="camps-events.html?par=idtournaments">Tournaments</a>
+          </li>
+          <li>
+            <a href="camps-events.html#field_camps"
+              >Field Camps</a
+            >
+          </li>
+          <li><a href="camps-events.html#idboxcamps">Box Camps</a></li>
         </ul>
         <input
           type="radio"
@@ -109,7 +117,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="./html/NCAA.html">NCAA RECRUITMENTS</a>
+          <a href="NCAA.html">NCAA RECRUITMENTS</a>
           <label for="subbtn-5" class="downbtn" id="hidebtn5">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -118,9 +126,9 @@
           </label>
         </li>
         <ul id="submenu-5">
-          <li><a href="#">PCC Alumni</a></li>
-          <li><a href="#">Recruiter Info</a></li>
-          <li><a href="#">SAT Preparation</a></li>
+          <li><a href="NCAA.html#NCAAlink1">PCC Alumni</a></li>
+          <li><a href="NCAA.html#NCAAlink2">Recruiter Info</a></li>
+          <li><a href="NCAA.html#NCAAlink2">SAT Preparation</a></li>
         </ul>
         <input
           type="radio"
@@ -130,7 +138,7 @@
           onclick="showSubmenu()"
         />
         <li>
-          <a href="#">TRAINING</a>
+          <a href="training.html">TRAINING</a>
           <label for="subbtn-6" class="downbtn" id="hidebtn6">
             <i class="fas fa-chevron-down" style="font-size: medium;"></i>
           </label>
@@ -139,15 +147,15 @@
           </label>
         </li>
         <ul id="submenu-6">
-          <li><a href="#">Private Training</a></li>
-          <li><a href="#">Group Training</a></li>
-          <li><a href="#">Weight Training</a></li>
+          <li><a href="training.html#idtraining">Private Training</a></li>
+          <li><a href="training.html#idtraining">Group Training</a></li>
+          <li><a href="training.html#idtraining">Weight Training</a></li>
         </ul>
         <li>
           <a href="#">Q&A</a>
         </li>
         <li>
-          <a href="./html/contact.html">CONTACT</a>
+          <a href="contact.html">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -160,3 +168,15 @@
     /></a>
   </div>
 </header>
+<script>
+  $(function () {
+    var backColor = $("#hamburger-bar");
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 220) {
+        backColor.css("background-color", "#89c64a");
+      } else if ($(this).scrollTop() < 220) {
+        backColor.css("background-color", "");
+      }
+    });
+  });
+</script>
