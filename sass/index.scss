@@ -11,12 +11,14 @@ $BackgroundColor: #e5e5e5;
 
 body {
   width: 100vw;
+  max-width: $max-width;
   height: auto;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: $font-family;
   background-color: $BackgroundColor;
+  overflow-x: hidden;
 }
 
 .section-our_numbers {
@@ -27,8 +29,7 @@ body {
   background-color: $blackColor;
   overflow: hidden;
 }
-
-span {
+.span_numbers {
   color: #fff;
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
