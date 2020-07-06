@@ -2,7 +2,7 @@
 var slideIndex,slides;
 function initGallery(){
     slideIndex = 0;
-    slides=document.getElementsByClassName("boxContainer");
+    slides=document.getElementsByClassName("box-container");
     slides[slideIndex].style.opacity=1;
 
     //disable nextPrevBtn if slide count is one
@@ -41,7 +41,7 @@ function moveSlide(n){
         next = slides[n];
         current=slides[slideIndex];
         for (i = 0; i < slides.length; i++) {
-            slides[i].className = "boxContainer";
+            slides[i].className = "box-container";
             slides[i].style.opacity=0;
         }
         current.classList.add(moveSlideAnimClass.forCurrent);
