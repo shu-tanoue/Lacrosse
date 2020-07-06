@@ -20,7 +20,7 @@ header {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.7fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
     gap: 1px 1px;
     grid-template-areas: "section1-grid" "section2-grid" "section3-grid";
     box-sizing: border-box;
@@ -29,7 +29,7 @@ header {
 
 .section1-grid {
     grid-area: section1-grid;
-    background: url(../images/boxProgramsS1.png);
+    /* background: url(../images/boxProgramsS1.png); */
     max-width: 100vw;
 }
 
