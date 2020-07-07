@@ -11,12 +11,14 @@ $BackgroundColor: #e5e5e5;
 
 body {
   width: 100vw;
+  max-width: $max-width;
   height: auto;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: $font-family;
   background-color: $BackgroundColor;
+  overflow-x: hidden;
 }
 
 .section-our_numbers {
@@ -148,28 +150,28 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 4.2vw;
     position: relative;
-        margin-right: 8px;
-      }
-    }
-  
-  .second-title {
-    font-size: 4.2vw;
-  }
-  .boxin_sub1 {
-    text-align: center;
-    position: relative;
-    bottom: 5%;
-    color: #89c64a;
-    font-size: 25px;
-  }
-  .boxin_sub2 {
-    text-align: center;
-    position: relative;
-    bottom: 5%;
-    color: #fff;
-    font-size: 25px;
+    margin-right: 8px;
   }
 }
+
+.second-title {
+  font-size: 4.2vw;
+}
+.boxin_sub1 {
+  text-align: center;
+  position: relative;
+  bottom: 5%;
+  color: #89c64a;
+  font-size: 25px;
+}
+.boxin_sub2 {
+  text-align: center;
+  position: relative;
+  bottom: 5%;
+  color: #fff;
+  font-size: 25px;
+}
+
 @media screen and (max-width: 2560px) {
 }
 @media screen and (max-width: 1800px) {

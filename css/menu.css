@@ -9,7 +9,7 @@
     position: fixed;
     top: 25px;
     margin-left: 25px;/*included*/
-    /* left: 25px; */
+    z-index: 1000;
   }
   
   /* ########################## */
@@ -98,6 +98,10 @@
     position: absolute;
     right: 0px;
     padding-right: 10px;
+  }
+
+  .fas {
+    padding-right: 15px;
   }
   
   .fas:hover {

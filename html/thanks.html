@@ -20,13 +20,39 @@
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
+    <!-- template-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="stylesheet" href="../sass/template.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+
+    <!--メールフォームプロ用CSS-->
+    <link
+      rel="stylesheet"
+      href="../mfp.statics/mailformpro.css"
+      type="text/css"
+    />
+    <!--/メールフォームプロ用CSS-->
   </head>
   <body>
+    <!-- HEADER -->
+    <div data-include="header"></div>
+
     <div class="all_select">
       <div class="container">
         <div class="wrapper">
           <div class="company-info">
-            <i class="far fa-envelope fa-3x"></i>
+            <div class="logo_size">
+              <i class="far fa-envelope fa-3x"></i>
+            </div>
             <ul class="details">
               <li><i class="fas fa-user-alt"></i> Tyler Pace</li>
               <li><i class="fa fa-phone"></i> (604) 445 1434</li>
@@ -37,13 +63,33 @@
             </ul>
           </div>
           <div class="contact">
-            <h3>Thank you</h3>
-            <p>
-              Your message is successful
-            </p>
+            <h3 class="thanks_title">Thank you</h3>
+            <div class="thanks_sub">Your message has been sent</div>
+         
+            <script
+              type="text/javascript"
+              id="mfpjs"
+              src="../mailformpro/mailformpro.cgi"
+              charset="UTF-8"
+            ></script>
+            <!--/メールフォームプロ-->
           </div>
         </div>
       </div>
     </div>
+
+    <!-- footer -->
+    <div data-include="footer"></div>
+    <script src="../js/index.js"></script>
+    <script>
+      setTimeout(function() {
+        checkSection();
+        function checkSection() {
+          const title = "CONTACT US"; /* PLEASE TYPE YOUR TITLE HERE*/
+          document.getElementById("title-section").innerHTML = title;
+        }
+      }, 500);
+    </script>
   </body>
+</html>
 </html>
