@@ -699,9 +699,12 @@ body {
           height: 440px;
           img.content_img {
             height: 270px;
+            width:100%;
+
           }
           video.content_img {
             height: 270px;
+            width: 100%;
           }
         }
       }
@@ -926,31 +929,31 @@ img.tounaments-img {
   position: relative;
   border-radius: 5px;
 
-  h1 {
-    font-size: 5rem;
+  h1{
+    font-size: 2rem;
     color: #89c64a;
     text-align: center;
   }
-  p {
-    font-size: 3rem;
+  p{
+    font-size: 1rem;
     margin: 20px;
   }
-  h2 {
-    font-size: 4rem;
+  h2{
+    font-size: 1.2rem;
     margin-top: 30px;
   }
   ul {
     padding-left: 50px;
     position: relative;
   }
-  .zeromodal-caption1 {
-    font-size: 2rem;
+  .zeromodal-caption1{
+    font-size: 1rem;
   }
-  li {
-    font-size: 2rem;
+  li{
+    font-size: 1rem;
   }
-  h3 {
-    font-size: 3rem;
+  h3{
+    font-size: 1rem;
   }
 }
 
@@ -1155,17 +1158,18 @@ img.tounaments-img {
     font-size: 75px;
   }
   .modal-content {
-    h1 {
-      font-size: 3rem;
+
+    h1{
+
       color: #89c64a;
       text-align: center;
     }
-    p {
-      font-size: 1.5rem;
+    p{
+
       margin: 20px;
     }
-    h2 {
-      font-size: 2rem;
+    h2{
+
       margin-top: 30px;
     }
     ul {
@@ -1173,15 +1177,10 @@ img.tounaments-img {
       position: relative;
       margin-top: 20px;
     }
-    .zeromodal-caption1 {
-      font-size: 1.5rem;
-    }
-    li {
-      font-size: 1.5rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-    }
+
+
+
+
   }
 }
 
@@ -1246,32 +1245,20 @@ img.tounaments-img {
   .modal-content {
     padding: 75px 75px;
 
-    h1 {
-      font-size: 2.2rem;
+    h1{
       color: #89c64a;
       text-align: center;
     }
-    p {
-      font-size: 1.1rem;
+    p{
       margin: 10px;
     }
-    h2 {
-      font-size: 1.5rem;
+    h2{
       margin-top: 30px;
     }
     ul {
       padding-left: 50px;
       position: relative;
       margin-top: 20px;
-    }
-    .zeromodal-caption1 {
-      font-size: 1.1rem;
-    }
-    li {
-      font-size: 1.1rem;
-    }
-    h3 {
-      font-size: 1.1rem;
     }
   }
 }

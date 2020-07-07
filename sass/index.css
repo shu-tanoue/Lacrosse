@@ -699,9 +699,11 @@ body {
   }
   #section_latest_news .latest_news_contentsbandle #instafeed .insta-bandle img.content_img {
     height: 270px;
+    width: 100%;
   }
   #section_latest_news .latest_news_contentsbandle #instafeed .insta-bandle video.content_img {
     height: 270px;
+    width: 100%;
   }
 }
 
@@ -917,18 +919,18 @@ img.tounaments-img {
 }
 
 .modal-content h1 {
-  font-size: 5rem;
+  font-size: 2rem;
   color: #89c64a;
   text-align: center;
 }
 
 .modal-content p {
-  font-size: 3rem;
+  font-size: 1rem;
   margin: 20px;
 }
 
 .modal-content h2 {
-  font-size: 4rem;
+  font-size: 1.2rem;
   margin-top: 30px;
 }
 
@@ -938,15 +940,15 @@ img.tounaments-img {
 }
 
 .modal-content .zeromodal-caption1 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .modal-content li {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .modal-content h3 {
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 .boxClose {
@@ -1142,31 +1144,19 @@ img.tounaments-img {
     font-size: 75px;
   }
   .modal-content h1 {
-    font-size: 3rem;
     color: #89c64a;
     text-align: center;
   }
   .modal-content p {
-    font-size: 1.5rem;
     margin: 20px;
   }
   .modal-content h2 {
-    font-size: 2rem;
     margin-top: 30px;
   }
   .modal-content ul {
     padding-left: 50px;
     position: relative;
     margin-top: 20px;
-  }
-  .modal-content .zeromodal-caption1 {
-    font-size: 1.5rem;
-  }
-  .modal-content li {
-    font-size: 1.5rem;
-  }
-  .modal-content h3 {
-    font-size: 1.5rem;
   }
 }
 
@@ -1225,31 +1215,19 @@ img.tounaments-img {
     padding: 75px 75px;
   }
   .modal-content h1 {
-    font-size: 2.2rem;
     color: #89c64a;
     text-align: center;
   }
   .modal-content p {
-    font-size: 1.1rem;
     margin: 10px;
   }
   .modal-content h2 {
-    font-size: 1.5rem;
     margin-top: 30px;
   }
   .modal-content ul {
     padding-left: 50px;
     position: relative;
     margin-top: 20px;
-  }
-  .modal-content .zeromodal-caption1 {
-    font-size: 1.1rem;
-  }
-  .modal-content li {
-    font-size: 1.1rem;
-  }
-  .modal-content h3 {
-    font-size: 1.1rem;
   }
 }
 
