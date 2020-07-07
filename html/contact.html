@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contact</title>
+    <title>document</title>
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -20,37 +20,96 @@
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="../images/image0.png" type="image/gif" sizes="16x16">
+    <!-- template-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="stylesheet" href="../sass/template.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+
+    <!--メールフォームプロ用CSS-->
+    <link
+      rel="stylesheet"
+      href="../mfp.statics/mailformpro.css"
+      type="text/css"
+    />
+    <!--/メールフォームプロ用CSS-->
   </head>
   <body>
+    <!-- HEADER -->
+    <div data-include="header"></div>
+
     <div class="all_select">
       <div class="container">
         <div class="wrapper">
           <div class="company-info">
-            <i class="far fa-envelope fa-3x"></i>
-            <ul>
-              <li><i class="fa fa-road"></i> 44 Something st</li>
+            <div class="logo_size">
+              <i class="far fa-envelope fa-3x"></i>
+            </div>
+            <ul class="details">
+              <li><i class="fas fa-user-alt"></i> Tyler Pace</li>
               <li><i class="fa fa-phone"></i> (604) 445 1434</li>
+              <li><i class="fas fa-user-alt"></i> Sandy Pace</li>
               <li>
                 <i class="fa fa-envelope"></i>sandy@procaliberlacrosse.net
               </li>
             </ul>
           </div>
           <div class="contact">
-            <h3>Contact Us</h3>
+            <h3 class="size_ajustment">Contact Us</h3>
             <div class="alert">Your message has been sent</div>
-            <form id="contactForm">
+            <!--メールフォームプロ-->
+            <form
+              id="mailformpro"
+              action="../mailformpro/mailformpro.cgi"
+              method="POST"
+            >
+              <p class="full">
+                <label>Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Type your name"
+                  required="required"
+                />
+              </p>
+              <p class="full_1480">
+                <label>Your Email</label>
+                <input
+                  type="email"
+                  data-type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Type your email"
+                  required="required"
+                />
+              </p>
+              <p class="full_1480">
+                <label>Phone</label>
+                <input
+                  type="text"
+                  name="Phone"
+                  placeholder="Type your number"
+                  id="Phone"
+                />
+              </p>
               <p class="full">
                 <label>Message</label>
-                <textarea name="message" rows="5" id="message"></textarea>
-              </p>
-              <p>
-                <label>Your Name</label>
-                <input type="email" name="email" id="email" required />
-              </p>
-              <p>
-                <label>Your Email</label>
-                <input type="text" name="phone" id="phone" />
+                <textarea
+                  name="message"
+                  rows="5"
+                  id="message"
+                  placeholder="Type your messge"
+                  required="required"
+                ></textarea>
               </p>
               <p class="buttonarea">
                 <button type="reset" class="reset">Cancel</button>
@@ -59,11 +118,29 @@
                 <button type="submit" class="submit">Send</button>
               </p>
             </form>
+            <script
+              type="text/javascript"
+              id="mfpjs"
+              src="../mailformpro/mailformpro.cgi"
+              charset="UTF-8"
+            ></script>
+            <!--/メールフォームプロ-->
           </div>
         </div>
       </div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script src="main.js"></script>
+
+    <!-- footer -->
+    <div data-include="footer"></div>
+    <script src="../js/index.js"></script>
+    <script>
+      setTimeout(function() {
+        checkSection();
+        function checkSection() {
+          const title = "CONTACT US"; /* PLEASE TYPE YOUR TITLE HERE*/
+          document.getElementById("title-section").innerHTML = title;
+        }
+      }, 500);
+    </script>
   </body>
 </html>

@@ -1,0 +1,819 @@
+body {
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    background: url(../images/boxProgramsS1.png);
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    max-height: 290px;
+    overflow: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "section1-grid"  "section3-grid";
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+.section1-grid {
+    grid-area: section1-grid;
+    /* background: url(../images/boxProgramsS1.png); */
+    max-width: 100vw;
+}
+
+.section1 {
+    margin: 90px;
+}
+
+.section1 h1 {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section1 h2 {
+    margin-top: -20px;
+    margin-bottom: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    color: #ffffff;
+}
+
+.section1 p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 34px;
+    text-align: justify;
+}
+
+.section2-grid {
+    grid-area: section2-grid;
+    margin-top: 100px;
+    max-width: 100vw;
+}
+
+/* *************************************************** */
+
+/********************** CARD CSS START ****************/
+
+/* *************************************************** */
+
+#box-programs {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.boxPrograms-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+}
+
+.boxPrograms-contents {
+    margin: 10px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.boxPrograms-contents:hover {
+    filter: grayscale(0);
+    transform: scale(1.15);
+    z-index: 1;
+    box-shadow: 0px 0px 10px 5px rgba(68, 68, 68, 0.5);
+    border-radius: 5px;
+}
+
+.boxPrograms-contents :hover .learnMore {
+    bottom: 0;
+    visibility: visible;
+}
+
+.bp-Img {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bp-Img .learnMore {
+    bottom: -50px;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    color: #89c64a;
+    width: 100%;
+    height: 50px;
+    line-height: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+.learnMore h3 {
+    text-align: center;
+}
+
+.img0 {
+    background: url(../images/boxProgramsDevProg.JPG) center center no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    background: url(../images/boxProgramsMidget.JPG) center center no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    background: url(../images/boxProgramsBantam.JPG) center center no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    background: url(../images/boxProgramsPeewee.JPG) center center no-repeat;
+    background-size: cover;
+}
+
+.box-Year {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.box-Year h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.boxModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 1), rgba(100, 100, 100, 0.85)), url("../images/programs3.JPG");
+    background-size: cover;
+    margin: auto;
+    padding: 100px 100px;
+    width: 80%;
+    text-align: justify;
+    position: relative;
+    border-radius: 5px;
+}
+
+.modal-content h1 {
+    color: #89c64a;
+    text-align: center;
+    font-size: 2em;
+}
+
+.modal-content h3 {
+    color: #89c64a;
+    text-decoration: underline;
+}
+
+.modal-content ul {
+    position: relative;
+    padding-left: 50px;
+}
+
+.boxClose {
+    color: #89c64a;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    transition: all 1.5s ease;
+    top: -50px;
+    position: relative;
+}
+
+.boxClose:hover, .boxClose:focus {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+/* *************************************************** */
+
+/* *******************CARD CSS END******************** */
+
+/* *************************************************** */
+
+.section3-grid {
+    grid-area: section3-grid;
+    background: url(../images/programsBackground.png);
+    max-width: 100vw;
+}
+
+.section3-grid h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 90px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#priceHeaders {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.btn {
+    margin: 10px;
+    width: 150px;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.active, .btn:hover {
+    background-color: #89c64a;
+    color: white;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#priceListContainter {
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.priceListContent {
+    display: flex;
+    /* min-height: 600px; */
+    margin: 50px;
+    
+}
+
+.priceList {
+    padding: 14px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.25s ease;
+    
+}
+
+
+
+.priceList:active {
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#Development {
+    width: 90%;
+}
+
+#devList {
+    width: 300px;
+    height: 350px;
+    
+}
+
+.priceList {
+    height: auto;
+    max-height: 300px;
+}
+
+.priceList h2 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+
+}
+
+#priceListDevUl {
+    height: auto !important;
+}
+
+.priceList ul {
+    /* position: relative; */
+    display: block;
+    height: 150px;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    color: #fff;
+}
+
+.priceList h6 {
+    float: right;
+    color: #89c64a;
+}
+
+.lastNote {
+    margin: auto;
+    padding: 25px;
+    height: auto;
+    position: relative;
+}
+
+.priceList {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-animation: cd-rotate 0.5s;
+    -moz-animation: cd-rotate 0.5s;
+    animation: cd-rotate 0.25s;
+}
+
+.priceList ul, .priceList h2, .priceList button, .priceList h6 {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-animation: cd-rotate-inverse 0.5s;
+    -moz-animation: cd-rotate-inverse 0.5s;
+    animation: cd-rotate-inverse 0.1s;
+}
+
+.priceList h6 {
+    float: left;
+}
+
+.lastSection {
+    background: url(../images/programsBackground.png);
+}
+
+.button-center {
+    text-align: center;
+}
+
+.button-center button {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #89c64a;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* -------------------------------- 
+  
+  xkeyframes 
+  
+  -------------------------------- */
+
+@-webkit-keyframes cd-rotate {
+    0% {
+        -webkit-transform: perspective(800px) rotateY(0);
+    }
+    70% {
+        -webkit-transform: perspective(800px) rotateY(200deg);
+        /* this creates the bounce effect */
+    }
+    100% {
+        -webkit-transform: perspective(800px) rotateY(180deg);
+    }
+}
+
+@-moz-keyframes cd-rotate {
+    0% {
+        -moz-transform: perspective(800px) rotateY(0);
+    }
+    70% {
+        -moz-transform: perspective(800px) rotateY(200deg);
+        /* this creates the bounce effect */
+    }
+    100% {
+        -moz-transform: perspective(800px) rotateY(180deg);
+    }
+}
+
+@keyframes cd-rotate {
+    0% {
+        -webkit-transform: perspective(800px) rotateY(0);
+        -moz-transform: perspective(800px) rotateY(0);
+        -ms-transform: perspective(800px) rotateY(0);
+        -o-transform: perspective(800px) rotateY(0);
+        transform: perspective(800px) rotateY(0);
+    }
+    70% {
+        -webkit-transform: perspective(800px) rotateY(200deg);
+        -moz-transform: perspective(800px) rotateY(200deg);
+        -ms-transform: perspective(800px) rotateY(200deg);
+        -o-transform: perspective(800px) rotateY(200deg);
+        transform: perspective(800px) rotateY(200deg);
+        /* this creates the bounce effect */
+    }
+    100% {
+        -webkit-transform: perspective(800px) rotateY(180deg);
+        -moz-transform: perspective(800px) rotateY(180deg);
+        -ms-transform: perspective(800px) rotateY(180deg);
+        -o-transform: perspective(800px) rotateY(180deg);
+        transform: perspective(800px) rotateY(180deg);
+    }
+}
+
+@-webkit-keyframes cd-rotate-inverse {
+    0% {
+        -webkit-transform: perspective(800px) rotateY(-180deg);
+    }
+    70% {
+        -webkit-transform: perspective(800px) rotateY(20deg);
+        /* this creates the bounce effect */
+    }
+    100% {
+        -webkit-transform: perspective(800px) rotateY(0);
+    }
+}
+
+@-moz-keyframes cd-rotate-inverse {
+    0% {
+        -moz-transform: perspective(800px) rotateY(-180deg);
+    }
+    70% {
+        -moz-transform: perspective(800px) rotateY(20deg);
+        /* this creates the bounce effect */
+    }
+    100% {
+        -moz-transform: perspective(800px) rotateY(0);
+    }
+}
+
+@keyframes cd-rotate-inverse {
+    0% {
+        -webkit-transform: perspective(800px) rotateY(-180deg);
+        -moz-transform: perspective(800px) rotateY(-180deg);
+        -ms-transform: perspective(800px) rotateY(-180deg);
+        -o-transform: perspective(800px) rotateY(-180deg);
+        transform: perspective(800px) rotateY(-180deg);
+    }
+    70% {
+        -webkit-transform: perspective(800px) rotateY(20deg);
+        -moz-transform: perspective(800px) rotateY(20deg);
+        -ms-transform: perspective(800px) rotateY(20deg);
+        -o-transform: perspective(800px) rotateY(20deg);
+        transform: perspective(800px) rotateY(20deg);
+        /* this creates the bounce effect */
+    }
+    100% {
+        -webkit-transform: perspective(800px) rotateY(0);
+        -moz-transform: perspective(800px) rotateY(0);
+        -ms-transform: perspective(800px) rotateY(0);
+        -o-transform: perspective(800px) rotateY(0);
+        transform: perspective(800px) rotateY(0);
+    }
+}
+footer {
+    max-width: 100vw;
+}
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 0.6fr 1fr;
+    }
+    .boxPrograms-container {
+        margin-left: 4vw;
+        margin-right: 4vw;
+        max-width: 1015px;
+    }
+    .section3-grid h1 {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 2em;
+        margin-top: 50px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .box-Year h1 {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        max-width: 100vw;
+    }
+    .section1-grid {
+        max-width: 100vw;
+    }
+    .section1 {
+        margin: 50px;
+    }
+    .section1 h1 {
+        font-size: 3em;
+    }
+    .section2-grid {
+        max-width: 100vw;
+    }
+    .boxPrograms-container {
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        gap: 20px;
+        max-width: 768px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .bp-Img {
+        height: 370px;
+    }
+    .boxPrograms-contents {
+        margin: 0;
+    }
+    .box-Year h1 {
+        font-size: 1em;
+        margin: 0 auto;
+    }
+    .section3-grid {
+        max-width: 100vw;
+    }
+    .section3 {
+        max-width: 100vw;
+    }
+    #Development {
+        justify-content: center;
+        width: auto;
+    }
+    #devList {
+        width: 200px;
+        height: 230px;
+    }
+    .priceList {
+        margin: 5px;
+        padding: 0;
+        font-size: 0.5em;
+        max-height: 420px;
+        height: 350px;
+    }
+    .priceList ul {
+        height: 190px;
+    }
+    .priceList h2 {
+        margin-top: 10px;
+    }
+    .priceList h6 {
+        font-size: 7px;
+        margin: 10px;
+    }
+    .priceListContent {
+        min-height: 360px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 0.7fr 1fr;
+        max-width: 100vw;
+    }
+    .section1-grid {
+        background: url(../images/rsz_boxprogramsmobile.png);
+        max-width: 100vw;
+    }
+    .section1 {
+        margin: 25px;
+    }
+    .section1 h1 {
+        font-size: 2em;
+    }
+    .section1 h2 {
+        font-size: 2em;
+        margin-top: -40px;
+        margin-bottom: 20px;
+    }
+    .section1 p {
+        font-size: 0.6em;
+        line-height: 20px;
+    }
+    .section2-grid {
+        max-width: 100vw;
+        margin-bottom: 50px;
+    }
+    .boxPrograms-container {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        gap: 20px;
+        max-width: 100vw;
+    }
+    .bp-Img {
+        height: 200px;
+    }
+    .section3-grid {
+        background: url(../images/rsz_programsbackground.png);
+        max-width: 100vw;
+    }
+    .section3 h1 {
+        font-size: 1.1em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .btn {
+        font-size: 0.2em;
+        padding: 10px;
+    }
+    .priceListContent {
+        margin: 0 auto;
+        min-height: 450px;
+    }
+    .priceListContent h2 {
+        font-size: 1em;
+    }
+    .priceList {
+        max-width: 100vw;
+        height: 420px;
+    }
+    .priceList ul {
+        height: 250px;
+    }
+    .lastNote {
+        background-color: white;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .lastNote p {
+        font-size: 0.5em;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .grid-container {
+        max-width: 100vw;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    }
+    .section1-grid {
+        max-width: 100vw;
+    }
+    .section1 h1 {
+        font-size: 1.5em;
+    }
+    .section1 h2 {
+        font-size: 1em;
+    }
+    .boxPrograms-container {
+        max-width: 100vw;
+        gap: 0px;
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .bp-Img {
+        width: 145px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .boxPrograms-contents {
+        margin: 5px;
+        width: 100%;
+    }
+    .box-Year {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .box-Year h1 {
+        font-size: 0.8em;
+        margin: 0 auto;
+    }
+    .section3 {
+        max-width: 100vw;
+        justify-content: center;
+        background-attachment: cover;
+        background-repeat: no-repeat;
+    }
+    #priceListContainter {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        height: 500px;
+        margin: 0 auto;
+    }
+    #Development {
+        width: 80%;
+    }
+    #devList {
+        height: 190px;
+    }
+    .priceListContent {
+        max-width: 100vw;
+        height: 400px;
+    }
+    .priceList {
+        height: 350px;
+    }
+    .priceList ul {
+        height: 190px;
+    }
+    .priceListContent ul li {
+        padding: 0;
+        font-size: 7px;
+    }
+    .priceListContent button {
+        font-size: 8px;
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .grid-container {
+        max-width: 100vw;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+    .section1-grid {
+        max-width: 100vw;
+    }
+    .section1 {
+        max-width: 100vw;
+        margin: 20px;
+    }
+    .section1 h1 {
+        font-size: 1em;
+    }
+    .section1 h2 {
+        font-size: 1em;
+    }
+    .section1 p {
+        font-size: 10px;
+    }
+    .section2-grid {
+        max-width: 100vw;
+    }
+    .section3-grid {
+        max-width: 100vw;
+    }
+    .priceList {
+        height: 380px;
+    }
+    #devList {
+        height: 240px;
+    }
+    .priceList ul {
+        height: 220px;
+    }
+    .priceList h2 {
+        font-size: 8px;
+    }
+    .priceList h6 {
+        font-size: 6px;
+    }
+}

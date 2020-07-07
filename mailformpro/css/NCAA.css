@@ -1,0 +1,432 @@
+/* ========== SHINYA ========== */
+
+#NCAA_body {
+    background: url("../images/NCAA_background.png");
+    padding: 70px;
+}
+
+/* #################################### */
+
+/* ########## NCAA container ########## */
+
+/* #################################### */
+#title_section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.7);
+}
+  
+.NCAA-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "NCAA-container";
+    grid-area: NCAA-contents;
+    margin: 50px;
+}
+  
+.NCAA-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 50px 0px;
+    grid-template-areas: "Josh-Jackson Drew-Kask Noah-Armitage" "Beau-Chetner Tyler-Kralj Drew-Andre" "Thomas-Mackiewich Kyle-Brunsch Luke-Evans" "John-Sterling-Blake Ben-Stewart Cooper-Gettel" "Zack-Kyriacethys Joey-Cote Liam-Chernoff" "Stuart-Chernoff Noah-Bradley Austin-Ducommun" "Aidan-Lalonde Carter-Calrk Kai-George" "Cole-Lowe Brian-Simmons Jaxon-Brandt" "Trevor-Funk Wesley-Phillips empty";
+    grid-area: NCAA-container; 
+}
+  
+.Josh-Jackson { 
+    grid-area: Josh-Jackson;
+}
+
+.Drew-Kask { 
+    grid-area: Drew-Kask; 
+}
+
+.Noah-Armitage { 
+    grid-area: Noah-Armitage; 
+}
+
+.Beau-Chetner { 
+    grid-area: Beau-Chetner; 
+}
+
+.Tyler-Kralj { 
+    grid-area: Tyler-Kralj; 
+}
+
+.Drew-Andre { 
+    grid-area: Drew-Andre; 
+}
+
+.Thomas-Mackiewich { 
+    grid-area: Thomas-Mackiewich; 
+}
+
+.Kyle-Brunsch { 
+    grid-area: Kyle-Brunsch; 
+}
+
+.Luke-Evans { 
+    grid-area: Luke-Evans; 
+}
+
+.John-Sterling-Blake { 
+    grid-area: John-Sterling-Blake; 
+}
+
+.Ben-Stewart { 
+    grid-area: Ben-Stewart; 
+}
+
+.Cooper-Gettel { 
+    grid-area: Cooper-Gettel; 
+}
+
+.Zack-Kyriacethys { 
+    grid-area: Zack-Kyriacethys; 
+}
+
+.Joey-Cote { 
+    grid-area: Joey-Cote; 
+}
+
+.Liam-Chernoff { 
+    grid-area: Liam-Chernoff; 
+}
+
+.Stuart-Chernoff { 
+    grid-area: Stuart-Chernoff; 
+}
+
+.Noah-Bradley { 
+    grid-area: Noah-Bradley; 
+}
+
+.Austin-Ducommun { 
+    grid-area: Austin-Ducommun; 
+}
+
+.Aidan-Lalonde { 
+    grid-area: Aidan-Lalonde; 
+}
+
+.Carter-Calrk { 
+    grid-area: Carter-Calrk; 
+}
+
+.Kai-George { 
+    grid-area: Kai-George; 
+}
+
+.Cole-Lowe { 
+    grid-area: Cole-Lowe; 
+}
+
+.Brian-Simmons { 
+    grid-area: Brian-Simmons; 
+}
+
+.Jaxon-Brandt { 
+    grid-area: Jaxon-Brandt; 
+}
+
+.Trevor-Funk { 
+    grid-area: Trevor-Funk; 
+}
+
+.Wesley-Phillips { 
+    grid-area: Wesley-Phillips; 
+}
+
+
+.empty { 
+    grid-area: empty; 
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "link img";
+    padding: 50px 70px;
+}
+
+.NCAA-links { 
+    grid-area: link;
+}
+
+.NCAA-img { 
+    grid-area: img;
+    text-align: center;
+}
+
+.links_p {
+    display: flex;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.links_p:nth-child(2) {
+    margin: 50px 0px;
+}
+
+.links_p:nth-child(3) {
+    margin: 50px 0px 0px 0px;
+}
+
+.links_p p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.links_p a {
+    margin-left: 30px;
+}
+
+.links_p button {
+    background-color: #89c64a;
+    color: #fff;
+    border: none;
+    width: 200%;
+    height: 100%;
+}
+
+#NCAA-logo {
+    width: 50%;
+    height: 100%;
+}
+
+/* ################################ */
+
+/* ########## hover card ########## */
+
+/* ################################ */
+
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 65%;
+    height: 65%;
+    background: #000;
+}
+
+.NCAA-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .NCAA-images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .NCAA-images img {
+    width: 100%;
+    transition: .5s;
+}
+.card:hover .NCAA-images img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    /* background: #ffc107; */
+    background: #89c64a;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    width: 75%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 1em;
+    color: #262626;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.card .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.card .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.card .details .center ul li a {
+    display: block;
+    background: #262626;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.card .details .center ul li a:hover {
+    background: #ff3636;
+}
+
+/* ################################# */
+
+/* ########## @media part ########## */
+
+/* ################################# */
+@media screen and (max-width:1440px) {
+    #NCAA_body {
+        padding: 30px;
+    }
+
+    .card .details .center h1 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:1204px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    .links_p p {
+        font-size: 1.2em;
+    }
+
+    .NCAA-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "Josh-Jackson Drew-Kask" "Noah-Armitage Beau-Chetner" "Tyler-Kralj Drew-Andre" "Thomas-Mackiewich Kyle-Brunsch" "Luke-Evans John-Sterling-Blake" "Ben-Stewart Cooper-Gettel" "Zack-Kyriacethys Joey-Cote" "Liam-Chernoff Stuart-Chernoff" "Noah-Bradley Austin-Ducommun" "Aidan-Lalonde Carter-Calrk" "Kai-George Cole-Lowe" "Brian-Simmons Jaxon-Brandt" "Trevor-Funk Wesley-Phillips";
+    }
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    .card .details .center {
+        width: 70%;
+    }
+
+    .card .details .center h1 {
+        font-size: 1em;
+    }
+
+    .center p {
+        margin: 0px !important;
+    }
+
+    .grid-container2 {
+        padding: 50px;
+    }
+
+    .links_p p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #NCAA_body {
+        background: url("../images/NCAA_mobileBackground.png");
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 20px;
+    }
+
+    .NCAA-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "Josh-Jackson" "Drew-Kask" "Noah-Armitage" "Beau-Chetner" "Tyler-Kralj" "Drew-Andre" "Thomas-Mackiewich" "Kyle-Brunsch" "Luke-Evans" "John-Sterling-Blake" "Ben-Stewart" "Cooper-Gettel" "Zack-Kyriacethys" "Joey-Cote" "Liam-Chernoff" "Stuart-Chernoff" "Noah-Bradley" "Austin-Ducommun" "Aidan-Lalonde" "Carter-Calrk" "Kai-George" "Cole-Lowe" "Brian-Simmons" "Jaxon-Brandt" "Trevor-Funk" "Wesley-Phillips";
+    }
+
+    .NCAA-contents {
+        margin: 0px;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "link" "img";
+        padding: 20px;
+    }
+
+    .NCAA-links h1 {
+        margin: 20px 0px;
+    }
+
+    .links_p p {
+        font-size: 1.2em;
+    }
+
+    .links_p:nth-child(2) {
+        margin: 20px 0px;
+    }
+    
+    .links_p:nth-child(3) {
+        margin: 20px 0px 0px 0px;
+    }
+
+    #NCAA-logo {
+        width: 35%;
+        height: 70%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .links_p p {
+        font-size: 1em;
+    }
+
+    #NCAA-logo {
+        height: 80%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .links_p p {
+        font-size: 0.8em;
+    }
+}
