@@ -481,10 +481,12 @@ body {
           height: 440px;
           img.content_img{
             height: 270px;
+            width:100%;
 
           }
           video.content_img{
             height: 270px;
+            width: 100%;
           }
         }
       }
@@ -715,16 +717,16 @@ img.tounaments-img {
   border-radius: 5px;
 
   h1{
-    font-size: 5rem;
+    font-size: 2rem;
     color: #89c64a;
     text-align: center;
   }
   p{
-    font-size: 3rem;
+    font-size: 1rem;
     margin: 20px;
   }
   h2{
-    font-size: 4rem;
+    font-size: 1.2rem;
     margin-top: 30px;
   }
   ul{
@@ -732,13 +734,13 @@ img.tounaments-img {
     position: relative;
   }
   .zeromodal-caption1{
-    font-size: 2rem;
+    font-size: 1rem;
   }
   li{
-    font-size: 2rem;
+    font-size: 1rem;
   }
   h3{
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
 
@@ -943,16 +945,16 @@ img.tounaments-img {
   .modal-content {
 
     h1{
-      font-size: 3rem;
+
       color: #89c64a;
       text-align: center;
     }
     p{
-      font-size: 1.5rem;
+
       margin: 20px;
     }
     h2{
-      font-size: 2rem;
+
       margin-top: 30px;
     }
     ul{
@@ -960,15 +962,7 @@ img.tounaments-img {
       position: relative;
       margin-top: 20px;
     }
-    .zeromodal-caption1{
-      font-size: 1.5rem;
-    }
-    li{
-      font-size: 1.5rem;
-    }
-    h3{
-      font-size: 1.5rem;
-    }
+
 
 
 
@@ -1040,16 +1034,13 @@ img.tounaments-img {
     padding: 75px 75px;
 
     h1{
-      font-size: 2.2rem;
       color: #89c64a;
       text-align: center;
     }
     p{
-      font-size: 1.1rem;
       margin: 10px;
     }
     h2{
-      font-size: 1.5rem;
       margin-top: 30px;
     }
     ul{
@@ -1057,17 +1048,6 @@ img.tounaments-img {
       position: relative;
       margin-top: 20px;
     }
-    .zeromodal-caption1{
-      font-size: 1.1rem;
-    }
-    li{
-      font-size: 1.1rem;
-    }
-    h3{
-      font-size: 1.1rem;
-    }
-
-
 
   }
 }
