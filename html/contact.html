@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contact</title>
+    <title>document</title>
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -20,7 +20,6 @@
       href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       rel="stylesheet"
     />
-
     <!-- template-->
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -42,19 +41,12 @@
       type="text/css"
     />
     <!--/メールフォームプロ用CSS-->
-
-    <link
-      rel="icon"
-      href="../images/image0.png"
-      type="image/gif"
-      sizes="16x16"
-    />
   </head>
   <body>
     <!-- HEADER -->
     <div data-include="header"></div>
 
-    <div  class="all_select">
+    <div class="all_select">
       <div class="container">
         <div class="wrapper">
           <div class="company-info">
@@ -64,8 +56,7 @@
             <ul class="details">
               <li><i class="fas fa-user-alt"></i> Tyler Pace</li>
               <li><i class="fa fa-phone"></i> (604) 445 1434</li>
-              <li><i class="fas fa-user-alt"></i> Tyler Pace</li>
-              <li><i class="fa fa-phone"></i> (604) 445 1434</li>
+              <li><i class="fas fa-user-alt"></i> Sandy Pace</li>
               <li>
                 <i class="fa fa-envelope"></i>sandy@procaliberlacrosse.net
               </li>
@@ -82,21 +73,33 @@
             >
               <p class="full">
                 <label>Your Name</label>
-                <input type="text" name="name" id="name" required="required" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Type your name"
+                  required="required"
+                />
               </p>
-              <p>
+              <p class="full_1480">
                 <label>Your Email</label>
                 <input
                   type="email"
                   data-type="email"
                   name="email"
                   id="email"
+                  placeholder="Type your email"
                   required="required"
                 />
               </p>
-              <p>
+              <p class="full_1480">
                 <label>Phone</label>
-                <input type="text" name="Phone" id="Phone" />
+                <input
+                  type="text"
+                  name="Phone"
+                  placeholder="Type your number"
+                  id="Phone"
+                />
               </p>
               <p class="full">
                 <label>Message</label>
@@ -104,6 +107,7 @@
                   name="message"
                   rows="5"
                   id="message"
+                  placeholder="Type your messge"
                   required="required"
                 ></textarea>
               </p>
