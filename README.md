@@ -1,4 +1,4 @@
-# Pro Caliber Lacrosse
+# Pro Caliber Lacrosse Club
 This is a company website project for Pro Caliber Lacrosse club
 
 website: https://pro-caliber-lacrosse.netlify.app/
